@@ -17,7 +17,7 @@ REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106
 */
 
 /*
-Validación cruzada de Regresión Lineal sel1 las variables
+Logistic
 seeds = 10
 groups = 4
 */
