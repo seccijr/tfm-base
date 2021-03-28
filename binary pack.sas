@@ -1,144 +1,26 @@
-/* LA MACRO RANDOMSELECTlog REALIZA UN M…TODO STEPWISE REPETIDAS VECES CON DIFERENTES ARCHIVOS TRAIN.
-
-LA SALIDA INCLUYE UNA TABLA DE FRECUENCIAS DE LOS MODELOS QUE APARECEN SELECCIONADOS EN LOS DIFERENTES 
-ARCHIVOS TRAIN
-
-LOS MODELOS QUE SALEN M¡S VECES SON POSIBLES CANDIDATOS A PROBAR CON VALIDACI”N CRUZADA
-
-listclass=lista de variables de clase ATENCI”N, EN ESTA LISTA SOLO PONER VARIABLES 
-			QUE SE VAYAN A USAR (BIEN COMO EFECTOS PRINCIPALES O INTERACCIONES)
-vardepen=variable dependiente
-modelo=modelo
-sinicio=semilla inicio
-sfinal=semilla final
-fracciontrain=fracciÛn de datos train
-directorio=directorio para archivos basura
-
-EL ARCHIVO QUE CONTIENE LOS EFECTOS SE LLAMA SALEFEC. 
-SE INCLUYE EN EL LOG EL LISTADO PARA PODER COPIAR Y PEGAR 
-(A VECES LA VENTANA OUTPUT EST¡ LIMITADA)
-
-*/
-
-%macro randomselectlog(data=, listclass=, vardepen=, modelo=, sinicio=, sfinal=, fracciontrain=, directorio=);
-	options nocenter linesize=256;
-	
-	proc printto print="&directorio\kk.txt";
-	run;
-	
-	data;file "&directorio\cosa2.txt";
-	run;
-	
-	%do semilla=&sinicio %to &sfinal;
-		proc surveyselect data=&data rate=&fracciontrain out=sal1234 seed=&semilla;
-		run;
-
-		%if &listclass ne %then %do;
-			ods output type3=parametros;
-			proc logistic data=sal1234;
-				class &listclass;
-				model &vardepen= &modelo/ selection=stepwise;
-			run;
-			
-			data parametros;length effect $20. modelo $ 20000;retain modelo " ";
-				set parametros end=fin;effect=cat(' ',effect);
-				if _n_ ne 1 then modelo=catt(modelo,' ',effect);
-				if fin then do;
-					variable=modelo;
-					output;
-				end;
-			run;
-		%end;
-		%else %do;
-			ods output  Logistic.ParameterEstimates=parametros;
-			proc logistic data=sal1234;
-				  model &vardepen= &modelo/ selection=stepwise;
-			run;   
-		%end;
-		
-		ods graphics off;   
-		ods html close;
-		
-		data;
-			file "&directorio\cosa2.txt" mod;
-			set parametros;
-			%if &listclass ne %then %do;
-				put variable @@;
-			%end;
-			%else %do;
-				if _n_ ne 1 then put variable @@;
-			%end;
-		run;
-	%end;
-	
-	proc printto;
-	run;
-	
-	data todos;
-		infile "&directorio\cosa2.txt";
-		length efecto $ 400;
-		input efecto @@;
-		if efecto ne 'Intercept' then output;
-	run;
-	
-	proc freq data=todos;tables efecto /out=sal;
-	run;
-	
-	proc sort data=sal;by descending count;
-	run;
-	
-	proc print data=sal;
-	run;
-
-	data todos;
-		infile "&directorio\cosa2.txt";
-		length efecto $ 200;
-		input efecto $ &&;
-	run;
-	
-	proc freq data=todos;
-		tables efecto /out=sal;
-	run;
-	
-	proc sort data=sal;
-		by descending count;
-	run;
-	
-	proc print data=sal;
-	run;
-	
-	data;
-		set sal;
-		put efecto;
-	run;
-%mend;
-
-
-
-/* VALIDACI”N CRUZADA LOGÕSTICA PARA VARIABLES DEPENDIENTES BINARIAS 
+/* VALIDACI√ìN CRUZADA LOG√çSTICA PARA VARIABLES DEPENDIENTES BINARIAS 
 
 *********************************************************************************
-								PAR¡METROS
+								PAR√ÅMETROS
 *********************************************************************************
 
-B¡SICOS
+B√ÅSICOS
 
 archivo=		archivo de datos
 vardepen=		variable dependiente binaria 
-categor=		lista de variables independientes categÛricas
-conti=			lista de variables independientes continuas Y TODAS LAS INTERACCIONES
-ngrupos=		n˙mero de grupos validaciÛn cruzada
-sinicio=		semilla inicial para repeticiÛn
-sfinal=			semilla final para repeticiÛn
+categor=		lista de variables independientes categ√≥ricas
+ngrupos=		n√∫mero de grupos validaci√≥n cruzada
+sinicio=		semilla inicial para repetici√≥n
+sfinal=			semilla final para repetici√≥n
 objetivo=		tasafallos,sensi,especif,porcenVN,porcenFN,porcenVP,porcenFP,precision,tasaciertos
 
 
-El archivo final se llama final. La variable media es la media del obejtivo en todas las pruebas de validaciÛn cruzada
+El archivo final se llama final. La variable media es la media del obejtivo en todas las pruebas de validaci√≥n cruzada
 (habitualmente tasa de fallos).
 
 */
 
-%macro cruzadalogistica(archivo=, vardepen=, conti=, categor=, ngrupos=, sinicio=, sfinal=, objetivo=tasafallos);
+%macro cruzadalogistica(archivo=, vardepen=, categor=, ngrupos=, sinicio=, sfinal=, objetivo=tasafallos);
 	title ' ';
 	
 	data final;
@@ -157,7 +39,7 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 		data dos (drop=nume);
 			retain grupo 1;
 			set dos nobs=nume;
-			if _n_>grupo*nume/&ngrupos then grupo=grupo+1;
+			if _n_ > grupo * nume / &ngrupos then grupo = grupo + 1;
 		run;
 		
 		data fantasma;
@@ -169,48 +51,46 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 				if grupo ne &exclu then vardep=&vardepen;
 			run;
 			
-			proc logistic data=tres noprint;
-				%if (&categor ne) %then %do;
-					class &categor;
-					model vardep=&conti &categor ;
-				%end;
-				%else %do;
-					model vardep=&conti;
-				%end;
-				output out=sal p=predi;
+			proc logistic data = tres;
+				class &categor;
+				model vardep=&categor / OUTROC=ROC;
+				ROC;
+				ods output out=sal p=predi ROCASSOCIATION = AUC;
 			run;
 			
-			data sal2;
-				set sal;pro=1-predi;
-				if pro>0.5 then pre11=1;
-				else pre11=0; 
-				if grupo=&exclu then output;
+			data sal2;	
+				set sal;
+				pro = 1 - predi;
+				if pro > 0.5 then pre11 = 1;
+				else pre11 = 0; 
+				if grupo = &exclu then output;
 			run;
 			
-			proc freq data=sal2;
-				tables pre11*&vardepen/out=sal3;
+			proc freq data = sal2;
+				tables pre11 * &vardepen /out=sal3;
 			run;
 			
 			data estadisticos (drop=count percent pre11 &vardepen); 
 				retain vp vn fp fn suma 0; 
-				set sal3 nobs=nume; 
-				suma=suma+count; 
-				if pre11=0 and &vardepen=0 then vn=count; 
-				if pre11=0 and &vardepen=1 then fn=count; 
-				if pre11=1 and &vardepen=0 then fp=count; 
-				if pre11=1 and &vardepen=1 then vp=count; 
-				if _n_=nume then do; 
-				porcenVN=vn/suma; 
-				porcenFN=FN/suma; 
-				porcenVP=VP/suma; 
-				porcenFP=FP/suma; 
-				sensi=vp/(vp+fn); 
-				especif=vn/(vn+fp); 
-				tasafallos=1-(vp+vn)/suma; 
-				tasaciertos=1-tasafallos; 
-				precision=vp/(vp+fp); 
-				F_M=2*Sensi*Precision/(Sensi+Precision); 
-				output; 
+				set sal3 nobs = nume; 
+				suma = suma + count; 
+				if pre11 = 0 and &vardepen=0 then vn = count; 
+				if pre11 = 0 and &vardepen=1 then fn = count; 
+				if pre11 = 1 and &vardepen=0 then fp = count; 
+				if pre11 = 1 and &vardepen=1 then vp = count; 
+				if _n_ = nume then do; 
+					porcenVN = vn / suma; 
+					porcenFN = FN / suma; 
+					porcenVP = VP / suma; 
+					porcenFP = FP / suma; 
+					sensi = vp / (vp + fn); 
+					especif = vn / (vn + fp); 
+					tasafallos = 1 - (vp + vn) / suma; 
+					tasaciertos = 1 - tasafallos; 
+					precision = vp / (vp + fp); 
+					F_M = 2 * Sensi * Precision / (Sensi + Precision); 
+					set AUC (where = (ROCModel = 'Model') keep = Area ROCModel);
+					output; 
 				end; 
 			run; 
 			
@@ -241,23 +121,23 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 
 
 
-/* LA MACRO CRUZADABINARIANEURAL GENERA RESULTADOS POR CLASIFICACI”N BINARIA 
+/* LA MACRO CRUZADABINARIANEURAL GENERA RESULTADOS POR CLASIFICACI√ìN BINARIA 
 CON RED NEURONAL CON VARIAS SEMILLAS
 
-PAR¡METROS:
+PAR√ÅMETROS:
 
 archivo
-vardepen 	debe de ser variable con dos categorÌas excluyentes
+vardepen 	debe de ser variable con dos categor√≠as excluyentes
 conti 		lista de variables continuas en el modelo	
-categor		lista de variables categÛricas en el modelo	
-ngrupos		grupos de validaciÛn cruzada
-sinicio		semilla inicial de aleatorizaciÛn
-sifinal		semilla final de aleatorizaciÛn
-nodos		n˙mero de nodos red
+categor		lista de variables categ√≥ricas en el modelo	
+ngrupos		grupos de validaci√≥n cruzada
+sinicio		semilla inicial de aleatorizaci√≥n
+sifinal		semilla final de aleatorizaci√≥n
+nodos		n√∫mero de nodos red
 algo		algoritmo
-objetivo	funciÛn objetivo para resumir en archivos y boxplot. Palabras clave:
+objetivo	funci√≥n objetivo para resumir en archivos y boxplot. Palabras clave:
 			
-		tasafallos (habitualmente se utilizar· esta)
+		tasafallos (habitualmente se utilizar√° esta)
 		porcenVN
 		porcenFN
 		porcenVP
@@ -269,21 +149,20 @@ objetivo	funciÛn objetivo para resumir en archivos y boxplot. Palabras clave:
 		F_M
 basura 	archivo basura
 
-El archivo llamado final contiene la media y suma de la funciÛn objetivo por validaciÛn cruzada
+El archivo llamado final contiene la media y suma de la funci√≥n objetivo por validaci√≥n cruzada
 
-NOTA: A VECES EL PROCESO DE OPTIMIZACI”N ES DEFECTUOSO (EL EARLY STOPPING NO SIEMPRE FUNCIONA BIEN).
-SUELE TAMBI…N HABER CIERTA DEPENDENCIA DE LA SEMILLA INICIAL UTILIZADA PARA LOS PESOS.
-EN ESTOS CASOS HABR¡ QUE 
+NOTA: A VECES EL PROCESO DE OPTIMIZACI√ìN ES DEFECTUOSO (EL EARLY STOPPING NO SIEMPRE FUNCIONA BIEN).
+SUELE TAMBI√âN HABER CIERTA DEPENDENCIA DE LA SEMILLA INICIAL UTILIZADA PARA LOS PESOS.
+EN ESTOS CASOS HABR√Å QUE 
 1) UTILIZAR PRELIM
-2)CAMBIAR  EL N⁄MERO DE ITERACIONES Y/O CAMBIAR EL ALGORITMO
-(o sus par·metros, aumentar por ejemplo mom en BPROP)
+2)CAMBIAR  EL N√öMERO DE ITERACIONES Y/O CAMBIAR EL ALGORITMO
+(o sus par√°metros, aumentar por ejemplo mom en BPROP)
 	
 */
 
-/*basura=F:\TÈcnicas de machine learning (Portela - MiÈrcoles)\Tema 8\basura.txt*/ /*C:*/
 
-%macro cruzadabinarianeural(archivo=,vardepen=,conti=,categor=,ngrupos=,sinicio=,sfinal=,nodos=,algo=,objetivo=,early=,acti=tanh,directorio=);
-title ' ';
+%macro cruzadabinarianeural(archivo=, vardepen=, categor=, ngrupos=, sinicio=, sfinal=, nodos=, algo=, objetivo=, early=, acti=tanh, directorio=);
+	title ' ';
 	data final;
 	run;
 	
@@ -293,7 +172,8 @@ title ' ';
 	/* Bucle semillas */
 	%do semilla=&sinicio %to &sfinal;
 		data dos;
-			set &archivo;u=ranuni(&semilla);
+			set &archivo;
+			u=ranuni(&semilla);
 		run;
 		
 		proc sort data=dos;
@@ -303,10 +183,13 @@ title ' ';
 		data dos (drop=nume);
 			retain grupo 1;
 			set dos nobs=nume;
-			if _n_>grupo*nume/&ngrupos then grupo=grupo+1;
+			if _n_> grupo * nume / &ngrupos then grupo = grupo + 1;
 		run;
 		
 		data fantasma;
+		run;
+
+		data sal_final;
 		run;
 		%do exclu=1 %to &ngrupos;
 			
@@ -318,25 +201,22 @@ title ' ';
 			
 			proc dmdb data=trestr dmdbcat=catatres;
 				target &vardepen;
-				var &conti;
-				class &vardepen;
-				%if &categor ne %then %do;
-					class &categor &vardepen;
-				%end;
+				class &categor &vardepen;
 			run;
 			
 			proc neural data=trestr dmdbcat=catatres random=789;
-				input &conti;
-				%if &categor ne %then %do;
-					input &categor /level=nominal;
-				%end;
-				
+				input &categor /level=nominal;
 				target &vardepen /level=nominal;
 				hidden &nodos /act=&acti;
 				netoptions randist=normal ranscale=0.15 random=15459;
 				prelim 15 preiter=10 pretech=&algo;
-				train maxiter=&early outest=mlpest technique=&algo;
-				score data=tresval role=valid out=sal ;
+				%if &early ne %then %do;
+					train maxiter=&early outest=mlpest technique=&algo;
+				%end;
+				%else %do;
+					train outest=mlpest technique=&algo;
+				%end;
+				score data=tresval role=valid out=sal;
 			run;
 			
 			data sal2;
@@ -344,10 +224,14 @@ title ' ';
 				pro=1-%str(p_&vardepen)0;
 				if pro>0.5 then pre11=1;
 				else pre11=0;
-			run; 
+			run;
+			
+			data sal_final;
+				set sal_final sal;
+			run;
 			
 			proc freq data=sal2;
-				tables pre11*&vardepen/out=sal3;
+				tables pre11 * &vardepen /out=sal3;
 			run;
 
 			data estadisticos (drop=count percent pre11 &vardepen); 
@@ -404,13 +288,13 @@ title ' ';
 
 /* ***************MACRO neuralbinariabasica*************************
 
-El objetivo de esta macro es obtener un resultado b·sico de la red
-con una sola particiÛn training test. 
+El objetivo de esta macro es obtener un resultado b√°sico de la red
+con una sola partici√≥n training test. 
 
 Si se quiere estratificacion en el muestreo quitar los comentarios en strata en el interior
 de la macro.
 
-NOTA: LA VARIABLE DEPENDIENTE DEBE ESTAR CODIFICADA COMO 0 y 1, SIENDO 1 LA CATEGORÕA DE INTER…S 
+NOTA: LA VARIABLE DEPENDIENTE DEBE ESTAR CODIFICADA COMO 0 y 1, SIENDO 1 LA CATEGOR√çA DE INTER√âS 
 
 SE FIJAN LOS NODOS, PUNTO DE CORTE, SEMILLA, PORCENTAJE
 OBVIAMENTE SE PUEDEN CAMBIAR LAS OPCIONES INTERNAS DEL PROC NEURAL:
@@ -518,8 +402,8 @@ El archivo que contiene la performance se llama estadisticos.
 MACRO REDNEURONALBINARIA
 
 PARA OBSERVAR EARLY STOPPING USAR ESTA MACRO, 
-PARA OTRAS COSAS MEJOR LAS MACROS BINARIAS B¡SICAS
-(ESTA MACRO NO TIENE COMO FUNCI”N DE ERROR LA TASA DE FALLOS)
+PARA OTRAS COSAS MEJOR LAS MACROS BINARIAS B√ÅSICAS
+(ESTA MACRO NO TIENE COMO FUNCI√ìN DE ERROR LA TASA DE FALLOS)
 
 MACRO redneuronalbinaria(archivo=,listclass=,listconti=,vardep=,porcen=,semilla=,ocultos=,meto=,acti=);
 
@@ -528,17 +412,17 @@ listclass= lista de variables de clase
 listconti= lista de variables continuas
 vardep=variable dependiente
 porcen= porcentaje de training
-semilla=semilla para hacer la particiÛn
-ocultos=n˙mero de nodos ocultos
+semilla=semilla para hacer la partici√≥n
+ocultos=n√∫mero de nodos ocultos
 
 LA MACRO SE PUEDE CAMBIAR A CONVENIENCIA INTERNAMENTE PARA LAS OPCIONES DE LA RED
-PARA CAMBIAR OTROS PAR¡METROS VER LAS MACROS AL FINAL DEL DOCUMENTO
+PARA CAMBIAR OTROS PAR√ÅMETROS VER LAS MACROS AL FINAL DEL DOCUMENTO
 
 		*************************************************************************************
 		NOTA IMPORTANTE:
 		*************************************************************************************
-		LA FUNCI”N DE ERROR EN EARLY STOPPING NO ES LA TASA DE FALLOS, 
-		ES ENTROPÕA O FUNCI”N DE ERROR DE BERNOULLI
+		LA FUNCI√ìN DE ERROR EN EARLY STOPPING NO ES LA TASA DE FALLOS, 
+		ES ENTROP√çA O FUNCI√ìN DE ERROR DE BERNOULLI
 
 		suma de 	-[y*log(ygorro)+(1-y)*log(1-ygorro)]
 
@@ -628,8 +512,8 @@ PARA CAMBIAR OTROS PAR¡METROS VER LAS MACROS AL FINAL DEL DOCUMENTO
 	title1 
 	h=2 box=1 j=c c=red 'TRAIN' c=blue '  VALIDA' 
 	h=1.5 j=c c=black "EARLY STOPPING=&earlystop " "semilla=&semilla" 
-	h=1 j=c c=green "NODOS OCULTOS: &ocultos  " " METODO: &meto "  "ACTIVACI”N: &acti"
-	h=1 j=c c=black "EL ERROR ES EL VALOR DE LA ENTROPÕA";
+	h=1 j=c c=green "NODOS OCULTOS: &ocultos  " " METODO: &meto "  "ACTIVACI√ìN: &acti"
+	h=1 j=c c=black "EL ERROR ES EL VALOR DE LA ENTROP√çA";
 
 	symbol1 c=red v=circle i=join pointlabel=("#cosa1" h=1 c=red position=bottom  j=c);
 	symbol2 c=blue v=circle i=join pointlabel=("#cosa2" h=1 c=blue position=top j=c);
@@ -645,20 +529,20 @@ PARA CAMBIAR OTROS PAR¡METROS VER LAS MACROS AL FINAL DEL DOCUMENTO
 %mend;
 
 
-/* LA MACRO CRUZADARANDOMFORESTBIN REALIZA VALIDACI”N CRUZADA REPETIDA PARA VARIABLE 
+/* LA MACRO CRUZADARANDOMFORESTBIN REALIZA VALIDACI√ìN CRUZADA REPETIDA PARA VARIABLE 
 DEPENDIENTE BINARIA
 
-SI SE DESEA HACER BAGGING SIMPLEMENTE SE PONE EL N⁄MERO TOTAL DE VARIABLES EN 
+SI SE DESEA HACER BAGGING SIMPLEMENTE SE PONE EL N√öMERO TOTAL DE VARIABLES EN 
 EL PARAMETRO variables=
 
-PAR¡METROS:
+PAR√ÅMETROS:
 
-porcenbag=porcentaje de observaciones en cada iteraciÛn
-variables=n˙mero de variables a sortear en cada nodo
-tamhoja=tamaÒo mÌnimo de hoja final
+porcenbag=porcentaje de observaciones en cada iteraci√≥n
+variables=n√∫mero de variables a sortear en cada nodo
+tamhoja=tama√±o m√≠nimo de hoja final
 maxtrees=iteraciones
-maxbranch=divisiones m·ximas en un nodo
-maxdepth=m·xima profundidad
+maxbranch=divisiones m√°ximas en un nodo
+maxdepth=m√°xima profundidad
 pvalor=p-valor para las divisiones de nodos
 
 */
@@ -922,18 +806,18 @@ pvalor=p-valor para las divisiones de nodos
 
 
 
-/* LA MACRO CRUZADATREEBOOSTBIN REALIZA VALIDACI”N CRUZADA REPETIDA PARA VARIABLE 
+/* LA MACRO CRUZADATREEBOOSTBIN REALIZA VALIDACI√ìN CRUZADA REPETIDA PARA VARIABLE 
 DEPENDIENTE BINARIA
 
-PAR¡METROS:
+PAR√ÅMETROS:
 
-leafsize=tamaÒo mÌnimo de hoja final
+leafsize=tama√±o m√≠nimo de hoja final
 iteraciones
-shrink=constante v de regularizaciÛn
-maxbranch=divisiones m·ximas en un nodo
-maxdepth=m·xima profundidad
-mincatsize=minimo n˙mero de observaciones var. categÛrica
-minobs=mÌnimo n˙mero de observaciones para dividir un nodo
+shrink=constante v de regularizaci√≥n
+maxbranch=divisiones m√°ximas en un nodo
+maxdepth=m√°xima profundidad
+mincatsize=minimo n√∫mero de observaciones var. categ√≥rica
+minobs=m√≠nimo n√∫mero de observaciones para dividir un nodo
 
 criterion=ProbF,
 
@@ -1045,15 +929,15 @@ options mprint=0;
 ********************************************************************
 						CRUZADASVM
 
-El par·metro C controla el soft margin 
-(C m·s grande, modelo m·s ajustado, menos sesgo m·s varianza; C m·s pequeÒo, modelo m·s simple, 
-m·s sesgo menos varianza)
+El par√°metro C controla el soft margin 
+(C m√°s grande, modelo m√°s ajustado, menos sesgo m√°s varianza; C m√°s peque√±o, modelo m√°s simple, 
+m√°s sesgo menos varianza)
 
-Nota: El par·metro kernel puede ser de las siguientes formas:
+Nota: El par√°metro kernel puede ser de las siguientes formas:
 
 kernel=linear
-kernel=polynom k_par=2 (2 o 3 grado del polinomio; m·s alto m·s complejo)
-kernel=RBF k_par=gamma (m·s bajo, m·s suavizado, m·s alto, m·s agresivo en cuanto a las zonas) 
+kernel=polynom k_par=2 (2 o 3 grado del polinomio; m√°s alto m√°s complejo)
+kernel=RBF k_par=gamma (m√°s bajo, m√°s suavizado, m√°s alto, m√°s agresivo en cuanto a las zonas) 
 
 Para un ejemplo de la interdependencia entre C y gamma 
 http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
@@ -1175,19 +1059,19 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 /* 
 MACRO CRUZADASTACK PARA BINARIA
 
-HACE VALIDACI”N CRUZADA CON LOS SIGUIENTES M…TODOS:
+HACE VALIDACI√ìN CRUZADA CON LOS SIGUIENTES M√âTODOS:
 
-RED NEURONAL (par·metro nodos de la macro; cualquier otra especificaciÛn 
-				de la red como algoritmo, iteraciones, activaciÛn, etc. se cambia dentro del cÛdigo)
-LOGÕSTICA
+RED NEURONAL (par√°metro nodos de la macro; cualquier otra especificaci√≥n 
+				de la red como algoritmo, iteraciones, activaci√≥n, etc. se cambia dentro del c√≥digo)
+LOG√çSTICA
 
 RANDOM FOREST
 
-GRADIENT BOOSTING (p·r·metros itera y v)
+GRADIENT BOOSTING (p√°r√°metros itera y v)
 
 SVM (si no se quiere se pone kernel=0)
 
-1) LA MACRO SE PUEDE CAMBIAR A CONVENIENCIA INTERNAMENTE, SOBRE TODO LOS PAR¡METROS DE LA RED NEURONAL, boosting, etc.
+1) LA MACRO SE PUEDE CAMBIAR A CONVENIENCIA INTERNAMENTE, SOBRE TODO LOS PAR√ÅMETROS DE LA RED NEURONAL, boosting, etc.
 
 2) SI NO HAY VARIABLES DE CLASE EN EL ARCHIVO:
 
