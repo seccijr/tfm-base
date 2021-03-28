@@ -429,10 +429,9 @@ PARA CAMBIAR OTROS PARÁMETROS VER LAS MACROS AL FINAL DEL DOCUMENTO
 		*************************************************************************************
 *************************************************************************************/
 
-%macro redneuronalbinaria(archivo=,listclass=,listconti=,vardep=,porcen=,semilla=,ocultos=,meto=levmar,acti=);
+%macro redneuronalbinaria(archivo=,listclass=,vardep=,porcen=,semilla=,ocultos=,meto=levmar,acti=);
 	proc dmdb data=&archivo dmdbcat=catauno;
 		target &vardep;
-		var &listconti ;
 		class &vardep &listclass;
 	run;
 
@@ -457,7 +456,6 @@ PARA CAMBIAR OTROS PARÁMETROS VER LAS MACROS AL FINAL DEL DOCUMENTO
 	run;
 
 	proc neural data=datos dmdbcat=catauno validata=valida graph;
-		input &listconti /id=i;
 		input &listclass /level=nominal;
 		target &vardep /level=nominal id=o error=ENT;
 		hidden &ocultos /id=h act=&acti;
