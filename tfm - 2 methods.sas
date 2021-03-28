@@ -36,7 +36,7 @@ data Results.llv1;
 run;
 
 /*
-Revisión de Early Stopping
+Early Stopping
 early = 197
 */
 %redneuronalbinaria(
@@ -51,13 +51,13 @@ early = 197
 );
 
 /*
-Validación cruzada de Red Neuronal
+Red Neuronal
 groups = 4
 seeds = 10
 n = 2
 algo = levmar
 early = 0
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
 	archivo=news_reduced_clean,
@@ -74,20 +74,14 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	directorio=C:\Users\secci\Workspace\TFM\Base\tmp
 );
 
-data Results.levtanh2;
+data Results.levtanhearly0n2;
 	set final;
 run;
 
 
 
-
-
-
-
-
-
 /*
-Validación cruzada de Support Vector Machine
+Support Vector Machine
 seeds = 31
 groups = 4
 kernel=rbf
@@ -113,7 +107,7 @@ data lib.svmrbfv1;
 run;
 
 /*
-Validación cruzada de Support Vector Machine
+Support Vector Machine
 seeds = 31
 groups = 4
 kernel=polynom
@@ -139,7 +133,7 @@ data lib.svmpolr2v1;
 run;
 
 /*
-Validación cruzada de Support Vector Machine
+Support Vector Machine
 seeds = 31
 groups = 4
 kernel=polynom
@@ -165,7 +159,7 @@ data lib.svmpolr3v1;
 run;
 
 /*
-Validación cruzada de Support Vector Machine
+Support Vector Machine
 seeds = 31
 groups = 4
 kernel=polynom
@@ -192,7 +186,7 @@ run;
 
 
 /*
-Validación cruzada de Support Vector Machine
+Support Vector Machine
 seeds = 31
 groups = 4
 kernel=polynom
@@ -218,7 +212,7 @@ data lib.svmpolr4v1;
 run;
 
 /*
-Validación cruzada de Gradient Boosting sel1 las variables
+Gradient Boosting sel1 las variables
 shrink = 0.03
 depth = 4
 trees = 100
@@ -226,7 +220,7 @@ category size = 15
 split size = 20
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadatreeboostbin(
 	archivo=sel1,
@@ -253,7 +247,7 @@ data lib.gb003v1;
 run;
 
 /*
-Validación cruzada de Gradient Boosting sel1 las variables
+Gradient Boosting sel1 las variables
 shrink = 0.1
 depth = 4
 trees = 100
@@ -261,7 +255,7 @@ category size = 15
 split size = 20
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadatreeboostbin(
 	archivo=sel1,
@@ -288,7 +282,7 @@ data lib.gb01v1;
 run;
 
 /*
-Validación cruzada de Gradient Boosting sel1 las variables
+Gradient Boosting sel1 las variables
 shrink = 0.1
 depth = 6
 trees = 100
@@ -296,7 +290,7 @@ category size = 15
 split size = 20
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadatreeboostbin(
 	archivo=sel1,
@@ -323,7 +317,7 @@ data lib.gbd601v1;
 run;
 
 /*
-Validación cruzada de Gradient Boosting sel1 las variables
+Gradient Boosting sel1 las variables
 shrink = 0.001
 depth = 4
 trees = 100
@@ -331,7 +325,7 @@ category size = 15
 split size = 20
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadatreeboostbin(
 	archivo=sel1,
@@ -358,14 +352,14 @@ data lib.gb0001v1;
 run;
 
 /*
-Validación cruzada de Bagging sel1 las variables
+Bagging sel1 las variables
 maxbranch = 2
 depth = 4
 nleaves = 6
 tamhoja = 5
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabaggingbin(
 	archivo=sel1,
@@ -392,12 +386,12 @@ data lib.bagn6m5v1;
 run;
 
 /*
-Validación cruzada de Random Forest sel1 las variables
+Random Forest sel1 las variables
 maxtrees = 100
 variables = 6
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadarandomforestbin(
 	archivo=sel1,
@@ -424,12 +418,12 @@ data lib.rfnt100nv6v1;
 run;
 
 /*
-Validación cruzada de Random Forest sel1 las variables
+Random Forest sel1 las variables
 maxtrees = 200
 variables = 12
 seeds = 31
 groups = 4
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(Número de muestras)]
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadarandomforestbin(
 	archivo=sel1,
@@ -461,7 +455,7 @@ data lib.union;
 	set lib.rnlve74n2v1 lib.rnlve0n2v1 lib.bagn6m5v1 lib.gb01v1 lib.gbd601v1 lib.gb003v1 lib.gb0001v1 lib.llv1 lib.rfnt100nv6v1 lib.rfnt200nv12v1 lib.svmpolr2v1 lib.svmpolr3v1 lib.svmpolr3c100v1 lib.svmpolr4v1;
 run;
 
-title 'Comparación SVM y Logísttica';
+title '';
 
 AXIS1 LABEL=(HEIGHT=1.8 'Modelo' FONT='ARIAL' JUSTIFY=CENTER) VALUE=('RN-LV-E74-N2-V1' 'RN-LV-E0-N2-V1' 'BAG-N6-M5-V1' 'GB-01-V1' 'GB-D6-01-V1' 'GB-003-V1' 'GB-0001-V1' 'LL-V1' 'RF-NT100-NV6-V1' 'RF-NT200-NV12-V1' 'SVM-POL-R2-V1' 'SVM-POL-R3-V1'  'SVM-POL-R3-C100-V1' 'SVM-POL-R4-V1' ANGLE=90) MAJOR=();
 
