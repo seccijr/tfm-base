@@ -1,8 +1,16 @@
 %include 'C:\Users\secci\Workspace\TFM\Base\binary pack.sas';
 
 
-data news_reduced_clean; 
-	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean.sas7bdat'; 
+data news_reduced_clean_2_methods; 
+	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean_two_methods.sas7bdat'; 
+run;
+
+data news_reduced_clean_3_methods; 
+	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean_three_methods.sas7bdat'; 
+run;
+
+data news_reduced_clean_4_methods; 
+	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean_four_methods.sas7bdat'; 
 run;
 
 libname Lib 'C:\Users\secci\Workspace\TFM\Lib';
@@ -70,3 +78,60 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\tmp
 );
+
+%cruzadaSVMbin(
+	archivo=news_reduced_clean_2_methods,
+	vardepen=REP_clicked,
+	listclass=REP_P1343_tail REP_P17_tail REP_P27_tail REP_P31_head REP_P31_tail REP_P361_tail REP_category REP_subcategory,
+	ngrupos=2,
+	sinicio=12345,
+	sfinal=12345,
+	kernel=polynom k_par=2,
+	c=10
+);
+
+
+%cruzadaSVMbin(
+	archivo=news_reduced_clean_4_methods,
+	vardepen=REP_clicked,
+	listclass=REP_P1343_tail REP_P17_tail REP_P27_tail REP_P31_head REP_P31_tail REP_P361_tail REP_category REP_subcategory,
+	ngrupos=2,
+	sinicio=12345,
+	sfinal=12345,
+	kernel=polynom k_par=2,
+	c=10
+);
+
+data dos;
+	set news_reduced_clean_4_methods;
+	u=ranuni(12345);
+run;
+
+proc sort data=dos;
+	by u;
+run;
+
+data dos (drop=nume);
+	retain grupo 1;
+	set dos nobs=nume;
+	if _n_>grupo*nume/4 then grupo=grupo+1;
+run;
+
+data tres valida;
+	set dos;
+	if grupo ne 1 then do;
+		vardep=REP_clicked;
+		output tres;
+	end;
+	else output valida;
+run;
+
+proc dmdb data=tres dmdbcat=catatres out=cua;
+	target vardep ;
+	class vardep REP_P1343_tail REP_P17_tail REP_P27_tail REP_P31_head REP_P31_tail REP_P361_tail REP_category REP_subcategory;
+run;
+
+proc svm data=cua dmdbcat=catatres testdata=valida kernel=polynom k_par=2 testout=sal6 c=1;
+   var REP_P1343_tail REP_P17_tail REP_P27_tail REP_P31_head REP_P31_tail REP_P361_tail REP_category REP_subcategory;
+   target vardep;
+run;

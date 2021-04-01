@@ -833,7 +833,7 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 ********************************************************************
 ********************************************************************/
 
-%macro cruzadaSVMbin(archivo=,vardepen=,listclass=,listconti=,ngrupos=,sinicio=,sfinal=,kernel=linear,c=10,directorio=c:);
+%macro cruzadaSVMbin(archivo=,vardepen=,listclass=,ngrupos=,sinicio=,sfinal=,kernel=linear,c=10,directorio=c:);
 	data final;
 	run;
 	
@@ -868,12 +868,11 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 			
 			proc dmdb data=tres dmdbcat=catatres out=cua;
 				target vardep ;
-				var &listconti;
 				class vardep &listclass;
 			run;
 
 			proc svm data=cua dmdbcat=catatres testdata=valida kernel=&kernel testout=sal6 c=&c;
-			   var &listconti &listclass;
+			   var &listclass;
 			   target vardep;
 			run;
 			
