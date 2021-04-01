@@ -1,10 +1,8 @@
 %include 'C:\Users\secci\Workspace\TFM\Base\binary pack.sas';
 
-data news_reduced_clean; 
-	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean.sas7bdat'; 
+data news_reduced_clean_two_methods; 
+	set 'C:\Users\secci\Workspace\TFM\Lib\news_reduced_clean_two_methods.sas7bdat'; 
 run;
-
-libname Lib 'C:\Users\secci\Workspace\TFM\Lib';
 
 libname Results 'C:\Users\secci\Workspace\TFM\Lib\Results';
 
@@ -17,12 +15,12 @@ REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106
 */
 
 /*
-Validación cruzada de Regresión Lineal sel1 las variables
+Logistic
 seeds = 10
 groups = 4
 */
 %cruzadalogistica(
-	archivo=news_reduced_clean,
+	archivo=news_reduced_clean_two_methods,
 	vardepen=REP_clicked,
 	categor=REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106_head REP_P106_tail REP_P118_head REP_P131_tail REP_P1340_tail REP_P1343_head REP_P1343_tail REP_P1412_head REP_P1412_tail REP_P1532_head REP_P1622_head REP_P166_head REP_P166_tail REP_P172_head REP_P172_tail REP_P17_tail REP_P1884_tail REP_P206_head REP_P206_tail REP_P21_head REP_P27_tail REP_P2936_head REP_P2936_tail REP_P30_head REP_P30_tail REP_P31_head REP_P31_tail REP_P361_head REP_P361_tail REP_P37_head REP_P37_tail REP_P39_tail REP_P421_tail REP_P463_tail REP_P495_head REP_P5008_head REP_P5008_tail REP_P552_tail REP_P641_tail REP_P6886_head REP_P6886_tail REP_P937_head REP_P937_tail REP_category REP_subcategory,
 	ngrupos=4,
@@ -31,16 +29,16 @@ groups = 4
 	objetivo=Area
 );
 
-data Results.llv1;
+data Results.llv2;
 	set final;
 run;
 
 /*
 Early Stopping
-early = 197
+early = 680
 */
 %redneuronalbinaria(
-	archivo=news_reduced_clean,
+	archivo=news_reduced_clean_two_methods,
 	vardep=REP_clicked,
 	listclass=REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106_head REP_P106_tail REP_P118_head REP_P131_tail REP_P1340_tail REP_P1343_head REP_P1343_tail REP_P1412_head REP_P1412_tail REP_P1532_head REP_P1622_head REP_P166_head REP_P166_tail REP_P172_head REP_P172_tail REP_P17_tail REP_P1884_tail REP_P206_head REP_P206_tail REP_P21_head REP_P27_tail REP_P2936_head REP_P2936_tail REP_P30_head REP_P30_tail REP_P31_head REP_P31_tail REP_P361_head REP_P361_tail REP_P37_head REP_P37_tail REP_P39_tail REP_P421_tail REP_P463_tail REP_P495_head REP_P5008_head REP_P5008_tail REP_P552_tail REP_P641_tail REP_P6886_head REP_P6886_tail REP_P937_head REP_P937_tail REP_category REP_subcategory,
 	porcen=0.8,
@@ -56,11 +54,43 @@ groups = 4
 seeds = 10
 n = 2
 algo = levmar
-early = 0
+early = 680
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
-	archivo=news_reduced_clean,
+	archivo=news_reduced_clean_two_methods,
+	vardepen=REP_clicked,
+	categor=REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106_head REP_P106_tail REP_P118_head REP_P131_tail REP_P1340_tail REP_P1343_head REP_P1343_tail REP_P1412_head REP_P1412_tail REP_P1532_head REP_P1622_head REP_P166_head REP_P166_tail REP_P172_head REP_P172_tail REP_P17_tail REP_P1884_tail REP_P206_head REP_P206_tail REP_P21_head REP_P27_tail REP_P2936_head REP_P2936_tail REP_P30_head REP_P30_tail REP_P31_head REP_P31_tail REP_P361_head REP_P361_tail REP_P37_head REP_P37_tail REP_P39_tail REP_P421_tail REP_P463_tail REP_P495_head REP_P5008_head REP_P5008_tail REP_P552_tail REP_P641_tail REP_P6886_head REP_P6886_tail REP_P937_head REP_P937_tail REP_category REP_subcategory,
+	ngrupos=4,
+	sinicio=12345,
+	sfinal=12354,
+	nodos=2,
+	algo=levmar,
+	objetivo=tasafallos,
+	early=680,
+	acti=tanh,
+	directorio=C:\Users\secci\Workspace\TFM\Base\tmp
+);
+
+data Results.levtanhearly680n2v2;
+	set final;
+run;
+
+data Results.sal_levtanhearly680n2v2;
+	set sal_final;
+run;
+
+/*
+Red Neuronal
+groups = 4
+seeds = 10
+n = 2
+algo = levmar
+early = 
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
+*/
+%cruzadabinarianeural(
+	archivo=news_reduced_clean_two_methods,
 	vardepen=REP_clicked,
 	categor=REP_P102_head REP_P103_head REP_P103_tail REP_P1050_head REP_P1050_tail REP_P106_head REP_P106_tail REP_P118_head REP_P131_tail REP_P1340_tail REP_P1343_head REP_P1343_tail REP_P1412_head REP_P1412_tail REP_P1532_head REP_P1622_head REP_P166_head REP_P166_tail REP_P172_head REP_P172_tail REP_P17_tail REP_P1884_tail REP_P206_head REP_P206_tail REP_P21_head REP_P27_tail REP_P2936_head REP_P2936_tail REP_P30_head REP_P30_tail REP_P31_head REP_P31_tail REP_P361_head REP_P361_tail REP_P37_head REP_P37_tail REP_P39_tail REP_P421_tail REP_P463_tail REP_P495_head REP_P5008_head REP_P5008_tail REP_P552_tail REP_P641_tail REP_P6886_head REP_P6886_tail REP_P937_head REP_P937_tail REP_category REP_subcategory,
 	ngrupos=4,
@@ -74,8 +104,12 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	directorio=C:\Users\secci\Workspace\TFM\Base\tmp
 );
 
-data Results.levtanhearly0n2;
+data Results.levtanhearly0n2v2;
 	set final;
+run;
+
+data Results.sal_levtanhearly0n2v2;
+	set sal_final;
 run;
 
 
@@ -100,7 +134,7 @@ c=10
 	c=10
 );
 
-data lib.svmrbfv1;
+data Results.svmrbfv1;
 	length modelo $256;
 	set final;
 	modelo='SVM-RBF-R10-V1';
@@ -126,7 +160,7 @@ c=10
 	c=10
 );
 
-data lib.svmpolr2v1;
+data Results.svmpolr2v1;
 	length modelo $256;
 	set final;
 	modelo='SVM-POL-R2-V1';
@@ -152,7 +186,7 @@ c=10
 	c=10
 );
 
-data lib.svmpolr3v1;
+data Results.svmpolr3v1;
 	length modelo $256;
 	set final;
 	modelo='SVM-POL-R3-V1';
@@ -178,7 +212,7 @@ c=100
 	c=100
 );
 
-data lib.svmpolr3c100v1;
+data Results.svmpolr3c100v1;
 	length modelo $256;
 	set final;
 	modelo='SVM-POL-R3-C100-V1';
@@ -205,7 +239,7 @@ c=10
 	c=10
 );
 
-data lib.svmpolr4v1;
+data Results.svmpolr4v1;
 	length modelo $256;
 	set final;
 	modelo='SVM-POL-R4-V1';
@@ -240,7 +274,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.gb003v1;
+data Results.gb003v1;
 	length modelo $256;
 	set final;
 	modelo='GB-003-V1';
@@ -275,7 +309,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.gb01v1;
+data Results.gb01v1;
 	length modelo $256;
 	set final;
 	modelo='GB-01-V1';
@@ -310,7 +344,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.gbd601v1;
+data Results.gbd601v1;
 	length modelo $256;
 	set final;
 	modelo='GB-D6-01-V1';
@@ -345,7 +379,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.gb0001v1;
+data Results.gb0001v1;
 	length modelo $256;
 	set final;
 	modelo='GB-0001-V1';
@@ -379,7 +413,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.bagn6m5v1;
+data Results.bagn6m5v1;
 	length modelo $256;
 	set final;
 	modelo='BAG-N6-M5-V1';
@@ -411,7 +445,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.rfnt100nv6v1;
+data Results.rfnt100nv6v1;
 	length modelo $256;
 	set final;
 	modelo='RF-NT100-NV6-V1';
@@ -443,16 +477,16 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	objetivo=tasafallos
 );
 
-data lib.rfnt200nv12v1;
+data Results.rfnt200nv12v1;
 	length modelo $256;
 	set final;
 	modelo='RF-NT200-NV12-V1';
 run;
 
 
-data lib.union;
+data Results.union;
 	length modelo $256;
-	set lib.rnlve74n2v1 lib.rnlve0n2v1 lib.bagn6m5v1 lib.gb01v1 lib.gbd601v1 lib.gb003v1 lib.gb0001v1 lib.llv1 lib.rfnt100nv6v1 lib.rfnt200nv12v1 lib.svmpolr2v1 lib.svmpolr3v1 lib.svmpolr3c100v1 lib.svmpolr4v1;
+	set Results.rnlve74n2v1 Results.rnlve0n2v1 Results.bagn6m5v1 Results.gb01v1 Results.gbd601v1 Results.gb003v1 Results.gb0001v1 Results.llv1 Results.rfnt100nv6v1 Results.rfnt200nv12v1 Results.svmpolr2v1 Results.svmpolr3v1 Results.svmpolr3c100v1 Results.svmpolr4v1;
 run;
 
 title '';
@@ -461,7 +495,7 @@ AXIS1 LABEL=(HEIGHT=1.8 'Modelo' FONT='ARIAL' JUSTIFY=CENTER) VALUE=('RN-LV-E74-
 
 AXIS2 LABEL=(HEIGHT=1.8 'BER Media en 31 semillas' FONT='ARIAL' JUSTIFY=CENTER);
 
-proc boxplot data=lib.union;
+proc boxplot data=Results.union;
 	plot media*modelo /BOXSTYLE=SCHEMATIC HAXIS=AXIS1 VAXIS=AXIS2;
 run;
 
