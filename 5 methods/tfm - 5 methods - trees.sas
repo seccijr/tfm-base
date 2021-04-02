@@ -21,7 +21,7 @@ depth = 4
 trees = 100
 category size = 15
 split size = 20
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -31,7 +31,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	categor=REP_P31_head REP_P31_tail REP_subcategory,
 	ngrupos=4,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	leafsize=5,
 	iteraciones=100,
 	shrink=0.03,
@@ -57,7 +57,7 @@ depth = 4
 trees = 100
 category size = 15
 split size = 20
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -67,7 +67,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	categor=REP_P31_head REP_P31_tail REP_subcategory,
 	ngrupos=4,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	leafsize=5,
 	iteraciones=100,
 	shrink=0.1,
@@ -93,7 +93,7 @@ depth = 6
 trees = 100
 category size = 15
 split size = 20
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -103,7 +103,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	categor=REP_P31_head REP_P31_tail REP_subcategory,
 	ngrupos=4,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	leafsize=5,
 	iteraciones=100,
 	shrink=0.1,
@@ -129,7 +129,7 @@ depth = 4
 trees = 100
 category size = 15
 split size = 20
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -139,7 +139,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	categor=REP_P31_head REP_P31_tail REP_subcategory,
 	ngrupos=4,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	leafsize=5,
 	iteraciones=100,
 	shrink=0.001,
@@ -164,7 +164,7 @@ maxbranch = 2
 depth = 4
 nleaves = 6
 tamhoja = 5
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -174,9 +174,9 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	listcategor=REP_P31_head REP_P31_tail REP_subcategory,
 	ngrupos=4,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	siniciobag=12345,
-	sfinalbag=12375,
+	sfinalbag=12354,
 	porcenbag=0.80,
 	maxbranch=2,
 	nleaves=6,
@@ -197,7 +197,7 @@ run;
 Random Forest news_reduced_clean_five_methods las variables
 maxtrees = 100
 variables = 6
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -214,7 +214,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	maxdepth=10,
 	pvalor=0.1,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	objetivo=tasafallos
 );
 
@@ -230,7 +230,7 @@ run;
 Random Forest news_reduced_clean_five_methods las variables
 maxtrees = 200
 variables = 12
-seeds = 31
+seeds = 10
 groups = 4
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
@@ -247,7 +247,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	maxdepth=10,
 	pvalor=0.1,
 	sinicio=12345,
-	sfinal=12375,
+	sfinal=12354,
 	objetivo=tasafallos
 );
 
