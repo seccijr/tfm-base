@@ -20,10 +20,13 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 
 */
 
-%macro cruzadalogistica(archivo=, vardepen=, categor=, ngrupos=, sinicio=, sfinal=, objetivo=tasafallos);
+%macro cruzadalogistica(archivo=,vardepen=,categor=,ngrupos=,sinicio=,sfinal=,objetivo=tasafallos);
 	title ' ';
 	
 	data final;
+	run;
+
+	data sal_final;
 	run;
 
 	%do semilla=&sinicio %to &sfinal;
@@ -39,7 +42,7 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 		data dos (drop=nume);
 			retain grupo 1;
 			set dos nobs=nume;
-			if _n_ > grupo * nume / &ngrupos then grupo = grupo + 1;
+			if _n_>grupo*nume/&ngrupos then grupo=grupo+1;
 		run;
 		
 		data fantasma;
@@ -51,46 +54,47 @@ El archivo final se llama final. La variable media es la media del obejtivo en t
 				if grupo ne &exclu then vardep=&vardepen;
 			run;
 			
-			proc logistic data = tres;
+			proc logistic data=tres noprint;
 				class &categor;
-				model vardep=&categor / OUTROC=ROC;
-				ROC;
-				ods output out=sal p=predi ROCASSOCIATION = AUC;
+				model vardep=&categor;
+				output out=sal p=predi;
 			run;
 			
-			data sal2;	
-				set sal;
-				pro = 1 - predi;
-				if pro > 0.5 then pre11 = 1;
-				else pre11 = 0; 
-				if grupo = &exclu then output;
+			data sal_final;
+				set sal_final sal;
 			run;
 			
-			proc freq data = sal2;
-				tables pre11 * &vardepen /out=sal3;
+			data sal2;
+				set sal;pro=1-predi;
+				if pro>0.5 then pre11=1;
+				else pre11=0; 
+				if grupo=&exclu then output;
+			run;
+			
+			proc freq data=sal2;
+				tables pre11*&vardepen/out=sal3;
 			run;
 			
 			data estadisticos (drop=count percent pre11 &vardepen); 
 				retain vp vn fp fn suma 0; 
-				set sal3 nobs = nume; 
-				suma = suma + count; 
-				if pre11 = 0 and &vardepen=0 then vn = count; 
-				if pre11 = 0 and &vardepen=1 then fn = count; 
-				if pre11 = 1 and &vardepen=0 then fp = count; 
-				if pre11 = 1 and &vardepen=1 then vp = count; 
-				if _n_ = nume then do; 
-					porcenVN = vn / suma; 
-					porcenFN = FN / suma; 
-					porcenVP = VP / suma; 
-					porcenFP = FP / suma; 
-					sensi = vp / (vp + fn); 
-					especif = vn / (vn + fp); 
-					tasafallos = 1 - (vp + vn) / suma; 
-					tasaciertos = 1 - tasafallos; 
-					precision = vp / (vp + fp); 
-					F_M = 2 * Sensi * Precision / (Sensi + Precision); 
-					set AUC (where = (ROCModel = 'Model') keep = Area ROCModel);
-					output; 
+				set sal3 nobs=nume; 
+				suma=suma+count; 
+				if pre11=0 and &vardepen=0 then vn=count; 
+				if pre11=0 and &vardepen=1 then fn=count; 
+				if pre11=1 and &vardepen=0 then fp=count; 
+				if pre11=1 and &vardepen=1 then vp=count; 
+				if _n_=nume then do; 
+				porcenVN=vn/suma; 
+				porcenFN=FN/suma; 
+				porcenVP=VP/suma; 
+				porcenFP=FP/suma; 
+				sensi=vp/(vp+fn); 
+				especif=vn/(vn+fp); 
+				tasafallos=1-(vp+vn)/suma; 
+				tasaciertos=1-tasafallos; 
+				precision=vp/(vp+fp); 
+				F_M=2*Sensi*Precision/(Sensi+Precision); 
+				output; 
 				end; 
 			run; 
 			
@@ -853,6 +857,9 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 %macro cruzadaSVMbin(archivo=,vardepen=,listclass=,ngrupos=,sinicio=,sfinal=,kernel=linear,c=10,directorio=c:);
 	data final;
 	run;
+		
+	data sal_final;
+	run;
 	
 	%do semilla=&sinicio %to &sfinal;
 		data dos;
@@ -870,7 +877,8 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 			if _n_>grupo*nume/&ngrupos then grupo=grupo+1;
 		run;
 
-		data fantasma;run;
+		data fantasma;
+		run;
 
 		%do exclu=1 %to &ngrupos;
 
@@ -884,13 +892,17 @@ El procedimiento SVM es experimental y FALLA A MENUDO con kernel RBF
 			run;
 			
 			proc dmdb data=tres dmdbcat=catatres out=cua;
-				target vardep ;
+				target vardep;
 				class vardep &listclass;
 			run;
 
 			proc svm data=cua dmdbcat=catatres testdata=valida kernel=&kernel testout=sal6 c=&c;
 			   var &listclass;
 			   target vardep;
+			run;
+			
+			data sal_final;
+				set sal_final sal6;
 			run;
 			
 			data sal1(keep=&vardepen predi1 grupo vardep);
