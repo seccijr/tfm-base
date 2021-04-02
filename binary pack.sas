@@ -165,6 +165,9 @@ EN ESTOS CASOS HABRÁ QUE
 	title ' ';
 	data final;
 	run;
+
+	data sal_final;
+	run;
 	
 	proc printto print="&directorio\basura.txt";
 	run;
@@ -187,9 +190,6 @@ EN ESTOS CASOS HABRÁ QUE
 		run;
 		
 		data fantasma;
-		run;
-
-		data sal_final;
 		run;
 		%do exclu=1 %to &ngrupos;
 			
@@ -434,9 +434,14 @@ pvalor=p-valor para las divisiones de nodos
 */
 
 
-%macro cruzadarandomforestbin(archivo=,vardep=,conti=,categor=,maxtrees=100,variables=3,porcenbag=0.80,maxbranch=2,tamhoja=5,maxdepth=10,pvalor=0.1,ngrupos=4,sinicio=12340,sfinal=12345,objetivo=tasafallos);
+%macro cruzadarandomforestbin(archivo=,vardep=,categor=,maxtrees=100,variables=3,porcenbag=0.80,maxbranch=2,tamhoja=5,maxdepth=10,pvalor=0.1,ngrupos=4,sinicio=12340,sfinal=12345,objetivo=tasafallos);
 
-	data final;run;
+	data final;
+	run;
+
+	data sal_final;
+	run;
+	
 	%do semilla=&sinicio %to &sfinal;
 		data dos;
 			set &archivo;
@@ -464,15 +469,16 @@ pvalor=p-valor para las divisiones de nodos
 
 			ods listing close;
 			proc hpforest data=tres maxtrees=&maxtrees vars_to_try=&variables trainfraction=&porcenbag leafsize=&tamhoja maxdepth=&maxdepth alpha=&pvalor exhaustive=5000 missing=useinsearch;
-				target vardep/level=nominal;
-				input &conti/level=interval;   
-				%if (&categor ne) %then %do;
-					input &categor/level=nominal;
-				%end;
+				target vardep/level=nominal;  
+				input &categor/level=nominal;
 				score out=salo;
 			run;
 			
 			ods listing;
+			
+			data sal_final;
+				set sal_final salo;
+			run;
 
 			data salo;
 				merge salo tres;
@@ -541,9 +547,12 @@ pvalor=p-valor para las divisiones de nodos
 ********************************************************************
 ********************************************************************/
 
-%macro cruzadabaggingbin(archivo=,vardepen=,listconti=,listcategor=,ngrupos=4,sinicio=12340,sfinal=12345,siniciobag=12340,sfinalbag=12345,porcenbag=0.80,maxbranch=2,nleaves=6,tamhoja=5,reemplazo=1,objetivo=tasafallos);
+%macro cruzadabaggingbin(archivo=,vardepen=,listcategor=,ngrupos=4,sinicio=12340,sfinal=12345,siniciobag=12340,sfinalbag=12345,porcenbag=0.80,maxbranch=2,nleaves=6,tamhoja=5,reemplazo=1,objetivo=tasafallos);
 
 	data final;
+	run;
+
+	data sal_final;
 	run;
 	
 	%do semilla=&sinicio %to &sfinal;
@@ -602,10 +611,7 @@ pvalor=p-valor para las divisiones de nodos
 				run;
 
 				proc arbor data=entreno1 ; 
-					input &listconti/level=interval;
-					%if (&listcategor ne) %then %do;
-						input &listcategor/level=nominal;
-					%end;
+					input &listcategor/level=nominal;
 					target vardep /level=nominal;
 					interact largest;
 					train maxbranch=&maxbranch leafsize=&tamhoja;
@@ -616,6 +622,10 @@ pvalor=p-valor para las divisiones de nodos
 				data sal;
 					set sal;
 					vardepen&numero=p_vardep1;
+				run;
+			
+				data sal_final;
+					set sal_final sal;
 				run;
 				
 				%if &numero=1 %then %do;
@@ -710,8 +720,11 @@ criterion=ProbF,
 */
 
 
-%macro cruzadatreeboostbin(archivo=,vardepen=,conti=,categor=,ngrupos=,sinicio=,sfinal=,leafsize=5,iteraciones=100,shrink=0.01,maxbranch=2,maxdepth=4,mincatsize=15,minobs=20,objetivo=tasafallos);
+%macro cruzadatreeboostbin(archivo=,vardepen=,categor=,ngrupos=,sinicio=,sfinal=,leafsize=5,iteraciones=100,shrink=0.01,maxbranch=2,maxdepth=4,mincatsize=15,minobs=20,objetivo=tasafallos);
 	data final;
+	run;
+		
+	data sal_final;
 	run;
 	
 	%do semilla=&sinicio %to &sfinal;
@@ -734,13 +747,13 @@ criterion=ProbF,
 		run;
 		
 		%do exclu=1 %to &ngrupos;
-			data tres;set dos;if grupo ne &exclu then vardep=&vardepen;
+			data tres;
+				set dos;
+				if grupo ne &exclu then vardep=&vardepen;
+			run;
 
 			proc treeboost data=tres exhaustive=1000 intervaldecimals=max leafsize=&leafsize iterations=&iteraciones maxbranch=&maxbranch maxdepth=&maxdepth mincatsize=&mincatsize missing=useinsearch shrinkage=&shrink splitsize=&minobs;
-				%if (&categor ne) %then %do;
-					input &categor/level=nominal;
-				%end;
-				input &conti/level=interval;
+				input &categor/level=nominal;
 				target vardep /level=binary;
 				save fit=iteraciones importance=impor model=modelo rules=reglas;
 				subseries largest;
@@ -753,6 +766,10 @@ criterion=ProbF,
 				if pro>0.5 then pre11=1; 
 				else pre11=0;
 				if grupo=&exclu then output;
+			run;
+			
+			data sal_final;
+				set sal_final sal;
 			run;
 			
 			proc freq data=sal2;
