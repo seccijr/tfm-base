@@ -12206,3 +12206,2081 @@ Convergence criterion (FCONV=0.0001) satisfied.
                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
                                Total        9142     9354    18496
                                            49.43    50.57   100.00
+                                                                   17:15 Friday, April 2, 2021 276
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.590902216844           10                
+                   2          1649706481    0.579314477083           10                
+                   3           563433777    0.579989129559           10                
+                   4           252877680    0.585992499714           10                
+                   5           346809007     0.58080152305           10                
+                   6          1793582916    0.581705118859           10                
+                   7          1744730513     0.58548288156           10                
+                   8           100245671    0.588888673305           10                
+                   9          2086076640    0.577747250117           10                
+                  10          1070106574    0.587566742607           10                
+                  11           515607104    0.587605202614           10                
+                  12           714527711    0.583127129851           10                
+                  13           134182948     0.58990086129           10                
+                  14          1474297040    0.579684215416           10                
+                  15           550501885    0.580411712465           10                
+                                                                   17:15 Friday, April 2, 2021 277
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.290446        0.026055
+                 2 REP_P31_tailQ35657_H11                 -0.537301       -0.010241
+                 3 REP_P31_tailQ5_H11                      0.718606        0.007960
+                 4 REP_P31_tail_EMPTY__H11                 0.565688        0.016166
+                 5 REP_subcategory_OTHER__H11              0.017896        0.006910
+                 6 REP_subcategoryautosenthusiasts_        0.127152        0.000697
+                 7 REP_subcategoryautosnews_H11            0.056565        0.000677
+                 8 REP_subcategorybaseball_mlb_H11         0.080243        0.000166
+                 9 REP_subcategorybasketball_nba_H1       -0.104558        0.000564
+                10 REP_subcategorycelebrity_H11           -0.376601        0.002784
+                11 REP_subcategoryentertainmentcele       -0.134699        0.000467
+                12 REP_subcategoryfinancecompanies_       -0.085204        0.000579
+                13 REP_subcategoryfinancerealestate        0.336823        0.001247
+                14 REP_subcategoryfoodnews_H11            -0.393034    -0.000046078
+                15 REP_subcategoryfootball_ncaa_H11        0.043051        0.001005
+                16 REP_subcategoryfootball_nfl_H11         0.133820       -0.000209
+                17 REP_subcategoryhealthnews_H11           0.142942        0.001175
+                18 REP_subcategorylifestylebuzz_H11       -0.372401        0.002538
+                19 REP_subcategorylifestyleroyals_H        0.001967        0.000559
+                20 REP_subcategorymarkets_H11             -0.066125        0.000653
+                21 REP_subcategorymoviescelebrity_H       -0.236818        0.000532
+                22 REP_subcategorymoviesgallery_H11        0.283008        0.001079
+                23 REP_subcategorymusiccelebrity_H1       -0.208670        0.000688
+                24 REP_subcategorymusicnews_H11            0.145181        0.000708
+                25 REP_subcategorynewscrime_H11           -0.402288       -0.005701
+                26 REP_subcategorynewsgoodnews_H11         0.365168        0.000886
+                27 REP_subcategorynewspolitics_H11        -0.118466        0.001819
+                28 REP_subcategorynewsus_H11              -0.168156       -0.003966
+                29 REP_subcategorynewsworld_H11           -0.018159        0.001494
+                30 REP_subcategoryrecipes_H11              0.096004        0.000978
+                31 REP_subcategoryrestaurantsandnew        0.113207        0.000545
+                32 REP_subcategoryshopholidays_H11         0.091709        0.000833
+                33 REP_subcategorytipsandtricks_H11       -0.140011        0.001476
+                34 REP_subcategorytravelnews_H11           0.014243        0.001255
+                35 REP_subcategorytvcelebrity_H11         -0.433222        0.002129
+                36 REP_subcategorytvnews_H11               0.014666        0.001096
+                37 REP_subcategoryviral_H11                0.290366        0.000806
+                38 REP_subcategoryvoices_H11               0.099222        0.001165
+                39 REP_P31_head_EMPTY__H12                -0.239363       -0.011549
+                40 REP_P31_tailQ35657_H12                 -0.563826        0.000576
+                41 REP_P31_tailQ5_H12                      1.773887       -0.003705
+                42 REP_P31_tail_EMPTY__H12                 0.859864       -0.010349
+                43 REP_subcategory_OTHER__H12             -0.273235       -0.003440
+                44 _DUP                                    0.210076       -0.000455
+                45 REP_subcategoryautosnews_H12           -0.168426       -0.000384
+                                                                   17:15 Friday, April 2, 2021 278
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         1.209721       -0.000227
+                47 _DUP1                                  -0.440477       -0.000246
+                48 REP_subcategorycelebrity_H12           -1.242328       -0.001906
+                49 _DUP2                                   1.413839       -0.000579
+                50 _DUP3                                  -0.525976       -0.000727
+                51 _DUP4                                   0.117567       -0.000860
+                52 REP_subcategoryfoodnews_H12            -0.688532        0.000292
+                53 REP_subcategoryfootball_ncaa_H12        0.275490       -0.000853
+                54 REP_subcategoryfootball_nfl_H12         1.189095     0.000078722
+                55 REP_subcategoryhealthnews_H12          -0.102845       -0.000682
+                56 REP_subcategorylifestylebuzz_H12       -0.892886       -0.004822
+                57 _DUP5                                   0.381612       -0.000447
+                58 REP_subcategorymarkets_H12             -0.328518       -0.000105
+                59 _DUP6                                   1.902486       -0.000568
+                60 REP_subcategorymoviesgallery_H12       -0.420272       -0.000685
+                61 _DUP7                                   0.184109       -0.000280
+                62 REP_subcategorymusicnews_H12            0.462764       -0.000558
+                63 REP_subcategorynewscrime_H12           -0.983163        0.001728
+                64 REP_subcategorynewsgoodnews_H12         0.533482       -0.000636
+                65 REP_subcategorynewspolitics_H12        -0.295895       -0.000554
+                66 REP_subcategorynewsus_H12              -0.485087        0.000536
+                67 REP_subcategorynewsworld_H12           -0.381496       -0.000734
+                68 REP_subcategoryrecipes_H12             -0.193788       -0.000482
+                69 _DUP8                                   0.344526       -0.000384
+                70 REP_subcategoryshopholidays_H12        -0.474595       -0.000435
+                71 REP_subcategorytipsandtricks_H12       -0.770061       -0.000898
+                72 REP_subcategorytravelnews_H12          -0.173678       -0.000733
+                73 REP_subcategorytvcelebrity_H12         -1.128122       -0.000395
+                74 REP_subcategorytvnews_H12               0.260606       -0.000913
+                75 REP_subcategoryviral_H12               -0.108602       -0.000436
+                76 REP_subcategoryvoices_H12              -0.432209       -0.000591
+                77 BIAS_H11                               -0.102566        0.008732
+                78 BIAS_H12                                0.012654       -0.009800
+                79 H11_REP_clicked0                        7.169798        0.002919
+                80 H12_REP_clicked0                       -4.564170        0.004244
+                81 BIAS_REP_clicked0                       0.067059       -0.000623
+
+                            Value of Objective Function = 0.5777472501
+
+                                                                   17:15 Friday, April 2, 2021 279
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion             0.0013863428
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                  0.5777472501
+Max Abs Gradient Element            0.0260545429  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         3            0        0.57638    0.00137    0.0129   0.0731      0.673
+     2          0         4            0        0.57578   0.000603   0.00735   0.0219      0.961
+     3          0         5            0        0.57530   0.000476   0.00746  0.00559      0.749
+     4          0         6            0        0.57503   0.000272   0.00646  0.00334      0.507
+     5          0         8            0        0.57490   0.000127   0.00500   0.0174      0.286
+     6          0         9            0        0.57482   0.000081   0.00406   0.0130      0.201
+     7          0        10            0        0.57449   0.000333   0.00443   0.0261      0.648
+     8          0        11            0        0.57362   0.000865   0.00358   0.0449      1.305
+     9          0        12            0        0.57271   0.000913   0.00221   0.0122      0.638
+    10          0        14            0        0.57258   0.000126   0.00259   0.0199      0.285
+                                                                   17:15 Friday, April 2, 2021 280
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        15            0        0.57245   0.000133   0.00248  0.00979      0.453
+    12          0        16            0        0.57244   0.000010   0.00283  0.00903     0.0492
+    13          0        17            0        0.57236   0.000082   0.00281   0.0414      0.418
+    14          0        18            0        0.57233   0.000024   0.00156   0.0135      0.335
+    15          0        19            0        0.57231   0.000017   0.00185   0.0153      0.242
+    16          0        20            0        0.57230   0.000013   0.00158   0.0141      0.182
+    17          0        21            0        0.57229   0.000014   0.00189   0.0152      0.180
+    18          0        22            0        0.57228   9.563E-6   0.00170   0.0139      0.125
+    19          0        23            0        0.57227   0.000012   0.00199   0.0150      0.145
+    20          0        24            0        0.57226    7.12E-6   0.00180   0.0137     0.0884
+    21          0        25            0        0.57223   0.000029   0.00143   0.0518      0.482
+    22          0        26            0        0.57222   0.000011  0.000733   0.0145      0.618
+    23          0        27            0        0.57221   7.645E-6  0.000670   0.0166      0.535
+
+                                       Optimization Results
+
+Iterations                                    23  Function Calls                                29
+Jacobian Calls                                25  Active Constraints                             0
+Objective Function                  0.5722113801  Max Abs Gradient Element            0.0006698195
+Lambda                              0.0166472453  Actual Over Pred Change             0.5345860846
+Radius                              0.0242061001                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+                                                                   17:15 Friday, April 2, 2021 281
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.324379        0.000291
+                 2 REP_P31_tailQ35657_H11                 -0.506608       -0.000597
+                 3 REP_P31_tailQ5_H11                      0.799208       -0.000188
+                 4 REP_P31_tail_EMPTY__H11                 0.752677       -0.000383
+                 5 REP_subcategory_OTHER__H11              0.021339     0.000045442
+                 6 REP_subcategoryautosenthusiasts_        0.112264     0.000007850
+                 7 REP_subcategoryautosnews_H11            0.085548     0.000010950
+                 8 REP_subcategorybaseball_mlb_H11         0.097370     0.000021979
+                 9 REP_subcategorybasketball_nba_H1       -0.117932    -0.000001862
+                10 REP_subcategorycelebrity_H11           -0.446461     0.000010464
+                11 REP_subcategoryentertainmentcele       -0.155163     0.000015873
+                12 REP_subcategoryfinancecompanies_       -0.074648    -0.000008142
+                13 REP_subcategoryfinancerealestate        0.773436     0.000017645
+                14 REP_subcategoryfoodnews_H11            -0.493601     0.000040261
+                15 REP_subcategoryfootball_ncaa_H11        0.039844     0.000015430
+                16 REP_subcategoryfootball_nfl_H11         0.121211     0.000026493
+                17 REP_subcategoryhealthnews_H11           0.157931     0.000010358
+                18 REP_subcategorylifestylebuzz_H11       -0.303806       -0.000522
+                19 REP_subcategorylifestyleroyals_H       -0.006937     0.000007848
+                20 REP_subcategorymarkets_H11             -0.059402     0.000016428
+                21 REP_subcategorymoviescelebrity_H       -0.259213     0.000011338
+                22 REP_subcategorymoviesgallery_H11        0.300806     0.000007773
+                23 REP_subcategorymusiccelebrity_H1       -0.340140     0.000013663
+                24 REP_subcategorymusicnews_H11            0.108748     0.000010684
+                25 REP_subcategorynewscrime_H11           -0.481743     0.000065512
+                26 REP_subcategorynewsgoodnews_H11         0.332657     0.000005538
+                27 REP_subcategorynewspolitics_H11        -0.135673     0.000003123
+                28 REP_subcategorynewsus_H11              -0.167038    -0.000032962
+                29 REP_subcategorynewsworld_H11           -0.012217     0.000014663
+                30 REP_subcategoryrecipes_H11              0.095526     0.000015719
+                31 REP_subcategoryrestaurantsandnew        0.073479     0.000013266
+                32 REP_subcategoryshopholidays_H11         0.103331     0.000011361
+                33 REP_subcategorytipsandtricks_H11       -0.139344     0.000013319
+                34 REP_subcategorytravelnews_H11           0.020596     0.000001931
+                35 REP_subcategorytvcelebrity_H11         -0.399683     0.000023231
+                36 REP_subcategorytvnews_H11               0.004500     0.000006879
+                37 REP_subcategoryviral_H11                0.287928     0.000023533
+                38 REP_subcategoryvoices_H11               0.097900     0.000023861
+                39 REP_P31_head_EMPTY__H12                -0.373561       -0.000213
+                40 REP_P31_tailQ35657_H12                 -0.233881        0.000398
+                41 REP_P31_tailQ5_H12                      2.181971     0.000021417
+                42 REP_P31_tail_EMPTY__H12                 1.501526     0.000073496
+                43 REP_subcategory_OTHER__H12             -0.594675    -0.000012565
+                44 _DUP                                   -0.035772    -0.000006257
+                45 REP_subcategoryautosnews_H12           -0.347422    -0.000009875
+                                                                   17:15 Friday, April 2, 2021 282
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         2.112600    -0.000024640
+                47 _DUP1                                  -0.945615    -0.000006657
+                48 REP_subcategorycelebrity_H12           -1.536581     0.000005239
+                49 _DUP2                                   2.571102    -0.000018451
+                50 _DUP3                                  -0.818398     0.000016993
+                51 _DUP4                                   3.197892    -0.000023111
+                52 REP_subcategoryfoodnews_H12            -1.232404    -0.000022522
+                53 REP_subcategoryfootball_ncaa_H12        0.292001    -0.000012581
+                54 REP_subcategoryfootball_nfl_H12         2.017155    -0.000031657
+                55 REP_subcategoryhealthnews_H12          -0.352959    -0.000005738
+                56 REP_subcategorylifestylebuzz_H12       -1.060383        0.000591
+                57 _DUP5                                   1.012113    -0.000020012
+                58 REP_subcategorymarkets_H12             -0.647829    -0.000020774
+                59 _DUP6                                   3.562282    -0.000019021
+                60 REP_subcategorymoviesgallery_H12       -0.734215    -0.000008256
+                61 _DUP7                                  -0.973516    -0.000008274
+                62 REP_subcategorymusicnews_H12            0.024497    -0.000003083
+                63 REP_subcategorynewscrime_H12           -1.398887    -0.000029291
+                64 REP_subcategorynewsgoodnews_H12         0.279552    -0.000006501
+                65 REP_subcategorynewspolitics_H12        -0.687561     0.000005453
+                66 REP_subcategorynewsus_H12              -0.809796     0.000064271
+                67 REP_subcategorynewsworld_H12           -0.699572    -0.000011890
+                68 REP_subcategoryrecipes_H12             -0.519582    -0.000010711
+                69 _DUP8                                   0.038408    -0.000006186
+                70 REP_subcategoryshopholidays_H12        -0.789852    -0.000009146
+                71 REP_subcategorytipsandtricks_H12       -1.066623    -0.000006696
+                72 REP_subcategorytravelnews_H12          -0.474656    -0.000003550
+                73 REP_subcategorytvcelebrity_H12         -1.335007    -0.000031660
+                74 REP_subcategorytvnews_H12               0.367644    -0.000009563
+                75 REP_subcategoryviral_H12               -0.435794    -0.000012946
+                76 REP_subcategoryvoices_H12              -0.765037    -0.000016067
+                77 BIAS_H11                               -0.020449       -0.000670
+                78 BIAS_H12                                0.179944        0.000585
+                79 H11_REP_clicked0                        8.360090    -0.000030528
+                80 H12_REP_clicked0                       -6.026457     0.000073288
+                81 BIAS_REP_clicked0                       0.092092    -0.000028934
+
+                            Value of Objective Function = 0.5722113801
+
+                                                                   17:15 Friday, April 2, 2021 283
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   6335 ‚   2836 ‚   9171
+                                        ‚  34.25 ‚  15.33 ‚  49.58
+                                        ‚  69.08 ‚  30.92 ‚
+                                        ‚  69.55 ‚  30.21 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   2774 ‚   6551 ‚   9325
+                                        ‚  15.00 ‚  35.42 ‚  50.42
+                                        ‚  29.75 ‚  70.25 ‚
+                                        ‚  30.45 ‚  69.79 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9109     9387    18496
+                                           49.25    50.75   100.00
+                                                                   17:15 Friday, April 2, 2021 284
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.588402778668           10                
+                   2          1649706481    0.578909528992           10                
+                   3           563433777    0.583414725282           10                
+                   4           252877680    0.584646528797           10                
+                   5           346809007    0.585121975933           10                
+                   6          1793582916    0.583307519942           10                
+                   7          1744730513    0.586144652959           10                
+                   8           100245671    0.581965002561           10                
+                   9          2086076640    0.580612131655           10                
+                  10          1070106574    0.592482836847           10                
+                  11           515607104    0.590203470171           10                
+                  12           714527711    0.583495430539           10                
+                  13           134182948    0.586157776834           10                
+                  14          1474297040    0.579415682116           10                
+                  15           550501885    0.587026509948           10                
+                                                                   17:15 Friday, April 2, 2021 285
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.095759       -0.024246
+                 2 REP_P31_tailQ35657_H11                 -0.109399        0.000837
+                 3 REP_P31_tailQ5_H11                     -1.463348       -0.006078
+                 4 REP_P31_tail_EMPTY__H11                -0.881371       -0.028451
+                 5 REP_subcategory_OTHER__H11             -0.165799       -0.006284
+                 6 REP_subcategoryautosenthusiasts_       -0.360180        0.001027
+                 7 REP_subcategoryautosnews_H11           -0.368015        0.001056
+                 8 REP_subcategorybaseball_mlb_H11         0.362182        0.000820
+                 9 REP_subcategorybasketball_nba_H1       -0.330248        0.001304
+                10 REP_subcategorycelebrity_H11            0.218179       -0.004542
+                11 REP_subcategoryentertainmentcele        1.137752        0.001157
+                12 REP_subcategoryfinancecompanies_        0.007991        0.000991
+                13 REP_subcategoryfinancerealestate        2.185355        0.001048
+                14 REP_subcategoryfoodnews_H11            -0.065081        0.000733
+                15 REP_subcategoryfootball_ncaa_H11       -1.358075        0.000997
+                16 REP_subcategoryfootball_nfl_H11         0.202155       -0.000606
+                17 REP_subcategoryhealthnews_H11          -0.200889        0.000616
+                18 REP_subcategorylifestylebuzz_H11        0.103260        0.000238
+                19 REP_subcategorylifestyleroyals_H       -0.157122        0.000955
+                20 REP_subcategorymarkets_H11             -0.106004        0.000605
+                21 REP_subcategorymoviescelebrity_H        1.378746        0.000933
+                22 REP_subcategorymoviesgallery_H11        0.040835        0.000454
+                23 REP_subcategorymusiccelebrity_H1        0.387877        0.000705
+                24 REP_subcategorymusicnews_H11            0.004576        0.000826
+                25 REP_subcategorynewscrime_H11            0.217006       -0.000780
+                26 REP_subcategorynewsgoodnews_H11        -0.779938        0.001184
+                27 REP_subcategorynewspolitics_H11        -0.099130        0.001118
+                28 REP_subcategorynewsus_H11              -0.015194        0.000868
+                29 REP_subcategorynewsworld_H11           -0.051954    -0.000053415
+                30 REP_subcategoryrecipes_H11             -0.191184        0.000670
+                31 REP_subcategoryrestaurantsandnew       -0.723138        0.001094
+                32 REP_subcategoryshopholidays_H11        -0.079348        0.000881
+                33 REP_subcategorytipsandtricks_H11        0.180902       -0.000479
+                34 REP_subcategorytravelnews_H11          -0.182875        0.000645
+                35 REP_subcategorytvcelebrity_H11          0.371284       -0.005490
+                36 REP_subcategorytvnews_H11              -1.318452        0.001143
+                37 REP_subcategoryviral_H11               -0.260538        0.000673
+                38 REP_subcategoryvoices_H11              -0.044987        0.000147
+                39 REP_P31_head_EMPTY__H12                 0.101078        0.056014
+                40 REP_P31_tailQ35657_H12                  0.245491        0.004823
+                41 REP_P31_tailQ5_H12                     -0.353725        0.026156
+                42 REP_P31_tail_EMPTY__H12                -0.306812        0.072712
+                43 REP_subcategory_OTHER__H12             -0.084374        0.013691
+                44 _DUP                                   -0.101023       -0.001642
+                45 REP_subcategoryautosnews_H12           -0.113480       -0.001779
+                                                                   17:15 Friday, April 2, 2021 286
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.089222       -0.001492
+                47 _DUP1                                  -0.040983       -0.001958
+                48 REP_subcategorycelebrity_H12           -0.000901        0.008573
+                49 _DUP2                                   0.513635       -0.002612
+                50 _DUP3                                  -0.031438       -0.001958
+                51 _DUP4                                   0.374809       -0.004373
+                52 REP_subcategoryfoodnews_H12             0.058338       -0.001896
+                53 REP_subcategoryfootball_ncaa_H12       -0.115438       -0.001476
+                54 REP_subcategoryfootball_nfl_H12         0.040959        0.000183
+                55 REP_subcategoryhealthnews_H12          -0.135918       -0.000817
+                56 REP_subcategorylifestylebuzz_H12        0.057222        0.002047
+                57 _DUP5                                  -0.049828       -0.001295
+                58 REP_subcategorymarkets_H12             -0.032936       -0.001162
+                59 _DUP6                                   0.649171       -0.001475
+                60 REP_subcategorymoviesgallery_H12       -0.208590       -0.000556
+                61 _DUP7                                   0.219518       -0.001055
+                62 REP_subcategorymusicnews_H12           -0.066952       -0.001412
+                63 REP_subcategorynewscrime_H12            0.073282        0.001237
+                64 REP_subcategorynewsgoodnews_H12        -0.232343       -0.001402
+                65 REP_subcategorynewspolitics_H12        -0.013678       -0.001810
+                66 REP_subcategorynewsus_H12               0.006075       -0.002266
+                67 REP_subcategorynewsworld_H12           -0.060901        0.000249
+                68 REP_subcategoryrecipes_H12             -0.112774       -0.000918
+                69 _DUP8                                  -0.096183       -0.001837
+                70 REP_subcategoryshopholidays_H12        -0.143045       -0.001463
+                71 REP_subcategorytipsandtricks_H12       -0.025247        0.001514
+                72 REP_subcategorytravelnews_H12          -0.065392       -0.000935
+                73 REP_subcategorytvcelebrity_H12          0.180120        0.009888
+                74 REP_subcategorytvnews_H12              -0.090048       -0.002197
+                75 REP_subcategoryviral_H12               -0.227791       -0.000795
+                76 REP_subcategoryvoices_H12              -0.146313     0.000032141
+                77 BIAS_H11                                0.743403       -0.033700
+                78 BIAS_H12                                0.099606        0.061229
+                79 H11_REP_clicked0                        5.044133        0.003185
+                80 H12_REP_clicked0                      -11.210063        0.001799
+                81 BIAS_REP_clicked0                      -0.499178       -0.005469
+
+                            Value of Objective Function = 0.578909529
+
+                                                                   17:15 Friday, April 2, 2021 287
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion              0.001386373
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                   0.578909529
+Max Abs Gradient Element            0.0727115619  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         3            0        0.57818   0.000729    0.0293   0.0226      0.626
+     2          0         4            0        0.57788   0.000300    0.0124   0.0165      0.795
+     3          0         5            0        0.57749   0.000395   0.00925  0.00499      1.126
+     4          0         6            0        0.57693   0.000558    0.0245  0.00191      1.080
+     5          0         8            0        0.57632   0.000608   0.00839  0.00377      1.050
+     6          0        10            0        0.57603   0.000285   0.00315   0.0663      0.915
+     7          0        11            0        0.57566   0.000370   0.00608   0.0191      0.964
+     8          0        12            0        0.57525   0.000412   0.00662  0.00546      0.849
+     9          0        13            0        0.57497   0.000284    0.0285  0.00175      0.482
+    10          0        14            0        0.57486   0.000110    0.0325  0.00112      0.163
+                                                                   17:15 Friday, April 2, 2021 288
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        16            0        0.57476   0.000102    0.0104  0.00377      0.164
+    12          0        17            0        0.57469   0.000072    0.0107  0.00315      0.105
+    13          0        19            0        0.57443   0.000256   0.00398   0.0197      0.719
+    14          0        20            0        0.57440   0.000034   0.00202  0.00362      0.700
+    15          0        21            0        0.57437   0.000024  0.000627  0.00314      0.611
+    16          0        22            0        0.57435   0.000019  0.000930  0.00289      0.434
+    17          0        23            0        0.57434   9.413E-6  0.000476  0.00293      0.201
+    18          0        24            0        0.57434   5.831E-6   0.00127  0.00318     0.0850
+    19          0        25            0        0.57431   0.000026  0.000364   0.0125      0.445
+    20          0        26            0        0.57430   6.398E-6  0.000583  0.00559      0.274
+    21          0        27            0        0.57430    6.22E-6  0.000285  0.00549      0.272
+    22          0        28            0        0.57429   4.956E-6  0.000546  0.00556      0.202
+    23          0        29            0        0.57429   5.475E-6  0.000270  0.00539      0.226
+
+                                       Optimization Results
+
+Iterations                                    23  Function Calls                                31
+Jacobian Calls                                25  Active Constraints                             0
+Objective Function                  0.5742880762  Max Abs Gradient Element            0.0002696976
+Lambda                              0.0053895394  Actual Over Pred Change             0.2258368349
+Radius                              0.0463842898                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+                                                                   17:15 Friday, April 2, 2021 289
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.520877       -0.000150
+                 2 REP_P31_tailQ35657_H11                  1.328534        0.000106
+                 3 REP_P31_tailQ5_H11                     -3.276813        0.000270
+                 4 REP_P31_tail_EMPTY__H11                -1.596231        0.000212
+                 5 REP_subcategory_OTHER__H11              0.066075    -0.000022968
+                 6 REP_subcategoryautosenthusiasts_       -0.115043    -0.000000856
+                 7 REP_subcategoryautosnews_H11            0.066228    -0.000000278
+                 8 REP_subcategorybaseball_mlb_H11         0.665128     0.000002066
+                 9 REP_subcategorybasketball_nba_H1       -2.765026     0.000006675
+                10 REP_subcategorycelebrity_H11            0.552951     0.000023723
+                11 REP_subcategoryentertainmentcele        2.795541    -0.000002353
+                12 REP_subcategoryfinancecompanies_        0.112822     0.000002389
+                13 REP_subcategoryfinancerealestate        4.087451    -0.000004757
+                14 REP_subcategoryfoodnews_H11             0.308100     0.000014181
+                15 REP_subcategoryfootball_ncaa_H11       -2.973685     0.000022099
+                16 REP_subcategoryfootball_nfl_H11         0.502166    -0.000015112
+                17 REP_subcategoryhealthnews_H11           0.046999    -0.000006960
+                18 REP_subcategorylifestylebuzz_H11        0.086047     0.000008317
+                19 REP_subcategorylifestyleroyals_H       -0.036334    -0.000014658
+                20 REP_subcategorymarkets_H11              0.174107     0.000010654
+                21 REP_subcategorymoviescelebrity_H        3.026778    -0.000001070
+                22 REP_subcategorymoviesgallery_H11        0.314906     0.000001249
+                23 REP_subcategorymusiccelebrity_H1        0.801054    -4.046636E-8
+                24 REP_subcategorymusicnews_H11            0.429758    -0.000001865
+                25 REP_subcategorynewscrime_H11            0.384923     0.000012307
+                26 REP_subcategorynewsgoodnews_H11        -4.171193    -0.000033607
+                27 REP_subcategorynewspolitics_H11         0.026339    -0.000012503
+                28 REP_subcategorynewsus_H11               0.043048     0.000000796
+                29 REP_subcategorynewsworld_H11            0.181659    -0.000012995
+                30 REP_subcategoryrecipes_H11              0.037281    9.0012849E-8
+                31 REP_subcategoryrestaurantsandnew       -3.510828    -0.000005238
+                32 REP_subcategoryshopholidays_H11         0.153472     0.000001072
+                33 REP_subcategorytipsandtricks_H11        0.408406    -0.000000524
+                34 REP_subcategorytravelnews_H11           0.050117     0.000002402
+                35 REP_subcategorytvcelebrity_H11          0.767352     0.000061611
+                36 REP_subcategorytvnews_H11              -3.146560       -0.000162
+                37 REP_subcategoryviral_H11                0.065855     0.000008866
+                38 REP_subcategoryvoices_H11               0.226677    -0.000000585
+                39 REP_P31_head_EMPTY__H12                 0.149116    -0.000044697
+                40 REP_P31_tailQ35657_H12                  0.654737    -0.000028261
+                41 REP_P31_tailQ5_H12                     -0.736675     0.000096593
+                42 REP_P31_tail_EMPTY__H12                -0.526171        0.000130
+                43 REP_subcategory_OTHER__H12             -0.148319     0.000018634
+                44 _DUP                                   -0.172158    -0.000003096
+                45 REP_subcategoryautosnews_H12           -0.164292     0.000002098
+                                                                   17:15 Friday, April 2, 2021 290
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.104715    -0.000002855
+                47 _DUP1                                  -0.115280    -0.000003130
+                48 REP_subcategorycelebrity_H12            0.012243    -0.000016870
+                49 _DUP2                                   1.223374    -0.000015213
+                50 _DUP3                                  -0.087739    -0.000005887
+                51 _DUP4                                   0.660751    -0.000012629
+                52 REP_subcategoryfoodnews_H12             0.091302    -0.000004132
+                53 REP_subcategoryfootball_ncaa_H12       -0.190281     0.000019750
+                54 REP_subcategoryfootball_nfl_H12         0.031877     0.000001547
+                55 REP_subcategoryhealthnews_H12          -0.216549     0.000001222
+                56 REP_subcategorylifestylebuzz_H12       -0.031403    -0.000017595
+                57 _DUP5                                  -0.113721    -0.000004054
+                58 REP_subcategorymarkets_H12             -0.072727    -0.000003828
+                59 _DUP6                                   1.337859    -0.000013881
+                60 REP_subcategorymoviesgallery_H12       -0.331626     0.000000649
+                61 _DUP7                                   0.392808    -0.000002768
+                62 REP_subcategorymusicnews_H12           -0.107576    -0.000004813
+                63 REP_subcategorynewscrime_H12            0.030649    -0.000010734
+                64 REP_subcategorynewsgoodnews_H12        -0.557259     0.000028204
+                65 REP_subcategorynewspolitics_H12        -0.052014     0.000006811
+                66 REP_subcategorynewsus_H12              -0.038410    -0.000001867
+                67 REP_subcategorynewsworld_H12           -0.121449    -0.000004833
+                68 REP_subcategoryrecipes_H12             -0.193041    -0.000000422
+                69 _DUP8                                  -0.213681     0.000004224
+                70 REP_subcategoryshopholidays_H12        -0.237684    -0.000000686
+                71 REP_subcategorytipsandtricks_H12       -0.069870    -0.000001505
+                72 REP_subcategorytravelnews_H12          -0.125297    -0.000007063
+                73 REP_subcategorytvcelebrity_H12          0.297792    -0.000061974
+                74 REP_subcategorytvnews_H12              -0.149809        0.000204
+                75 REP_subcategoryviral_H12               -0.332647    -0.000005728
+                76 REP_subcategoryvoices_H12              -0.226115     0.000000673
+                77 BIAS_H11                                1.553374       -0.000172
+                78 BIAS_H12                                0.103241        0.000104
+                79 H11_REP_clicked0                        5.355196    -0.000001591
+                80 H12_REP_clicked0                       -8.518099    -0.000000969
+                81 BIAS_REP_clicked0                      -1.117581    -0.000018079
+
+                            Value of Objective Function = 0.5742880762
+
+                                                                   17:15 Friday, April 2, 2021 291
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   6447 ‚   2985 ‚   9432
+                                        ‚  34.86 ‚  16.14 ‚  50.99
+                                        ‚  68.35 ‚  31.65 ‚
+                                        ‚  70.37 ‚  31.98 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   2715 ‚   6349 ‚   9064
+                                        ‚  14.68 ‚  34.33 ‚  49.01
+                                        ‚  29.95 ‚  70.05 ‚
+                                        ‚  29.63 ‚  68.02 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9162     9334    18496
+                                           49.54    50.46   100.00
+                                                                   17:15 Friday, April 2, 2021 292
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.585699237987           10                
+                   2          1649706481    0.579933715374           10                
+                   3           563433777     0.58089789981           10                
+                   4           252877680    0.587764648011           10                
+                   5           346809007    0.582329078619           10                
+                   6          1793582916    0.581388287454           10                
+                   7          1744730513    0.588212180985           10                
+                   8           100245671    0.581966113833           10                
+                   9          2086076640     0.57582577129           10                
+                  10          1070106574    0.585556791494           10                
+                  11           515607104    0.591244609492           10                
+                  12           714527711    0.580283056335           10                
+                  13           134182948    0.585444442127           10                
+                  14          1474297040    0.578457175269           10                
+                  15           550501885     0.57864828111           10                
+                                                                   17:15 Friday, April 2, 2021 293
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.291595        0.016973
+                 2 REP_P31_tailQ35657_H11                 -0.443025        0.016306
+                 3 REP_P31_tailQ5_H11                      0.681807        0.016521
+                 4 REP_P31_tail_EMPTY__H11                 0.609976        0.015996
+                 5 REP_subcategory_OTHER__H11              0.030331       -0.001353
+                 6 REP_subcategoryautosenthusiasts_        0.120559       -0.000770
+                 7 REP_subcategoryautosnews_H11            0.063598       -0.000405
+                 8 REP_subcategorybaseball_mlb_H11         0.055005    -0.000077914
+                 9 REP_subcategorybasketball_nba_H1       -0.082315       -0.000736
+                10 REP_subcategorycelebrity_H11           -0.360359       -0.001981
+                11 REP_subcategoryentertainmentcele       -0.136515       -0.000279
+                12 REP_subcategoryfinancecompanies_       -0.074194       -0.000837
+                13 REP_subcategoryfinancerealestate        0.441127        0.001563
+                14 REP_subcategoryfoodnews_H11            -0.402728       -0.000907
+                15 REP_subcategoryfootball_ncaa_H11        0.004875       -0.000591
+                16 REP_subcategoryfootball_nfl_H11         0.112209        0.000197
+                17 REP_subcategoryhealthnews_H11           0.175920       -0.000412
+                18 REP_subcategorylifestylebuzz_H11       -0.353493        0.000661
+                19 REP_subcategorylifestyleroyals_H       -0.017302       -0.001069
+                20 REP_subcategorymarkets_H11             -0.051963       -0.000788
+                21 REP_subcategorymoviescelebrity_H       -0.263882       -0.000406
+                22 REP_subcategorymoviesgallery_H11        0.273685       -0.000727
+                23 REP_subcategorymusiccelebrity_H1       -0.185918       -0.000409
+                24 REP_subcategorymusicnews_H11            0.152970       -0.000553
+                25 REP_subcategorynewscrime_H11           -0.411090       -0.003239
+                26 REP_subcategorynewsgoodnews_H11         0.322690       -0.001190
+                27 REP_subcategorynewspolitics_H11        -0.119565       -0.001242
+                28 REP_subcategorynewsus_H11              -0.149982       -0.002036
+                29 REP_subcategorynewsworld_H11           -0.010526       -0.001076
+                30 REP_subcategoryrecipes_H11              0.093863       -0.000801
+                31 REP_subcategoryrestaurantsandnew        0.102656       -0.000913
+                32 REP_subcategoryshopholidays_H11         0.117429       -0.001066
+                33 REP_subcategorytipsandtricks_H11       -0.124575       -0.001010
+                34 REP_subcategorytravelnews_H11           0.028146       -0.000652
+                35 REP_subcategorytvcelebrity_H11         -0.396632       -0.002422
+                36 REP_subcategorytvnews_H11              -0.028298       -0.000460
+                37 REP_subcategoryviral_H11                0.277800       -0.000325
+                38 REP_subcategoryvoices_H11               0.109944       -0.000701
+                39 REP_P31_head_EMPTY__H12                -0.257828        0.002832
+                40 REP_P31_tailQ35657_H12                 -0.430617       -0.001406
+                41 REP_P31_tailQ5_H12                      1.848845     0.000093719
+                42 REP_P31_tail_EMPTY__H12                 0.969153        0.000362
+                43 REP_subcategory_OTHER__H12             -0.298275       -0.001353
+                44 _DUP                                    0.192388     0.000074519
+                45 REP_subcategoryautosnews_H12           -0.155864    -0.000079739
+                                                                   17:15 Friday, April 2, 2021 294
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         1.232041       -0.000146
+                47 _DUP1                                  -0.470798        0.000162
+                48 REP_subcategorycelebrity_H12           -1.217447        0.001249
+                49 _DUP2                                   1.474807       -0.000190
+                50 _DUP3                                  -0.598151     0.000087290
+                51 _DUP4                                   0.359826       -0.001260
+                52 REP_subcategoryfoodnews_H12            -0.769217        0.000736
+                53 REP_subcategoryfootball_ncaa_H12        0.185955       -0.000200
+                54 REP_subcategoryfootball_nfl_H12         1.218479       -0.000261
+                55 REP_subcategoryhealthnews_H12          -0.021323    -0.000076912
+                56 REP_subcategorylifestylebuzz_H12       -0.910238       -0.002384
+                57 _DUP5                                   0.351436        0.000175
+                58 REP_subcategorymarkets_H12             -0.407595        0.000160
+                59 _DUP6                                   1.902190       -0.000199
+                60 REP_subcategorymoviesgallery_H12       -0.494005        0.000291
+                61 _DUP7                                   0.660346       -0.000200
+                62 REP_subcategorymusicnews_H12            0.517554        0.000108
+                63 REP_subcategorynewscrime_H12           -1.042680        0.001940
+                64 REP_subcategorynewsgoodnews_H12         0.514308     0.000073141
+                65 REP_subcategorynewspolitics_H12        -0.321975        0.000275
+                66 REP_subcategorynewsus_H12              -0.492595        0.000637
+                67 REP_subcategorynewsworld_H12           -0.411602        0.000181
+                68 REP_subcategoryrecipes_H12             -0.224109        0.000146
+                69 _DUP8                                   0.369181        0.000163
+                70 REP_subcategoryshopholidays_H12        -0.411522        0.000229
+                71 REP_subcategorytipsandtricks_H12       -0.809707        0.000582
+                72 REP_subcategorytravelnews_H12          -0.214810    -0.000081904
+                73 REP_subcategorytvcelebrity_H12         -1.096955        0.001586
+                74 REP_subcategorytvnews_H12               0.154678       -0.000350
+                75 REP_subcategoryviral_H12               -0.205519        0.000108
+                76 REP_subcategoryvoices_H12              -0.467588        0.000327
+                77 BIAS_H11                               -0.060275       -0.013567
+                78 BIAS_H12                                0.155586       -0.002770
+                79 H11_REP_clicked0                        7.227823        0.002240
+                80 H12_REP_clicked0                       -4.648942        0.004573
+                81 BIAS_REP_clicked0                       0.161766       -0.003374
+
+                            Value of Objective Function = 0.5758257713
+
+                                                                   17:15 Friday, April 2, 2021 295
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion             0.0013863863
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                  0.5758257713
+Max Abs Gradient Element            0.0169729913  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         3            0        0.57477    0.00105    0.0114  0.00562      0.526
+     2          0         4            0        0.57453   0.000238    0.0176  0.00816      0.103
+     3          0         5            0        0.57312    0.00141    0.0127  0.00546      0.334
+     4          0         7            0        0.57201    0.00111   0.00692   0.0555      0.507
+     5          0         8            0        0.57186   0.000149   0.00511  0.00860      0.286
+     6          0         9            0        0.57186   3.063E-6   0.00462  0.00889     0.0055
+     7          0        10            0        0.57163   0.000231   0.00464   0.0470      0.467
+     8          0        11            0        0.57157   0.000056   0.00234  0.00962      0.351
+     9          0        12            0        0.57155   0.000022   0.00334   0.0113      0.136
+    10          0        13            0        0.57154   7.303E-6   0.00271   0.0133     0.0378
+                                                                   17:15 Friday, April 2, 2021 296
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        14            0        0.57147   0.000076   0.00245   0.0577      0.497
+    12          0        15            0        0.57144   0.000025   0.00121   0.0128      0.600
+    13          0        16            0        0.57143   0.000015   0.00106   0.0141      0.451
+    14          0        17            0        0.57141   0.000012  0.000988   0.0142      0.351
+    15          0        18            0        0.57140   0.000011   0.00110   0.0137      0.297
+    16          0        19            0        0.57139   8.621E-6   0.00110   0.0145      0.217
+    17          0        20            0        0.57139   8.082E-6   0.00127   0.0138      0.190
+    18          0        21            0        0.57138   6.446E-6   0.00125   0.0153      0.138
+    19          0        22            0        0.57137   6.353E-6   0.00143   0.0141      0.130
+    20          0        23            0        0.57137   5.472E-6   0.00136   0.0163      0.103
+    21          0        24            0        0.57136   5.258E-6   0.00154   0.0143     0.0984
+
+                                       Optimization Results
+
+Iterations                                    21  Function Calls                                26
+Jacobian Calls                                23  Active Constraints                             0
+Objective Function                  0.5713616473  Max Abs Gradient Element            0.0015351179
+Lambda                              0.0142839333  Actual Over Pred Change             0.0983771935
+Radius                               0.018838356                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+
+NOTE: At least one element of the gradient is greater than 1e-3.
+
+                                                                   17:15 Friday, April 2, 2021 297
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.336418        0.000718
+                 2 REP_P31_tailQ35657_H11                 -0.503606       -0.001535
+                 3 REP_P31_tailQ5_H11                      0.756129       -0.000404
+                 4 REP_P31_tail_EMPTY__H11                 0.789132       -0.000646
+                 5 REP_subcategory_OTHER__H11              0.026354     0.000080570
+                 6 REP_subcategoryautosenthusiasts_        0.109657     0.000018781
+                 7 REP_subcategoryautosnews_H11            0.096062     0.000019418
+                 8 REP_subcategorybaseball_mlb_H11         0.112248     0.000043799
+                 9 REP_subcategorybasketball_nba_H1       -0.194584     0.000010208
+                10 REP_subcategorycelebrity_H11           -0.415511     0.000014831
+                11 REP_subcategoryentertainmentcele       -0.133994     0.000033326
+                12 REP_subcategoryfinancecompanies_       -0.079897    -0.000017196
+                13 REP_subcategoryfinancerealestate        0.741083     0.000027894
+                14 REP_subcategoryfoodnews_H11            -0.539527     0.000086100
+                15 REP_subcategoryfootball_ncaa_H11        0.023582     0.000029404
+                16 REP_subcategoryfootball_nfl_H11         0.126563     0.000045238
+                17 REP_subcategoryhealthnews_H11           0.192913     0.000016899
+                18 REP_subcategorylifestylebuzz_H11       -0.301989       -0.000948
+                19 REP_subcategorylifestyleroyals_H       -0.030902     0.000022207
+                20 REP_subcategorymarkets_H11             -0.054926     0.000043670
+                21 REP_subcategorymoviescelebrity_H       -0.259072     0.000029985
+                22 REP_subcategorymoviesgallery_H11        0.283565     0.000018372
+                23 REP_subcategorymusiccelebrity_H1       -0.095201     0.000031052
+                24 REP_subcategorymusicnews_H11            0.127206     0.000025090
+                25 REP_subcategorynewscrime_H11           -0.507109        0.000105
+                26 REP_subcategorynewsgoodnews_H11         0.319821     0.000011025
+                27 REP_subcategorynewspolitics_H11        -0.139506     0.000033751
+                28 REP_subcategorynewsus_H11              -0.166074     0.000001302
+                29 REP_subcategorynewsworld_H11           -0.011456     0.000028878
+                30 REP_subcategoryrecipes_H11              0.085963     0.000031406
+                31 REP_subcategoryrestaurantsandnew        0.071349     0.000028329
+                32 REP_subcategoryshopholidays_H11         0.113714     0.000025256
+                33 REP_subcategorytipsandtricks_H11       -0.139794     0.000028558
+                34 REP_subcategorytravelnews_H11           0.034213     0.000003290
+                35 REP_subcategorytvcelebrity_H11         -0.359656     0.000054663
+                36 REP_subcategorytvnews_H11              -0.026562     0.000010072
+                37 REP_subcategoryviral_H11                0.247854     0.000045070
+                38 REP_subcategoryvoices_H11               0.096994     0.000046886
+                39 REP_P31_head_EMPTY__H12                -0.502173       -0.000630
+                40 REP_P31_tailQ35657_H12                 -0.337242        0.001090
+                41 REP_P31_tailQ5_H12                      2.215749     0.000049310
+                42 REP_P31_tail_EMPTY__H12                 1.699081        0.000155
+                43 REP_subcategory_OTHER__H12             -0.699489     0.000001684
+                44 _DUP                                   -0.124063    -0.000018168
+                45 REP_subcategoryautosnews_H12           -0.340448    -0.000012672
+                                                                   17:15 Friday, April 2, 2021 298
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         2.064927    -0.000037466
+                47 _DUP1                                  -1.409858     0.000006524
+                48 REP_subcategorycelebrity_H12           -1.633585     0.000007143
+                49 _DUP2                                   2.660907    -0.000029114
+                50 _DUP3                                  -0.988707     0.000043828
+                51 _DUP4                                   3.214663    -0.000032571
+                52 REP_subcategoryfoodnews_H12            -1.444960    -0.000042824
+                53 REP_subcategoryfootball_ncaa_H12        0.130217    -0.000025910
+                54 REP_subcategoryfootball_nfl_H12         1.940069    -0.000039269
+                55 REP_subcategoryhealthnews_H12          -0.283713    -0.000006177
+                56 REP_subcategorylifestylebuzz_H12       -1.188246        0.001356
+                57 _DUP5                                   0.740288    -0.000019360
+                58 REP_subcategorymarkets_H12             -0.810048    -0.000042727
+                59 _DUP6                                   3.695650    -0.000030467
+                60 REP_subcategorymoviesgallery_H12       -0.875777    -0.000015865
+                61 _DUP7                                   2.421905    -0.000036301
+                62 REP_subcategorymusicnews_H12            0.002023    -0.000012837
+                63 REP_subcategorynewscrime_H12           -1.578704    -0.000046288
+                64 REP_subcategorynewsgoodnews_H12         0.366028    -0.000018083
+                65 REP_subcategorynewspolitics_H12        -0.824109    -0.000006908
+                66 REP_subcategorynewsus_H12              -0.926064     0.000058644
+                67 REP_subcategorynewsworld_H12           -0.806314    -0.000021714
+                68 REP_subcategoryrecipes_H12             -0.630978    -0.000021133
+                69 _DUP8                                   0.179755    -0.000020516
+                70 REP_subcategoryshopholidays_H12        -0.820009    -0.000018527
+                71 REP_subcategorytipsandtricks_H12       -1.215724    -0.000011759
+                72 REP_subcategorytravelnews_H12          -0.577407    -0.000013767
+                73 REP_subcategorytvcelebrity_H12         -1.406386    -0.000088910
+                74 REP_subcategorytvnews_H12               0.170016    -0.000018500
+                75 REP_subcategoryviral_H12               -0.643395    -0.000022776
+                76 REP_subcategoryvoices_H12              -0.882410    -0.000027384
+                77 BIAS_H11                               -0.048868       -0.001151
+                78 BIAS_H12                                0.275371        0.001347
+                79 H11_REP_clicked0                        8.311907    -0.000012542
+                80 H12_REP_clicked0                       -5.907133     0.000013410
+                81 BIAS_REP_clicked0                       0.239670    -0.000018891
+
+                            Value of Objective Function = 0.5713616473
+
+                                                                   17:15 Friday, April 2, 2021 299
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   6442 ‚   2846 ‚   9288
+                                        ‚  34.83 ‚  15.39 ‚  50.22
+                                        ‚  69.36 ‚  30.64 ‚
+                                        ‚  70.16 ‚  30.56 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   2740 ‚   6468 ‚   9208
+                                        ‚  14.81 ‚  34.97 ‚  49.78
+                                        ‚  29.76 ‚  70.24 ‚
+                                        ‚  29.84 ‚  69.44 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9182     9314    18496
+                                           49.64    50.36   100.00
+                                                                   17:15 Friday, April 2, 2021 300
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.586367620495           10                
+                   2          1649706481    0.578993881499           10                
+                   3           563433777    0.590453852567           10                
+                   4           252877680    0.590526096842           10                
+                   5           346809007    0.581199298919           10                
+                   6          1793582916    0.580823576869           10                
+                   7          1744730513    0.585951921359           10                
+                   8           100245671    0.582001532774           10                
+                   9          2086076640    0.579756775043           10                
+                  10          1070106574     0.58117547842           10                
+                  11           515607104    0.588246601519           10                
+                  12           714527711     0.58171620144           10                
+                  13           134182948    0.590479942966           10                
+                  14          1474297040    0.577640170053           10                
+                  15           550501885    0.578585769827           10                
+                                                                   17:15 Friday, April 2, 2021 301
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.030233        0.012562
+                 2 REP_P31_tailQ35657_H11                  0.953281        0.002592
+                 3 REP_P31_tailQ5_H11                      0.294217       -0.000167
+                 4 REP_P31_tail_EMPTY__H11                 0.046913        0.014720
+                 5 REP_subcategory_OTHER__H11              0.055379        0.001622
+                 6 REP_subcategoryautosenthusiasts_        0.228260       -0.001439
+                 7 REP_subcategoryautosnews_H11            0.173518       -0.001608
+                 8 REP_subcategorybaseball_mlb_H11        -0.402442       -0.001892
+                 9 REP_subcategorybasketball_nba_H1        0.082697       -0.001496
+                10 REP_subcategorycelebrity_H11           -0.034869       -0.000149
+                11 REP_subcategoryentertainmentcele       -0.852152       -0.002238
+                12 REP_subcategoryfinancecompanies_       -0.062370       -0.001749
+                13 REP_subcategoryfinancerealestate       -0.202953       -0.000938
+                14 REP_subcategoryfoodnews_H11             0.004372       -0.000502
+                15 REP_subcategoryfootball_ncaa_H11        1.000307       -0.001406
+                16 REP_subcategoryfootball_nfl_H11        -0.205149       -0.001088
+                17 REP_subcategoryhealthnews_H11           0.071334       -0.001239
+                18 REP_subcategorylifestylebuzz_H11       -0.563561        0.000266
+                19 REP_subcategorylifestyleroyals_H       -0.001158       -0.001672
+                20 REP_subcategorymarkets_H11              0.034366       -0.001188
+                21 REP_subcategorymoviescelebrity_H       -0.730314       -0.001624
+                22 REP_subcategorymoviesgallery_H11        0.022515       -0.001122
+                23 REP_subcategorymusiccelebrity_H1       -0.651386       -0.001678
+                24 REP_subcategorymusicnews_H11           -0.063702       -0.001404
+                25 REP_subcategorynewscrime_H11           -0.212629        0.000836
+                26 REP_subcategorynewsgoodnews_H11         0.397368       -0.001170
+                27 REP_subcategorynewspolitics_H11        -0.064995       -0.001470
+                28 REP_subcategorynewsus_H11              -0.158947       -0.003264
+                29 REP_subcategorynewsworld_H11           -0.024078       -0.001262
+                30 REP_subcategoryrecipes_H11              0.068338       -0.001192
+                31 REP_subcategoryrestaurantsandnew        0.394058       -0.000664
+                32 REP_subcategoryshopholidays_H11         0.020364       -0.001248
+                33 REP_subcategorytipsandtricks_H11       -0.211769       -0.000526
+                34 REP_subcategorytravelnews_H11           0.115545       -0.001307
+                35 REP_subcategorytvcelebrity_H11         -0.191816        0.001651
+                36 REP_subcategorytvnews_H11               1.785272       -0.001572
+                37 REP_subcategoryviral_H11                0.208876       -0.001387
+                38 REP_subcategoryvoices_H11              -0.010405       -0.000608
+                39 REP_P31_head_EMPTY__H12                 0.159479        0.010509
+                40 REP_P31_tailQ35657_H12                 -0.908150        0.003421
+                41 REP_P31_tailQ5_H12                     -0.162159        0.001012
+                42 REP_P31_tail_EMPTY__H12                -0.058960        0.015656
+                43 REP_subcategory_OTHER__H12             -0.064870        0.002962
+                44 _DUP                                   -0.183654       -0.000832
+                45 REP_subcategoryautosnews_H12           -0.166911       -0.001124
+                                                                   17:15 Friday, April 2, 2021 302
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.381093       -0.001179
+                47 _DUP1                                  -0.026149       -0.000838
+                48 REP_subcategorycelebrity_H12           -0.050466       -0.000292
+                49 _DUP2                                   0.883046       -0.001795
+                50 _DUP3                                   0.055487       -0.000890
+                51 _DUP4                                   0.074550       -0.000130
+                52 REP_subcategoryfoodnews_H12             0.110299       -0.000664
+                53 REP_subcategoryfootball_ncaa_H12       -0.757871       -0.000764
+                54 REP_subcategoryfootball_nfl_H12         0.198629        0.001140
+                55 REP_subcategoryhealthnews_H12          -0.117623       -0.000380
+                56 REP_subcategorylifestylebuzz_H12        0.585435        0.000801
+                57 _DUP5                                   0.005088       -0.000813
+                58 REP_subcategorymarkets_H12             -0.014177       -0.000669
+                59 _DUP6                                   0.854090       -0.000936
+                60 REP_subcategorymoviesgallery_H12       -0.224226       -0.000568
+                61 _DUP7                                   0.734833       -0.001037
+                62 REP_subcategorymusicnews_H12           -0.016605       -0.000713
+                63 REP_subcategorynewscrime_H12            0.223881        0.000523
+                64 REP_subcategorynewsgoodnews_H12        -0.396295       -0.000383
+                65 REP_subcategorynewspolitics_H12         0.095010       -0.000634
+                66 REP_subcategorynewsus_H12               0.174232       -0.001488
+                67 REP_subcategorynewsworld_H12           -0.005950       -0.000633
+                68 REP_subcategoryrecipes_H12             -0.104830       -0.000516
+                69 _DUP8                                  -0.260468        0.000326
+                70 REP_subcategoryshopholidays_H12        -0.118143       -0.000539
+                71 REP_subcategorytipsandtricks_H12        0.126729        0.000157
+                72 REP_subcategorytravelnews_H12          -0.083907       -0.000602
+                73 REP_subcategorytvcelebrity_H12          0.232707        0.000636
+                74 REP_subcategorytvnews_H12              -1.628192       -0.000733
+                75 REP_subcategoryviral_H12               -0.347797       -0.000803
+                76 REP_subcategoryvoices_H12              -0.099663     0.000042737
+                77 BIAS_H11                                0.003819        0.013172
+                78 BIAS_H12                               -0.298756        0.013202
+                79 H11_REP_clicked0                      -11.880235       -0.000545
+                80 H12_REP_clicked0                      -12.204790        0.000781
+                81 BIAS_REP_clicked0                      -2.361151       -0.000806
+
+                            Value of Objective Function = 0.5776401701
+
+                                                                   17:15 Friday, April 2, 2021 303
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion             0.0013863374
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                  0.5776401701
+Max Abs Gradient Element            0.0156561345  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         3            0        0.57741   0.000228   0.00842  0.00205      0.655
+     2          0         4            0        0.57728   0.000129   0.00337  0.00263      0.520
+     3          0         5            0        0.57716   0.000123    0.0121  0.00185      0.579
+     4          0         6            0        0.57705   0.000109   0.00689  0.00250      0.486
+     5          0         7            0        0.57695   0.000104    0.0189  0.00216      0.461
+     6          0         8            0        0.57682   0.000133   0.00908  0.00273      0.503
+     7          0        10            0        0.57671   0.000102    0.0116  0.00490      0.523
+     8          0        11            0        0.57661   0.000104   0.00482  0.00457      0.682
+     9          0        12            0        0.57651   0.000099   0.00990  0.00422      0.779
+    10          0        13            0        0.57632   0.000187   0.00666  0.00181      0.898
+                                                                   17:15 Friday, April 2, 2021 304
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        15            0        0.57619   0.000138   0.00853  0.00271      0.827
+    12          0        16            0        0.57599   0.000193    0.0128  0.00108      0.759
+    13          0        18            0        0.57588   0.000111   0.00182  0.00387      0.649
+    14          0        19            0        0.57581   0.000075   0.00130  0.00321      0.707
+    15          0        20            0        0.57574   0.000064   0.00334  0.00255      0.727
+    16          0        21            0        0.57569   0.000053   0.00203  0.00234      0.660
+    17          0        22            0        0.57565   0.000039   0.00362  0.00186      0.534
+    18          0        24            0        0.57563   0.000025   0.00366  0.00149      0.306
+    19          0        25            0        0.57562   1.788E-6   0.00424  0.00157     0.0169
+    20          0        26            0        0.57558   0.000049   0.00256  0.00751      0.524
+    21          0        27            0        0.57556   0.000020   0.00205  0.00194      0.647
+    22          0        28            0        0.57554   0.000016  0.000880  0.00177      0.634
+    23          0        29            0        0.57552   0.000015   0.00189  0.00167      0.619
+    24          0        30            0        0.57551   0.000012   0.01000  0.00040      0.231
+    25          0        31            0        0.57550   0.000012   0.00520  0.00031      0.123
+
+                                       Optimization Results
+
+Iterations                                    25  Function Calls                                33
+Jacobian Calls                                27  Active Constraints                             0
+Objective Function                  0.5755002507  Max Abs Gradient Element            0.0051956668
+Lambda                              0.0003054713  Actual Over Pred Change             0.1225471333
+Radius                              0.2606701952                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+
+NOTE: At least one element of the gradient is greater than 1e-3.
+
+                                                                   17:15 Friday, April 2, 2021 305
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                 0.054949        0.002121
+                 2 REP_P31_tailQ35657_H11                  0.813543        0.000664
+                 3 REP_P31_tailQ5_H11                      0.441812        0.002706
+                 4 REP_P31_tail_EMPTY__H11                 0.523923        0.003186
+                 5 REP_subcategory_OTHER__H11              0.028352        0.001731
+                 6 REP_subcategoryautosenthusiasts_        0.201729    -0.000063148
+                 7 REP_subcategoryautosnews_H11            0.165558    -0.000019235
+                 8 REP_subcategorybaseball_mlb_H11        -0.289436    -0.000003965
+                 9 REP_subcategorybasketball_nba_H1        0.221689    -0.000073806
+                10 REP_subcategorycelebrity_H11           -0.448415        0.000219
+                11 REP_subcategoryentertainmentcele       -0.343122       -0.000902
+                12 REP_subcategoryfinancecompanies_       -0.012363     0.000003481
+                13 REP_subcategoryfinancerealestate       -0.191749       -0.000514
+                14 REP_subcategoryfoodnews_H11             0.129144     0.000097706
+                15 REP_subcategoryfootball_ncaa_H11        0.559343       -0.000170
+                16 REP_subcategoryfootball_nfl_H11        -0.100174        0.000196
+                17 REP_subcategoryhealthnews_H11          -0.007235    -0.000012757
+                18 REP_subcategorylifestylebuzz_H11       -0.598385        0.000977
+                19 REP_subcategorylifestyleroyals_H        0.043271        0.000256
+                20 REP_subcategorymarkets_H11              0.076618     0.000014190
+                21 REP_subcategorymoviescelebrity_H       -0.258936       -0.000148
+                22 REP_subcategorymoviesgallery_H11       -0.247617     0.000004420
+                23 REP_subcategorymusiccelebrity_H1       -0.692792        0.000410
+                24 REP_subcategorymusicnews_H11           -0.057388     0.000006624
+                25 REP_subcategorynewscrime_H11           -0.115125        0.000277
+                26 REP_subcategorynewsgoodnews_H11         0.195767    -0.000046031
+                27 REP_subcategorynewspolitics_H11         0.023913        0.000458
+                28 REP_subcategorynewsus_H11              -0.035194        0.000687
+                29 REP_subcategorynewsworld_H11           -0.016517        0.000155
+                30 REP_subcategoryrecipes_H11             -0.024641    -0.000003924
+                31 REP_subcategoryrestaurantsandnew        0.373988    -0.000093918
+                32 REP_subcategoryshopholidays_H11        -0.129947    -0.000043910
+                33 REP_subcategorytipsandtricks_H11       -0.189857        0.000103
+                34 REP_subcategorytravelnews_H11           0.144130    -0.000055921
+                35 REP_subcategorytvcelebrity_H11         -0.313279       -0.000318
+                36 REP_subcategorytvnews_H11               2.283013        0.000111
+                37 REP_subcategoryviral_H11               -0.090234     0.000069237
+                38 REP_subcategoryvoices_H11              -0.157802     0.000079972
+                39 REP_P31_head_EMPTY__H12                 0.193843        0.003346
+                40 REP_P31_tailQ35657_H12                 -0.965033        0.001030
+                41 REP_P31_tailQ5_H12                     -0.271591        0.002366
+                42 REP_P31_tail_EMPTY__H12                -0.822249        0.002820
+                43 REP_subcategory_OTHER__H12             -0.117215        0.000153
+                44 _DUP                                   -0.243695    -0.000018274
+                45 REP_subcategoryautosnews_H12           -0.224938     0.000020902
+                                                                   17:15 Friday, April 2, 2021 306
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.457301    -0.000010806
+                47 _DUP1                                  -0.130209    -0.000071820
+                48 REP_subcategorycelebrity_H12            0.666118     0.000084228
+                49 _DUP2                                   0.751826       -0.000509
+                50 _DUP3                                  -0.003231    -0.000040788
+                51 _DUP4                                  -0.026967        0.000383
+                52 REP_subcategoryfoodnews_H12             0.118079     0.000031474
+                53 REP_subcategoryfootball_ncaa_H12       -0.487100    -0.000053222
+                54 REP_subcategoryfootball_nfl_H12         0.166021     0.000076701
+                55 REP_subcategoryhealthnews_H12          -0.186573     0.000018741
+                56 REP_subcategorylifestylebuzz_H12        1.092516        0.000713
+                57 _DUP5                                  -0.067189     0.000084441
+                58 REP_subcategorymarkets_H12             -0.065830    -0.000023065
+                59 _DUP6                                   0.724488        0.000318
+                60 REP_subcategorymoviesgallery_H12       -0.260416     0.000024202
+                61 _DUP7                                   1.190785        0.000444
+                62 REP_subcategorymusicnews_H12           -0.083010     0.000058385
+                63 REP_subcategorynewscrime_H12            0.292609     0.000076384
+                64 REP_subcategorynewsgoodnews_H12        -0.413460     0.000000417
+                65 REP_subcategorynewspolitics_H12         0.036267     0.000099018
+                66 REP_subcategorynewsus_H12               0.099471     0.000047445
+                67 REP_subcategorynewsworld_H12           -0.059992     0.000065009
+                68 REP_subcategoryrecipes_H12             -0.142330    -0.000024044
+                69 _DUP8                                  -0.312927    -0.000069386
+                70 REP_subcategoryshopholidays_H12        -0.156841    -0.000041458
+                71 REP_subcategorytipsandtricks_H12        0.129408     0.000046478
+                72 REP_subcategorytravelnews_H12          -0.155363    -0.000007629
+                73 REP_subcategorytvcelebrity_H12          0.659259    -0.000016723
+                74 REP_subcategorytvnews_H12              -2.679375     0.000057214
+                75 REP_subcategoryviral_H12               -0.349228     0.000003503
+                76 REP_subcategoryvoices_H12              -0.130368     0.000000771
+                77 BIAS_H11                                0.322168        0.005196
+                78 BIAS_H12                               -0.910318        0.001833
+                79 H11_REP_clicked0                      -12.395656       -0.000942
+                80 H12_REP_clicked0                      -11.806982        0.001042
+                81 BIAS_REP_clicked0                      -2.115048       -0.000389
+
+                            Value of Objective Function = 0.5755002507
+
+                                                                   17:15 Friday, April 2, 2021 307
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   5993 ‚   2545 ‚   8538
+                                        ‚  32.40 ‚  13.76 ‚  46.16
+                                        ‚  70.19 ‚  29.81 ‚
+                                        ‚  65.87 ‚  27.08 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   3105 ‚   6853 ‚   9958
+                                        ‚  16.79 ‚  37.05 ‚  53.84
+                                        ‚  31.18 ‚  68.82 ‚
+                                        ‚  34.13 ‚  72.92 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9098     9398    18496
+                                           49.19    50.81   100.00
+                                                                   17:15 Friday, April 2, 2021 308
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.587967997037           10                
+                   2          1649706481      0.5812796117           10                
+                   3           563433777    0.582011121533           10                
+                   4           252877680    0.587418386574           10                
+                   5           346809007    0.581834449675           10                
+                   6          1793582916     0.58319315658           10                
+                   7          1744730513    0.586878815302           10                
+                   8           100245671    0.578864521201           10                
+                   9          2086076640    0.580416157228           10                
+                  10          1070106574    0.594626583029           10                
+                  11           515607104    0.590033368032           10                
+                  12           714527711    0.585005915312           10                
+                  13           134182948    0.589012828659           10                
+                  14          1474297040    0.581642890423           10                
+                  15           550501885    0.580178897115           10                
+                                                                   17:15 Friday, April 2, 2021 309
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -1.454780       -0.004242
+                 2 REP_P31_tailQ35657_H11                 -0.374850       -0.008425
+                 3 REP_P31_tailQ5_H11                      0.560167       -0.007391
+                 4 REP_P31_tail_EMPTY__H11                 0.581633       -0.008035
+                 5 REP_subcategory_OTHER__H11              0.207553        0.000261
+                 6 REP_subcategoryautosenthusiasts_       -0.140820     0.000076614
+                 7 REP_subcategoryautosnews_H11            0.289845       -0.000141
+                 8 REP_subcategorybaseball_mlb_H11        -0.282888    -0.000017724
+                 9 REP_subcategorybasketball_nba_H1       -0.752911        0.000554
+                10 REP_subcategorycelebrity_H11            0.766586    -0.000021406
+                11 REP_subcategoryentertainmentcele       -0.728013       -0.000381
+                12 REP_subcategoryfinancecompanies_        0.376079       -0.000220
+                13 REP_subcategoryfinancerealestate        0.745279        0.000271
+                14 REP_subcategoryfoodnews_H11            -0.899009        0.000668
+                15 REP_subcategoryfootball_ncaa_H11       -0.503706    -0.000070101
+                16 REP_subcategoryfootball_nfl_H11        -0.357579        0.000477
+                17 REP_subcategoryhealthnews_H11           0.242559        0.000105
+                18 REP_subcategorylifestylebuzz_H11        0.112407       -0.001129
+                19 REP_subcategorylifestyleroyals_H       -0.043605        0.001595
+                20 REP_subcategorymarkets_H11              0.049248        0.000766
+                21 REP_subcategorymoviescelebrity_H       -1.093252       -0.000502
+                22 REP_subcategorymoviesgallery_H11        0.919793     0.000000817
+                23 REP_subcategorymusiccelebrity_H1       -0.817698       -0.000345
+                24 REP_subcategorymusicnews_H11           -0.260847       -0.000281
+                25 REP_subcategorynewscrime_H11            0.034386        0.000133
+                26 REP_subcategorynewsgoodnews_H11        -0.017360        0.000110
+                27 REP_subcategorynewspolitics_H11        -0.484351       -0.000357
+                28 REP_subcategorynewsus_H11              -0.159925       -0.000752
+                29 REP_subcategorynewsworld_H11            0.374759       -0.000396
+                30 REP_subcategoryrecipes_H11              0.293125        0.000222
+                31 REP_subcategoryrestaurantsandnew       -0.261543    -0.000008908
+                32 REP_subcategoryshopholidays_H11         0.648064        0.000206
+                33 REP_subcategorytipsandtricks_H11        0.633257    -0.000021392
+                34 REP_subcategorytravelnews_H11           0.011826        0.000646
+                35 REP_subcategorytvcelebrity_H11         -0.187858       -0.000855
+                36 REP_subcategorytvnews_H11              -0.657497        0.000748
+                37 REP_subcategoryviral_H11                0.700447        0.000105
+                38 REP_subcategoryvoices_H11               0.664039     0.000081012
+                39 REP_P31_head_EMPTY__H12                -1.484540        0.006346
+                40 REP_P31_tailQ35657_H12                  0.679823        0.005092
+                41 REP_P31_tailQ5_H12                      1.239213        0.004662
+                42 REP_P31_tail_EMPTY__H12                -1.193998        0.005922
+                43 REP_subcategory_OTHER__H12              0.005751       -0.000313
+                44 _DUP                                   -0.543147        0.000220
+                45 REP_subcategoryautosnews_H12            0.034248        0.000328
+                                                                   17:15 Friday, April 2, 2021 310
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.100103    -0.000010858
+                47 _DUP1                                  -1.026918        0.000122
+                48 REP_subcategorycelebrity_H12            1.097096    -0.000012262
+                49 _DUP2                                   1.270723     0.000094753
+                50 _DUP3                                   0.509461        0.000360
+                51 _DUP4                                  -0.305734       -0.000247
+                52 REP_subcategoryfoodnews_H12            -0.839393     0.000042702
+                53 REP_subcategoryfootball_ncaa_H12       -1.031623        0.000371
+                54 REP_subcategoryfootball_nfl_H12        -0.264896       -0.000685
+                55 REP_subcategoryhealthnews_H12          -0.322769       -0.000188
+                56 REP_subcategorylifestylebuzz_H12        1.324386       -0.000125
+                57 _DUP5                                  -0.195171       -0.000707
+                58 REP_subcategorymarkets_H12             -0.091596       -0.000507
+                59 _DUP6                                   1.711699    -0.000098099
+                60 REP_subcategorymoviesgallery_H12       -0.391612    -0.000063818
+                61 _DUP7                                   0.616528     0.000059016
+                62 REP_subcategorymusicnews_H12           -0.673477        0.000467
+                63 REP_subcategorynewscrime_H12            0.414071       -0.000467
+                64 REP_subcategorynewsgoodnews_H12        -1.086297    -0.000040054
+                65 REP_subcategorynewspolitics_H12        -0.568196        0.000121
+                66 REP_subcategorynewsus_H12              -0.140475       -0.001101
+                67 REP_subcategorynewsworld_H12            0.351802        0.000707
+                68 REP_subcategoryrecipes_H12             -0.075733       -0.000175
+                69 _DUP8                                  -0.631346        0.000337
+                70 REP_subcategoryshopholidays_H12         0.096202       -0.000275
+                71 REP_subcategorytipsandtricks_H12        0.801937     0.000066141
+                72 REP_subcategorytravelnews_H12          -0.275971       -0.000202
+                73 REP_subcategorytvcelebrity_H12          0.809570       -0.000162
+                74 REP_subcategorytvnews_H12              -1.045887    -0.000088181
+                75 REP_subcategoryviral_H12               -0.220260    -0.000028446
+                76 REP_subcategoryvoices_H12               0.211538    -0.000074601
+                77 BIAS_H11                               -0.223264        0.001271
+                78 BIAS_H12                               -0.343588       -0.008285
+                79 H11_REP_clicked0                        3.921809       -0.001160
+                80 H12_REP_clicked0                       -2.838759       -0.000989
+                81 BIAS_REP_clicked0                      -0.224427       -0.000652
+
+                            Value of Objective Function = 0.5788645212
+
+                                                                   17:15 Friday, April 2, 2021 311
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion               0.00138635
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                  0.5788645212
+Max Abs Gradient Element            0.0084247803  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         3            0        0.57707    0.00179   0.00595   0.0343      0.666
+     2          0         4            0        0.57581    0.00126   0.00286   0.0226      0.587
+     3          0         6            0        0.57539   0.000419   0.00355    0.111      0.407
+     4          0         7            0        0.57492   0.000471   0.00197   0.0700      0.549
+     5          0         8            0        0.57473   0.000189   0.00314   0.0633      0.346
+     6          0         9            0        0.57452   0.000207   0.00212   0.0621      0.306
+     7          0        10            0        0.57436   0.000166   0.00278   0.0664      0.260
+     8          0        11            0        0.57424   0.000121   0.00202   0.0595      0.196
+     9          0        12            0        0.57410   0.000141   0.00250   0.0600      0.227
+    10          0        13            0        0.57399   0.000106   0.00192   0.0518      0.185
+                                                                   17:15 Friday, April 2, 2021 312
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        14            0        0.57391   0.000080   0.00240   0.0538      0.141
+    12          0        15            0        0.57380   0.000112   0.00182   0.0454      0.192
+    13          0        16            0        0.57377   0.000029   0.00238   0.0491     0.0545
+    14          0        17            0        0.57357   0.000204   0.00105    0.125      0.488
+    15          0        18            0        0.57351   0.000057   0.00120   0.0515      0.462
+    16          0        19            0        0.57344   0.000064  0.000999   0.0452      0.481
+    17          0        20            0        0.57341   0.000034   0.00118   0.0482      0.290
+    18          0        21            0        0.57336   0.000055   0.00102   0.0425      0.376
+    19          0        22            0        0.57333   0.000020   0.00124   0.0489      0.157
+    20          0        23            0        0.57328   0.000052   0.00104   0.0419      0.317
+    21          0        24            0        0.57327   0.000016   0.00125   0.0495      0.119
+    22          0        25            0        0.57322   0.000049   0.00104   0.0399      0.298
+    23          0        26            0        0.57320   0.000015   0.00123   0.0481      0.109
+    24          0        27            0        0.57316   0.000046   0.00102   0.0375      0.289
+    25          0        28            0        0.57314   0.000014   0.00119   0.0462      0.108
+    26          0        29            0        0.57310   0.000042   0.00100   0.0352      0.284
+
+                                       Optimization Results
+
+Iterations                                    26  Function Calls                                31
+Jacobian Calls                                28  Active Constraints                             0
+Objective Function                  0.5731010703  Max Abs Gradient Element            0.0010000124
+Lambda                              0.0352456896  Actual Over Pred Change               0.28380292
+Radius                              0.0410478493                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+
+NOTE: At least one element of the gradient is greater than 1e-3.
+
+                                                                   17:15 Friday, April 2, 2021 313
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -1.347712        0.000549
+                 2 REP_P31_tailQ35657_H11                 -0.207047        0.000371
+                 3 REP_P31_tailQ5_H11                      0.547329        0.000564
+                 4 REP_P31_tail_EMPTY__H11                 0.417835        0.000491
+                 5 REP_subcategory_OTHER__H11              0.194344    -0.000029882
+                 6 REP_subcategoryautosenthusiasts_       -0.283988    -0.000005959
+                 7 REP_subcategoryautosnews_H11            0.145796     0.000001052
+                 8 REP_subcategorybaseball_mlb_H11         0.056903    -0.000001759
+                 9 REP_subcategorybasketball_nba_H1       -1.122225     0.000016776
+                10 REP_subcategorycelebrity_H11            0.655862    -0.000005086
+                11 REP_subcategoryentertainmentcele       -0.333282     0.000002951
+                12 REP_subcategoryfinancecompanies_        0.332612     0.000009210
+                13 REP_subcategoryfinancerealestate        0.603028    -0.000037910
+                14 REP_subcategoryfoodnews_H11            -1.504496     0.000016840
+                15 REP_subcategoryfootball_ncaa_H11       -0.774088     0.000009868
+                16 REP_subcategoryfootball_nfl_H11        -0.052651    -0.000011276
+                17 REP_subcategoryhealthnews_H11           0.266831    -0.000002630
+                18 REP_subcategorylifestylebuzz_H11        0.503069     0.000009914
+                19 REP_subcategorylifestyleroyals_H       -0.141216    -0.000007150
+                20 REP_subcategorymarkets_H11             -0.117890    -0.000003718
+                21 REP_subcategorymoviescelebrity_H       -0.693029     0.000002584
+                22 REP_subcategorymoviesgallery_H11        0.804301     0.000000699
+                23 REP_subcategorymusiccelebrity_H1       -0.448005     0.000003390
+                24 REP_subcategorymusicnews_H11            0.084682     0.000001311
+                25 REP_subcategorynewscrime_H11            0.177840    -0.000007509
+                26 REP_subcategorynewsgoodnews_H11        -0.144426    -0.000001292
+                27 REP_subcategorynewspolitics_H11        -0.169253    -0.000007975
+                28 REP_subcategorynewsus_H11               0.073493    -0.000007731
+                29 REP_subcategorynewsworld_H11            0.296719     0.000014635
+                30 REP_subcategoryrecipes_H11              0.272182    -0.000005292
+                31 REP_subcategoryrestaurantsandnew       -0.719941     0.000021671
+                32 REP_subcategoryshopholidays_H11         0.580673    -0.000001631
+                33 REP_subcategorytipsandtricks_H11        0.550228     0.000003643
+                34 REP_subcategorytravelnews_H11          -0.059489    -0.000010410
+                35 REP_subcategorytvcelebrity_H11          0.215822    -0.000009336
+                36 REP_subcategorytvnews_H11              -0.957770       -0.000268
+                37 REP_subcategoryviral_H11                0.610357    -0.000002172
+                38 REP_subcategoryvoices_H11               0.587372     0.000001353
+                39 REP_P31_head_EMPTY__H12                -2.432063       -0.000519
+                40 REP_P31_tailQ35657_H12                  0.845451       -0.000173
+                41 REP_P31_tailQ5_H12                      2.025671       -0.001000
+                42 REP_P31_tail_EMPTY__H12                -1.124833       -0.000103
+                43 REP_subcategory_OTHER__H12             -0.063578     0.000015147
+                44 _DUP                                   -0.772749     0.000002515
+                45 REP_subcategoryautosnews_H12           -0.201305     0.000006221
+                                                                   17:15 Friday, April 2, 2021 314
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         0.287115     0.000002069
+                47 _DUP1                                  -2.641925     0.000006628
+                48 REP_subcategorycelebrity_H12            1.095742     0.000004142
+                49 _DUP2                                   3.327703    -0.000003523
+                50 _DUP3                                   0.245714    -0.000001410
+                51 _DUP4                                  -0.293167       -0.000437
+                52 REP_subcategoryfoodnews_H12            -2.584337     0.000020918
+                53 REP_subcategoryfootball_ncaa_H12       -2.199465     0.000004765
+                54 REP_subcategoryfootball_nfl_H12        -0.066113     0.000011519
+                55 REP_subcategoryhealthnews_H12          -0.187072     0.000005258
+                56 REP_subcategorylifestylebuzz_H12        3.078975    -0.000014138
+                57 _DUP5                                  -0.395614     0.000001105
+                58 REP_subcategorymarkets_H12             -0.368646     0.000000791
+                59 _DUP6                                   3.587071    -2.372348E-9
+                60 REP_subcategorymoviesgallery_H12       -0.021759     0.000009176
+                61 _DUP7                                   0.823020     0.000005108
+                62 REP_subcategorymusicnews_H12           -0.278543     0.000006325
+                63 REP_subcategorynewscrime_H12            0.360596    -0.000000580
+                64 REP_subcategorynewsgoodnews_H12        -1.144179     0.000001256
+                65 REP_subcategorynewspolitics_H12        -0.317777    -0.000014280
+                66 REP_subcategorynewsus_H12               0.013384    -0.000004088
+                67 REP_subcategorynewsworld_H12            0.108387    -0.000003369
+                68 REP_subcategoryrecipes_H12             -0.065090     0.000004120
+                69 _DUP8                                  -1.606641     0.000003538
+                70 REP_subcategoryshopholidays_H12         0.179066     0.000005697
+                71 REP_subcategorytipsandtricks_H12        0.644795    -1.667754E-8
+                72 REP_subcategorytravelnews_H12          -0.398415     0.000002320
+                73 REP_subcategorytvcelebrity_H12          1.276950    -0.000003899
+                74 REP_subcategorytvnews_H12              -2.039631        0.000140
+                75 REP_subcategoryviral_H12                0.001098     0.000003418
+                76 REP_subcategoryvoices_H12               0.284260     0.000001085
+                77 BIAS_H11                               -0.294372       -0.000491
+                78 BIAS_H12                               -0.264231    -0.000091196
+                79 H11_REP_clicked0                        5.633363       -0.000152
+                80 H12_REP_clicked0                       -4.347020        0.000171
+                81 BIAS_REP_clicked0                      -0.139138       -0.000117
+
+                            Value of Objective Function = 0.5731010703
+
+                                                                   17:15 Friday, April 2, 2021 315
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   6421 ‚   2847 ‚   9268
+                                        ‚  34.72 ‚  15.39 ‚  50.11
+                                        ‚  69.28 ‚  30.72 ‚
+                                        ‚  70.38 ‚  30.37 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   2702 ‚   6526 ‚   9228
+                                        ‚  14.61 ‚  35.28 ‚  49.89
+                                        ‚  29.28 ‚  70.72 ‚
+                                        ‚  29.62 ‚  69.63 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9123     9373    18496
+                                           49.32    50.68   100.00
+                                                                   17:15 Friday, April 2, 2021 316
+
+                                       The NEURAL Procedure
+
+           Preliminary       Starting         Objective         Number
+            Training          Random           Function           of        Terminating
+               Run             Seed             Value         Iterations     Criteria
+
+                   1               15459    0.587340273072           10                
+                   2          1649706481    0.579355608075           10                
+                   3           563433777    0.582030005164           10                
+                   4           252877680    0.592093635729           10                
+                   5           346809007    0.581155905689           10                
+                   6          1793582916    0.583078354837           10                
+                   7          1744730513    0.586925996022           10                
+                   8           100245671    0.586077253732           10                
+                   9          2086076640    0.575005267334           10                
+                  10          1070106574    0.589367912428           10                
+                  11           515607104    0.587150389247           10                
+                  12           714527711    0.580155094411           10                
+                  13           134182948     0.58805825676           10                
+                  14          1474297040    0.579719064464           10                
+                  15           550501885    0.578999038241           10                
+                                                                   17:15 Friday, April 2, 2021 317
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.307516       -0.004801
+                 2 REP_P31_tailQ35657_H11                 -0.446900       -0.000595
+                 3 REP_P31_tailQ5_H11                      0.712152        0.005951
+                 4 REP_P31_tail_EMPTY__H11                 0.665853       -0.005258
+                 5 REP_subcategory_OTHER__H11              0.034279       -0.001294
+                 6 REP_subcategoryautosenthusiasts_        0.101720       -0.000391
+                 7 REP_subcategoryautosnews_H11            0.093782       -0.000370
+                 8 REP_subcategorybaseball_mlb_H11         0.111196       -0.000271
+                 9 REP_subcategorybasketball_nba_H1       -0.126685       -0.000245
+                10 REP_subcategorycelebrity_H11           -0.394528        0.002018
+                11 REP_subcategoryentertainmentcele       -0.097478       -0.000276
+                12 REP_subcategoryfinancecompanies_       -0.092398       -0.000180
+                13 REP_subcategoryfinancerealestate        0.433707    -0.000015172
+                14 REP_subcategoryfoodnews_H11            -0.452680       -0.000494
+                15 REP_subcategoryfootball_ncaa_H11        0.077209       -0.000342
+                16 REP_subcategoryfootball_nfl_H11         0.174227        0.000407
+                17 REP_subcategoryhealthnews_H11           0.165450       -0.000336
+                18 REP_subcategorylifestylebuzz_H11       -0.390915        0.000600
+                19 REP_subcategorylifestyleroyals_H        0.023144       -0.000267
+                20 REP_subcategorymarkets_H11             -0.069989       -0.000494
+                21 REP_subcategorymoviescelebrity_H       -0.181383       -0.000346
+                22 REP_subcategorymoviesgallery_H11        0.269484       -0.000439
+                23 REP_subcategorymusiccelebrity_H1       -0.355363        0.000350
+                24 REP_subcategorymusicnews_H11            0.193140    -0.000020125
+                25 REP_subcategorynewscrime_H11           -0.456069       -0.001775
+                26 REP_subcategorynewsgoodnews_H11         0.362649       -0.000266
+                27 REP_subcategorynewspolitics_H11        -0.120933     0.000003957
+                28 REP_subcategorynewsus_H11              -0.168827       -0.000512
+                29 REP_subcategorynewsworld_H11           -0.009439       -0.000312
+                30 REP_subcategoryrecipes_H11              0.095096       -0.000361
+                31 REP_subcategoryrestaurantsandnew        0.122549       -0.000201
+                32 REP_subcategoryshopholidays_H11         0.139840       -0.000305
+                33 REP_subcategorytipsandtricks_H11       -0.126366       -0.000594
+                34 REP_subcategorytravelnews_H11           0.029353       -0.000442
+                35 REP_subcategorytvcelebrity_H11         -0.627283        0.002321
+                36 REP_subcategorytvnews_H11               0.021225       -0.000274
+                37 REP_subcategoryviral_H11                0.315109       -0.000347
+                38 REP_subcategoryvoices_H11               0.129454       -0.000403
+                39 REP_P31_head_EMPTY__H12                -0.230340        0.004017
+                40 REP_P31_tailQ35657_H12                 -0.206782       -0.001335
+                41 REP_P31_tailQ5_H12                      1.806725       -0.003368
+                42 REP_P31_tail_EMPTY__H12                 1.148020        0.001930
+                43 REP_subcategory_OTHER__H12             -0.401649        0.000721
+                44 _DUP                                    0.043736        0.000181
+                45 REP_subcategoryautosnews_H12           -0.149764     0.000095961
+                                                                   17:15 Friday, April 2, 2021 318
+
+                                       The NEURAL Procedure
+
+                                        Optimization Start
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         1.740923        0.000217
+                47 _DUP1                                  -0.638534        0.000202
+                48 REP_subcategorycelebrity_H12           -1.347153       -0.001185
+                49 _DUP2                                   2.201760        0.000196
+                50 _DUP3                                  -0.755965    -0.000022582
+                51 _DUP4                                   0.223152       -0.000351
+                52 REP_subcategoryfoodnews_H12            -0.994249        0.000395
+                53 REP_subcategoryfootball_ncaa_H12        0.434312        0.000240
+                54 REP_subcategoryfootball_nfl_H12         1.707562     0.000086851
+                55 REP_subcategoryhealthnews_H12          -0.187221        0.000147
+                56 REP_subcategorylifestylebuzz_H12       -1.048961       -0.002286
+                57 _DUP5                                   0.759148     0.000085345
+                58 REP_subcategorymarkets_H12             -0.492776        0.000360
+                59 _DUP6                                   2.743843        0.000119
+                60 REP_subcategorymoviesgallery_H12       -0.643347        0.000270
+                61 _DUP7                                  -0.916635     0.000010741
+                62 REP_subcategorymusicnews_H12            0.992185     0.000052419
+                63 REP_subcategorynewscrime_H12           -1.198245        0.001004
+                64 REP_subcategorynewsgoodnews_H12         0.553090        0.000198
+                65 REP_subcategorynewspolitics_H12        -0.446528        0.000238
+                66 REP_subcategorynewsus_H12              -0.616864        0.000420
+                67 REP_subcategorynewsworld_H12           -0.531847        0.000242
+                68 REP_subcategoryrecipes_H12             -0.369050        0.000251
+                69 _DUP8                                   0.567018        0.000151
+                70 REP_subcategoryshopholidays_H12        -0.482929        0.000214
+                71 REP_subcategorytipsandtricks_H12       -0.888182        0.000409
+                72 REP_subcategorytravelnews_H12          -0.323590        0.000203
+                73 REP_subcategorytvcelebrity_H12         -1.586889       -0.001191
+                74 REP_subcategorytvnews_H12               0.491913        0.000182
+                75 REP_subcategoryviral_H12               -0.259023        0.000203
+                76 REP_subcategoryvoices_H12              -0.573342        0.000315
+                77 BIAS_H11                               -0.046357        0.003604
+                78 BIAS_H12                                0.106861       -0.003476
+                79 H11_REP_clicked0                        7.525796     0.000088324
+                80 H12_REP_clicked0                       -5.153701        0.000300
+                81 BIAS_REP_clicked0                       0.079754     0.000096533
+
+                            Value of Objective Function = 0.5750052673
+
+                                                                   17:15 Friday, April 2, 2021 319
+
+                                       The NEURAL Procedure
+
+                                 Levenberg-Marquardt Optimization
+
+
+                       Minimum Iterations                                0
+                       Maximum Iterations                              100
+                       Maximum Function Calls                   2147483647
+                       Maximum CPU Time                             604800
+                       ABSGCONV Gradient Criterion                 0.00001
+                       GCONV Gradient Criterion                       1E-8
+                       GCONV2 Gradient Criterion                         0
+                       ABSFCONV Function Criterion                       0
+                       FCONV Function Criterion                     0.0001
+                       FCONV2 Function Criterion                         0
+                       FSIZE Parameter                                   0
+                       ABSXCONV Parameter Change Criterion               0
+                       XCONV Parameter Change Criterion                  0
+                       XSIZE Parameter                                   0
+                       ABSCONV Function Criterion             0.0013864454
+                       Trust Region Initial Radius Factor                1
+                       Singularity Tolerance (SINGULAR)               1E-8
+
+                                 Levenberg-Marquardt Optimization
+
+                                  Scaling Update of More (1978)
+
+                               Parameter Estimates              81
+
+                                        Optimization Start
+
+Active Constraints                             0  Objective Function                  0.5750052673
+Max Abs Gradient Element             0.005951143  Radius                                         1
+
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+     1          0         4            0        0.57477   0.000236   0.00663   0.0216      0.333
+     2          0         5            0        0.57470   0.000071   0.00349   0.0117      0.149
+     3          0         6            0        0.57465   0.000044   0.00513   0.0139     0.0912
+     4          0         7            0        0.57446   0.000199   0.00275   0.0607      0.531
+     5          0         8            0        0.57432   0.000139   0.00133   0.0206      1.124
+     6          0         9            0        0.57346   0.000860   0.00248   0.0211      2.170
+     7          0        10            0        0.57248   0.000976   0.00283   0.0106      0.628
+     8          0        13            0        0.57222   0.000262   0.00162   0.0568      0.875
+     9          0        14            0        0.57212   0.000099   0.00147  0.00417      0.730
+    10          0        15            0        0.57206   0.000055  0.000795  0.00228      0.681
+                                                                   17:15 Friday, April 2, 2021 320
+
+                                       The NEURAL Procedure
+
+                                                                                           Ratio
+                                                                                         Between
+                                                                                          Actual
+                                                         Objective   Max Abs                 and
+                   Function       Active      Objective   Function  Gradient           Predicted
+  Iter   Restarts     Calls  Constraints       Function     Change   Element   Lambda     Change
+
+    11          0        16            0        0.57206   5.521E-6   0.00223  0.00202     0.0796
+    12          0        18            0        0.57203   0.000033   0.00153   0.0467      0.485
+    13          0        19            0        0.57202   6.144E-6  0.000812  0.00747      0.382
+    14          0        20            0        0.57202   1.604E-6  0.000768  0.00715      0.106
+    15          0        21            0        0.57202   3.281E-7  0.000961  0.00890     0.0167
+    16          0        22            0        0.57201   8.109E-6  0.000728   0.0469      0.472
+    17          0        23            0        0.57201   2.362E-6  0.000411   0.0110      0.511
+    18          0        24            0        0.57200   1.783E-6  0.000328   0.0111      0.429
+    19          0        25            0        0.57200   1.599E-6  0.000360   0.0117      0.376
+
+                                       Optimization Results
+
+Iterations                                    19  Function Calls                                27
+Jacobian Calls                                21  Active Constraints                             0
+Objective Function                   0.572003269  Max Abs Gradient Element            0.0003596521
+Lambda                              0.0117036012  Actual Over Pred Change             0.3764094174
+Radius                              0.0147896368                                                  
+
+Convergence criterion (FCONV=0.0001) satisfied.                                                   
+                                                                   17:15 Friday, April 2, 2021 321
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                 1 REP_P31_head_EMPTY__H11                -0.281901        0.000106
+                 2 REP_P31_tailQ35657_H11                 -0.421286       -0.000360
+                 3 REP_P31_tailQ5_H11                      0.736075    -0.000041741
+                 4 REP_P31_tail_EMPTY__H11                 0.647364    -0.000091486
+                 5 REP_subcategory_OTHER__H11              0.022599     0.000021194
+                 6 REP_subcategoryautosenthusiasts_        0.077200    -0.000002020
+                 7 REP_subcategoryautosnews_H11            0.079403     0.000000364
+                 8 REP_subcategorybaseball_mlb_H11         0.110119     0.000004201
+                 9 REP_subcategorybasketball_nba_H1       -0.115094    -0.000000852
+                10 REP_subcategorycelebrity_H11           -0.437458    -0.000002385
+                11 REP_subcategoryentertainmentcele       -0.074949     0.000002116
+                12 REP_subcategoryfinancecompanies_       -0.095054    -0.000010240
+                13 REP_subcategoryfinancerealestate        0.786395     0.000001886
+                14 REP_subcategoryfoodnews_H11            -0.436487     0.000014894
+                15 REP_subcategoryfootball_ncaa_H11        0.056111     0.000003099
+                16 REP_subcategoryfootball_nfl_H11         0.170648     0.000007127
+                17 REP_subcategoryhealthnews_H11           0.145962    6.0072956E-8
+                18 REP_subcategorylifestylebuzz_H11       -0.300499       -0.000258
+                19 REP_subcategorylifestyleroyals_H        0.058400    -0.000000904
+                20 REP_subcategorymarkets_H11             -0.081470     0.000007141
+                21 REP_subcategorymoviescelebrity_H       -0.150266     0.000000480
+                22 REP_subcategorymoviesgallery_H11        0.245511     0.000000435
+                23 REP_subcategorymusiccelebrity_H1       -0.324849    -0.000000793
+                24 REP_subcategorymusicnews_H11            0.254272    -0.000000962
+                25 REP_subcategorynewscrime_H11           -0.448475     0.000030546
+                26 REP_subcategorynewsgoodnews_H11         0.314791    -0.000003904
+                27 REP_subcategorynewspolitics_H11        -0.116475     0.000000863
+                28 REP_subcategorynewsus_H11              -0.165655    -0.000011781
+                29 REP_subcategorynewsworld_H11           -0.018309    -0.000000356
+                30 REP_subcategoryrecipes_H11              0.076848     0.000002816
+                31 REP_subcategoryrestaurantsandnew        0.077239     0.000001466
+                32 REP_subcategoryshopholidays_H11         0.121455     0.000001311
+                33 REP_subcategorytipsandtricks_H11       -0.130848     0.000002646
+                34 REP_subcategorytravelnews_H11           0.014318    -0.000002285
+                35 REP_subcategorytvcelebrity_H11         -0.881397     0.000015793
+                36 REP_subcategorytvnews_H11              -0.008034     0.000004745
+                37 REP_subcategoryviral_H11                0.274669     0.000007915
+                38 REP_subcategoryvoices_H11               0.110334     0.000007950
+                39 REP_P31_head_EMPTY__H12                -0.199670       -0.000162
+                40 REP_P31_tailQ35657_H12                  0.009237        0.000231
+                41 REP_P31_tailQ5_H12                      2.062306     0.000021282
+                42 REP_P31_tail_EMPTY__H12                 1.271227     0.000030437
+                43 REP_subcategory_OTHER__H12             -0.658990    -0.000000140
+                44 _DUP                                   -0.324244     0.000001994
+                45 REP_subcategoryautosnews_H12           -0.441167     0.000001593
+                                                                   17:15 Friday, April 2, 2021 322
+
+                                       The NEURAL Procedure
+
+                                       Optimization Results
+                                        Parameter Estimates
+                                                                           Gradient
+                                                                          Objective
+                 N Parameter                               Estimate        Function
+
+                46 REP_subcategorybaseball_mlb_H12         2.202684    -0.000010255
+                47 _DUP1                                  -0.828253     0.000004029
+                48 REP_subcategorycelebrity_H12           -1.588719     0.000006024
+                49 _DUP2                                   2.610204    -0.000005673
+                50 _DUP3                                  -0.959527     0.000016873
+                51 _DUP4                                   3.184383    -0.000006253
+                52 REP_subcategoryfoodnews_H12            -1.220680    -0.000012952
+                53 REP_subcategoryfootball_ncaa_H12        0.138116    -0.000002763
+                54 REP_subcategoryfootball_nfl_H12         2.181564    -0.000017585
+                55 REP_subcategoryhealthnews_H12          -0.467389     0.000001519
+                56 REP_subcategorylifestylebuzz_H12       -1.117253        0.000344
+                57 _DUP5                                   1.516149    -0.000005077
+                58 REP_subcategorymarkets_H12             -0.763556    -0.000006336
+                59 _DUP6                                   3.516325    -0.000005663
+                60 REP_subcategorymoviesgallery_H12       -0.854198    -0.000000302
+                61 _DUP7                                  -1.101095     0.000001234
+                62 REP_subcategorymusicnews_H12            1.914269    -0.000004275
+                63 REP_subcategorynewscrime_H12           -1.401089    -0.000022475
+                64 REP_subcategorynewsgoodnews_H12         0.100904     0.000002671
+                65 REP_subcategorynewspolitics_H12        -0.700567     0.000008281
+                66 REP_subcategorynewsus_H12              -0.853621     0.000031199
+                67 REP_subcategorynewsworld_H12           -0.777898    -0.000001448
+                68 REP_subcategoryrecipes_H12             -0.633825    -0.000000457
+                69 _DUP8                                   0.056159     0.000002247
+                70 REP_subcategoryshopholidays_H12        -0.723224    -9.200513E-9
+                71 REP_subcategorytipsandtricks_H12       -1.097958     0.000001217
+                72 REP_subcategorytravelnews_H12          -0.599909     0.000001315
+                73 REP_subcategorytvcelebrity_H12         -2.281657    -0.000003223
+                74 REP_subcategorytvnews_H12               0.399763    -0.000001377
+                75 REP_subcategoryviral_H12               -0.533658    -0.000002378
+                76 REP_subcategoryvoices_H12              -0.804160    -0.000004360
+                77 BIAS_H11                               -0.036177       -0.000263
+                78 BIAS_H12                                0.190487        0.000322
+                79 H11_REP_clicked0                        8.470882    -0.000009956
+                80 H12_REP_clicked0                       -5.967605     0.000024942
+                81 BIAS_REP_clicked0                       0.103257    -0.000007458
+
+                            Value of Objective Function = 0.572003269
+
+                                                                   17:15 Friday, April 2, 2021 323
+
+                                        The FREQ Procedure
+
+                                  Table of pre11 by REP_clicked
+
+                               pre11
+                                         REP_clicked(Replacement: clicked)
+
+                               Frequency‚
+                               Percent  ‚
+                               Row Pct  ‚
+                               Col Pct  ‚       0‚       1‚  Total
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      0 ‚   6362 ‚   2682 ‚   9044
+                                        ‚  34.40 ‚  14.50 ‚  48.90
+                                        ‚  70.34 ‚  29.66 ‚
+                                        ‚  68.73 ‚  29.03 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                      1 ‚   2895 ‚   6557 ‚   9452
+                                        ‚  15.65 ‚  35.45 ‚  51.10
+                                        ‚  30.63 ‚  69.37 ‚
+                                        ‚  31.27 ‚  70.97 ‚
+                               ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                               Total        9257     9239    18496
+                                           50.05    49.95   100.00
