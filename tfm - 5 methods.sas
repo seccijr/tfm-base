@@ -34,8 +34,72 @@ data Results.llv5;
 run;
 
 /*
+Red Neuronal
+groups = 4
+seeds = 10
+n = 2
+algo = levmar
+early = None
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
+*/
+%cruzadabinarianeural(
+	archivo=news_reduced_clean_five_methods,
+	vardepen=REP_clicked,
+	categor=REP_P31_head REP_P31_tail REP_subcategory,
+	ngrupos=4,
+	sinicio=12345,
+	sfinal=12354,
+	nodos=2,
+	algo=levmar,
+	objetivo=tasafallos,
+	early=,
+	acti=tanh,
+	directorio=C:\Users\secci\Workspace\TFM\Base\levtanhearly680n2v5
+);
+
+data Results.levtanhearly680n2v5;
+	set final;
+run;
+
+data Results.sal_levtanhearly680n2v5;
+	set sal_final;
+run;
+
+/*
+Red Neuronal
+groups = 4
+seeds = 10
+n = 3
+algo = levmar
+early = None
+Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
+*/
+%cruzadabinarianeural(
+	archivo=news_reduced_clean_five_methods,
+	vardepen=REP_clicked,
+	categor=REP_P31_head REP_P31_tail REP_subcategory,
+	ngrupos=4,
+	sinicio=12345,
+	sfinal=12354,
+	nodos=3,
+	algo=levmar,
+	objetivo=tasafallos,
+	early=,
+	acti=tanh,
+	directorio=C:\Users\secci\Workspace\TFM\Base\levtanhearly0n3v5
+);
+
+data Results.levtanhearly0n3v5;
+	set final;
+run;
+
+data Results.sal_levtanhearly0n3v5;
+	set sal_final;
+run;
+
+/*
 Early Stopping
-Stop = 680
+Stop = 
 N = 2
 Algo = Levmar
 Acti = Tanh
@@ -50,38 +114,6 @@ Acti = Tanh
 	meto=levmar,
 	acti=tanh
 );
-
-/*
-Red Neuronal
-groups = 4
-seeds = 10
-n = 2
-algo = levmar
-early = 680
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
-*/
-%cruzadabinarianeural(
-	archivo=news_reduced_clean_five_methods,
-	vardepen=REP_clicked,
-	categor=REP_P31_head REP_P31_tail REP_subcategory,
-	ngrupos=4,
-	sinicio=12345,
-	sfinal=12354,
-	nodos=2,
-	algo=levmar,
-	objetivo=tasafallos,
-	early=680,
-	acti=tanh,
-	directorio=C:\Users\secci\Workspace\TFM\Base\levtanhearly680n2v5
-);
-
-data Results.levtanhearly680n2v5;
-	set final;
-run;
-
-data Results.sal_levtanhearly680n2v5;
-	set sal_final;
-run;
 
 /*
 Red Neuronal
@@ -112,88 +144,6 @@ data Results.levtanhearly0n2v5;
 run;
 
 data Results.sal_levtanhearly0n2v5;
-	set sal_final;
-run;
-
-/*
-Early Stopping
-Stop = 
-N = 3
-Algo = Levmar
-Acti = Tanh
-*/
-%redneuronalbinaria(
-	archivo=news_reduced_clean_five_methods,
-	vardep=REP_clicked,
-	listclass=REP_P31_head REP_P31_tail REP_subcategory,
-	porcen=0.8,
-	semilla=12345,
-	ocultos=3,
-	meto=levmar,
-	acti=tanh
-);
-
-/*
-Red Neuronal
-groups = 4
-seeds = 10
-n = 3
-algo = levmar
-early = 
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
-*/
-%cruzadabinarianeural(
-	archivo=news_reduced_clean_five_methods,
-	vardepen=REP_clicked,
-	categor=REP_P31_head REP_P31_tail REP_subcategory,
-	ngrupos=4,
-	sinicio=12345,
-	sfinal=12354,
-	nodos=3,
-	algo=levmar,
-	objetivo=tasafallos,
-	early=,
-	acti=tanh,
-	directorio=C:\Users\secci\Workspace\TFM\Base\levtanhearly0n3v5
-);
-
-data Results.levtanhearly0n3v5;
-	set final;
-run;
-
-data Results.sal_levtanhearly0n3v5;
-	set sal_final;
-run;
-
-/*
-Red Neuronal
-groups = 4
-seeds = 10
-n = 3
-algo = levmar
-early = 
-Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
-*/
-%cruzadabinarianeural(
-	archivo=news_reduced_clean_five_methods,
-	vardepen=REP_clicked,
-	categor=REP_P31_head REP_P31_tail REP_subcategory,
-	ngrupos=4,
-	sinicio=12345,
-	sfinal=12354,
-	nodos=3,
-	algo=levmar,
-	objetivo=tasafallos,
-	early=,
-	acti=tanh,
-	directorio=C:\Users\secci\Workspace\TFM\Base\levtanhearly0n3v5
-);
-
-data Results.levtanhearly0n3v5;
-	set final;
-run;
-
-data Results.sal_levtanhearly0n3v5;
 	set sal_final;
 run;
 
