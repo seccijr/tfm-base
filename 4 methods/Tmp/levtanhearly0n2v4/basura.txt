@@ -18216,3 +18216,610 @@ NOTE: At least one element of the gradient is greater than 1e-3.
                                  ƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
                                  Total         9165     9331    18496
                                               49.55    50.45   100.00
+                                                                       18:56 Friday, April 2, 2021 135
+
+                                         Procedimiento NEURAL
+
+             Preliminary       Starting         Objective         Number
+              Training          Random           Function           of        Terminating
+                 Run             Seed             Value         Iterations     Criteria
+
+                     1               15459    0.554403977951           10                
+                     2          1182084786    0.557597942444           10                
+                     3          2069749977    0.547581504753           10                
+                     4           671378147    0.564334358717           10                
+                     5            65324733    0.549798437954           10                
+                     6          1441194548    0.565829158354           10                
+                     7           673181296    0.563102900801           10                
+                     8           933179945     0.55181721035           10                
+                     9          1336231140    0.558792009662           10                
+                    10          1997893410    0.565401065178           10                
+                    11           961705923    0.561187776165           10                
+                    12          1686801563     0.57660710089           10                
+                    13          1231941651    0.564021398619           10                
+                    14          1358971515    0.548422824175           10                
+                    15           486495775    0.557854193407           10                
+                                                                       18:56 Friday, April 2, 2021 136
+
+                                         Procedimiento NEURAL
+
+                                        Inicio de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                   1 REP_P1343_tailQ17290934_H11             0.221831       -0.001676
+                   2 REP_P1343_tailQ19180675_H11            -0.257442       -0.001013
+                   3 REP_P1343_tailQ2657718_H11              0.098762       -0.002902
+                   4 REP_P1343_tailQ302556_H11              -0.401557       -0.002382
+                   5 REP_P1343_tailQ4091875_H11             -0.410054       -0.001986
+                   6 REP_P1343_tailQ602358_H11               0.265484       -0.002535
+                   7 REP_P1343_tailQ67311526_H11             0.719828       -0.001646
+                   8 REP_P1343_tail_EMPTY__H11              -0.117311        0.004920
+                   9 REP_P17_tailQ145_H11                    0.085268    -0.000053370
+                  10 REP_P17_tailQ30_H11                    -0.816213        0.005810
+                  11 REP_P17_tail_EMPTY__H11                -0.177013        0.001493
+                  12 REP_P27_tailQ145_H11                    0.365534        0.001878
+                  13 REP_P27_tailQ30_H11                     0.004676        0.009733
+                  14 REP_P27_tail_EMPTY__H11                -0.263664     0.000010109
+                  15 REP_P31_head_EMPTY__H11                 0.221435       -0.007970
+                  16 REP_P31_tailQ35657_H11                 -0.622964       -0.001567
+                  17 REP_P31_tailQ5_H11                      0.245776        0.006369
+                  18 REP_P31_tail_EMPTY__H11                 0.236976       -0.002621
+                  19 REP_P361_tailQ242345_H11                0.792401       -0.002287
+                  20 REP_P361_tailQ278064_H11               -0.249100       -0.001478
+                  21 REP_P361_tailQ49_H11                    0.589618       -0.001117
+                  22 REP_P361_tailQ507306_H11               -0.009586       -0.001831
+                  23 REP_P361_tailQ578170_H11                0.131739       -0.001923
+                  24 REP_P361_tailQ645968_H11               -0.615751        0.000276
+                  25 REP_P361_tailQ7204_H11                 -0.598916       -0.000989
+                  26 REP_P361_tail_EMPTY__H11               -0.039875        0.002852
+                  27 REP_category_OTHER__H11                -0.005309     0.000046393
+                  28 REP_categoryautos_H11                  -0.014097        0.000532
+                  29 REP_categoryentertainment_H11          -0.771237        0.002269
+                  30 REP_categoryfinance_H11                -0.345103        0.001872
+                  31 REP_categoryfoodanddrink_H11            0.020733        0.002501
+                  32 REP_categoryhealth_H11                 -0.343310        0.001952
+                  33 REP_categorylifestyle_H11               0.354940       -0.006589
+                  34 REP_categorymovies_H11                  0.015494        0.000325
+                  35 REP_categorymusic_H11                   0.086324        0.005161
+                  36 REP_categorynews_H11                    0.097589       -0.002042
+                  37 REP_categorysports_H11                  0.205913        0.004828
+                  38 REP_categorytravel_H11                  0.141569        0.000777
+                  39 REP_categorytv_H11                     -0.308043       -0.002467
+                  40 REP_categoryvideo_H11                  -0.216201        0.000699
+                  41 REP_subcategory_OTHER__H11              0.084944       -0.003790
+                  42 REP_subcategoryautosenthusiasts_       -0.186857        0.000820
+                  43 REP_subcategoryautosnews_H11            0.227732       -0.000129
+                  44 REP_subcategorybaseball_mlb_H11        -0.378571        0.000305
+                  45 REP_subcategorybasketball_nba_H1       -0.282512        0.000684
+                  46 REP_subcategorycelebrity_H11            0.108089       -0.000773
+                                                                       18:56 Friday, April 2, 2021 137
+
+                                         Procedimiento NEURAL
+
+                                        Inicio de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                  47 REP_subcategoryentertainmentcele       -0.410542        0.002396
+                  48 REP_subcategoryfinancecompanies_        0.487283       -0.000296
+                  49 REP_subcategoryfinancerealestate       -0.584583        0.000696
+                  50 REP_subcategoryfoodnews_H11            -0.148058       -0.000311
+                  51 REP_subcategoryfootball_ncaa_H11        0.393546       -0.000188
+                  52 REP_subcategoryfootball_nfl_H11        -0.443515        0.004027
+                  53 REP_subcategoryhealthnews_H11           0.607103        0.000251
+                  54 REP_subcategorylifestylebuzz_H11        0.063668       -0.001191
+                  55 REP_subcategorylifestyleroyals_H       -0.272892        0.001924
+                  56 REP_subcategorymarkets_H11              0.461231       -0.000131
+                  57 REP_subcategorymoviescelebrity_H        0.375715       -0.000475
+                  58 REP_subcategorymoviesgallery_H11       -0.122494        0.000108
+                  59 REP_subcategorymusiccelebrity_H1       -0.455045        0.000440
+                  60 REP_subcategorymusicnews_H11           -0.032113        0.005076
+                  61 REP_subcategorynewscrime_H11           -0.140062       -0.000233
+                  62 REP_subcategorynewsgoodnews_H11         0.221527       -0.000352
+                  63 REP_subcategorynewspolitics_H11        -0.625368        0.000691
+                  64 REP_subcategorynewsus_H11               0.195146       -0.000488
+                  65 REP_subcategorynewsworld_H11           -0.060624       -0.000957
+                  66 REP_subcategoryrecipes_H11              0.054036        0.001105
+                  67 REP_subcategoryrestaurantsandnew        0.251305        0.002129
+                  68 REP_subcategoryshopholidays_H11         0.114170       -0.001397
+                  69 REP_subcategorytipsandtricks_H11       -0.235612     0.000078679
+                  70 REP_subcategorytravelnews_H11          -0.431745        0.001382
+                  71 REP_subcategorytvcelebrity_H11         -0.103863       -0.001740
+                  72 REP_subcategorytvnews_H11              -0.525429        0.000598
+                  73 REP_subcategoryviral_H11                0.183591       -0.000332
+                  74 REP_subcategoryvoices_H11              -0.393051        0.000953
+                  75 REP_P1343_tailQ17290934_H12             0.091021    -0.000055766
+                  76 REP_P1343_tailQ19180675_H12            -0.065424       -0.000887
+                  77 REP_P1343_tailQ2657718_H12             -0.006689        0.001573
+                  78 REP_P1343_tailQ302556_H12              -0.113184        0.000407
+                  79 REP_P1343_tailQ4091875_H12             -0.199414        0.000388
+                  80 REP_P1343_tailQ602358_H12               0.131685        0.000281
+                  81 REP_P1343_tailQ67311526_H12             0.312049       -0.000400
+                  82 REP_P1343_tail_EMPTY__H12              -0.054032       -0.013100
+                  83 REP_P17_tailQ145_H12                    0.048093       -0.002297
+                  84 REP_P17_tailQ30_H12                    -0.390360       -0.005913
+                  85 REP_P17_tail_EMPTY__H12                -0.086847       -0.008170
+                  86 REP_P27_tailQ145_H12                    0.166993       -0.002873
+                  87 REP_P27_tailQ30_H12                    -0.041968       -0.002897
+                  88 REP_P27_tail_EMPTY__H12                -0.111021       -0.007869
+                  89 REP_P31_head_EMPTY__H12                -0.018986       -0.007091
+                  90 REP_P31_tailQ35657_H12                 -0.212917       -0.003579
+                  91 REP_P31_tailQ5_H12                      0.065305       -0.011618
+                  92 REP_P31_tail_EMPTY__H12                 0.149030       -0.009307
+                                                                       18:56 Friday, April 2, 2021 138
+
+                                         Procedimiento NEURAL
+
+                                        Inicio de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                  93 REP_P361_tailQ242345_H12                0.308575       -0.008506
+                  94 REP_P361_tailQ278064_H12                0.144626       -0.002236
+                  95 REP_P361_tailQ49_H12                    0.150292       -0.004416
+                  96 REP_P361_tailQ507306_H12               -0.080306       -0.002165
+                  97 REP_P361_tailQ578170_H12                0.037046       -0.002394
+                  98 REP_P361_tailQ645968_H12               -0.343615       -0.003229
+                  99 REP_P361_tailQ7204_H12                 -0.198127       -0.002720
+                 100 REP_P361_tail_EMPTY__H12               -0.026915       -0.009445
+                 101 REP_category_OTHER__H12                -0.087125       -0.000271
+                 102 REP_categoryautos_H12                   0.040486       -0.000789
+                 103 REP_categoryentertainment_H12          -0.279795       -0.007916
+                 104 REP_categoryfinance_H12                -0.087946       -0.003679
+                 105 REP_categoryfoodanddrink_H12            0.094118       -0.002946
+                 106 REP_categoryhealth_H12                 -0.185106       -0.002756
+                 107 REP_categorylifestyle_H12               0.166059        0.006293
+                 108 REP_categorymovies_H12                  0.066668        0.001872
+                 109 REP_categorymusic_H12                   0.131040       -0.005361
+                 110 REP_categorynews_H12                    0.040659        0.004969
+                 111 REP_categorysports_H12                  0.098946       -0.002189
+                 112 REP_categorytravel_H12                  0.182144       -0.001338
+                 113 REP_categorytv_H12                     -0.123843        0.001147
+                 114 REP_categoryvideo_H12                  -0.074077       -0.000403
+                 115 REP_subcategory_OTHER__H12              0.045470        0.002558
+                 116 _DUP                                   -0.100691       -0.000708
+                 117 REP_subcategoryautosnews_H12            0.081028       -0.000298
+                 118 REP_subcategorybaseball_mlb_H12        -0.181135    -0.000073484
+                 119 _DUP1                                  -0.120421       -0.000107
+                 120 REP_subcategorycelebrity_H12            0.069329       -0.003798
+                 121 _DUP2                                  -0.330611       -0.003430
+                 122 _DUP3                                   0.155012       -0.001066
+                 123 _DUP4                                  -0.146168       -0.001713
+                 124 REP_subcategoryfoodnews_H12            -0.222740       -0.000312
+                 125 REP_subcategoryfootball_ncaa_H12        0.161197        0.000559
+                 126 REP_subcategoryfootball_nfl_H12        -0.219041       -0.003930
+                 127 REP_subcategoryhealthnews_H12           0.389942       -0.001052
+                 128 REP_subcategorylifestylebuzz_H12        0.025913        0.003741
+                 129 _DUP5                                  -0.109459       -0.001944
+                 130 REP_subcategorymarkets_H12              0.179858       -0.001199
+                 131 _DUP6                                  -0.065529        0.001640
+                 132 REP_subcategorymoviesgallery_H12        0.070314       -0.000604
+                 133 _DUP7                                  -0.386390        0.000845
+                 134 REP_subcategorymusicnews_H12           -0.030129       -0.005708
+                 135 REP_subcategorynewscrime_H12           -0.048699        0.000656
+                 136 REP_subcategorynewsgoodnews_H12         0.212891        0.000624
+                 137 REP_subcategorynewspolitics_H12        -0.205687        0.000816
+                 138 REP_subcategorynewsus_H12               0.055108        0.000943
+                                                                       18:56 Friday, April 2, 2021 139
+
+                                         Procedimiento NEURAL
+
+                                        Inicio de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                 139 REP_subcategorynewsworld_H12           -0.005104        0.000646
+                 140 REP_subcategoryrecipes_H12              0.006286       -0.000738
+                 141 _DUP8                                   0.060093       -0.002134
+                 142 REP_subcategoryshopholidays_H12         0.155055       -0.001070
+                 143 REP_subcategorytipsandtricks_H12       -0.113526       -0.000727
+                 144 REP_subcategorytravelnews_H12          -0.287935       -0.001113
+                 145 REP_subcategorytvcelebrity_H12         -0.114627        0.000746
+                 146 REP_subcategorytvnews_H12              -0.174754        0.000284
+                 147 REP_subcategoryviral_H12                0.204174       -0.000542
+                 148 REP_subcategoryvoices_H12              -0.047607       -0.001055
+                 149 BIAS_H11                               -0.134514        0.009025
+                 150 BIAS_H12                               -0.025709       -0.008837
+                 151 H11_REP_clicked0                       -6.933339        0.001337
+                 152 H12_REP_clicked0                       11.504085     0.000059114
+                 153 BIAS_REP_clicked0                      -0.279999        0.000226
+
+                             Valor de la función objetivo = 0.5475815048
+
+                                                                       18:56 Friday, April 2, 2021 140
+
+                                         Procedimiento NEURAL
+
+                                   Optimización Levenberg-Marquardt
+
+
+                    Iteraciones mímimas                                          0
+                    Iteraciones máximas                                        100
+                    Invocaciones máximas de la función                  2147483647
+                    Tiempo CPU máximo                                       604800
+                    Criterio gradiente ABSGCONV                            0.00001
+                    Criterio gradiente GCONV                                  1E-8
+                    Criterio gradiente GCONV2                                    0
+                    Criterio de la función ABSFCONV                              0
+                    Criterio de la función FCONV                            0.0001
+                    Criterio de la función FCONV2                                0
+                    Parámetro FSIZE                                              0
+                    Criterio de cambio de parámetro ABSXCONV                     0
+                    Criterio de cambio de parámetro XCONV                        0
+                    Parámetro XSIZE                                              0
+                    Criterio de función ABSCONV                       0.0013864168
+                    Factor de radio inicial de región de confianza               1
+                    Tolerancia de singularidad (SINGULAR)                     1E-8
+
+                                   Optimización Levenberg-Marquardt
+
+                          Ajuste a escala de la actualización de More (1978)
+
+                              Estimaciones de parámetro             153
+
+                                        Inicio de optimización
+
+Restricciones activas                            0  Función objetivo                      0.5475815048
+Elemento gradiente absoluto máx       0.0130996633  Radio                                            1
+
+
+                                                                                                 Ratio
+                                                                                               Between
+                                                                                                Actual
+                                                            Objective    Max Abs                   and
+                   Function        Active       Objective    Function   Gradient             Predicted
+Iter    Restarts      Calls   Constraints        Function      Change    Element    Lambda      Change
+
+   1*          0          2             0         0.54738    0.000202     0.1190   0.00301      0.0214
+   2*          0          3             0         0.54063     0.00675     0.1055    0.0117       0.488
+   3*          0          4             0         0.53956     0.00107     0.0569   0.00687       0.163
+   4*          0          5             0         0.53926    0.000300     0.0857   0.00805      0.0448
+   5*          0          6             0         0.53720     0.00206     0.0363    0.0319       0.341
+   6*          0          7             0         0.53663    0.000566     0.0226    0.0104       0.206
+   7*          0          8             0         0.53640    0.000229     0.0278    0.0144      0.0870
+   8*          0          9             0         0.53556    0.000840     0.0135    0.0482       0.424
+   9*          0         10             0         0.53531    0.000256    0.00960    0.0173       0.333
+  10*          0         11             0         0.53510    0.000206    0.00932    0.0164       0.327
+  11*          0         12             0         0.53494    0.000165    0.00798    0.0154       0.301
+                                                                       18:56 Friday, April 2, 2021 141
+
+                                         Procedimiento NEURAL
+
+                                                                                                 Ratio
+                                                                                               Between
+                                                                                                Actual
+                                                            Objective    Max Abs                   and
+                   Function        Active       Objective    Function   Gradient             Predicted
+Iter    Restarts      Calls   Constraints        Function      Change    Element    Lambda      Change
+
+  12*          0         13             0         0.53477    0.000168    0.00787    0.0138       0.333
+  13*          0         14             0         0.53463    0.000136    0.00734    0.0137       0.289
+  14*          0         15             0         0.53449    0.000144    0.00743    0.0117       0.315
+  15*          0         16             0         0.53437    0.000115    0.00715    0.0128       0.258
+  16*          0         17             0         0.53425    0.000126    0.00731    0.0112       0.289
+  17*          0         18             0         0.53414    0.000104    0.00706    0.0122       0.240
+  18*          0         19             0         0.53403    0.000118    0.00730    0.0108       0.277
+  19*          0         20             0         0.53392    0.000101    0.00697    0.0120       0.236
+  20*          0         21             0         0.53381    0.000117    0.00731    0.0103       0.275
+  21*          0         22             0         0.53371    0.000100    0.00698    0.0110       0.230
+  22*          0         23             0         0.53359    0.000115    0.00738    0.0109       0.268
+  23*          0         24             0         0.53349    0.000097    0.00678    0.0115       0.232
+  24*          0         25             0         0.53339    0.000108    0.00731    0.0102       0.263
+  25*          0         26             0         0.53330    0.000091    0.00667    0.0111       0.223
+  26*          0         27             0         0.53319    0.000102    0.00748   0.00898       0.248
+  27*          0         28             0         0.53311    0.000088    0.00673    0.0112       0.209
+  28*          0         29             0         0.53300    0.000101    0.00757   0.00914       0.242
+  29*          0         30             0         0.53291    0.000090    0.00672    0.0112       0.214
+  30*          0         31             0         0.53281    0.000106    0.00755   0.00918       0.255
+  31*          0         32             0         0.53271    0.000098    0.00664    0.0114       0.234
+  32*          0         33             0         0.53260    0.000114    0.00717    0.0105       0.286
+  33*          0         34             0         0.53249    0.000107    0.00630    0.0113       0.274
+  34*          0         35             0         0.53237    0.000121    0.00676    0.0105       0.322
+  35*          0         36             0         0.53225    0.000113    0.00596    0.0112       0.309
+  36*          0         37             0         0.53213    0.000124    0.00638    0.0103       0.352
+  37*          0         38             0         0.53202    0.000114    0.00563    0.0109       0.331
+  38*          0         39             0         0.53190    0.000122    0.00607   0.00996       0.369
+  39*          0         40             0         0.53178    0.000111    0.00535    0.0105       0.341
+  40*          0         41             0         0.53167    0.000117    0.00586   0.00954       0.373
+  41*          0         42             0         0.53156    0.000105    0.00513    0.0101       0.338
+  42*          0         43             0         0.53145    0.000111    0.00571   0.00913       0.368
+  43*          0         44             0         0.53135    0.000100    0.00497   0.00966       0.332
+  44*          0         45             0         0.53124    0.000108    0.00559   0.00881       0.364
+  45*          0         46             0         0.53115    0.000099    0.00482   0.00941       0.331
+  46*          0         47             0         0.53104    0.000109    0.00541   0.00863       0.370
+  47*          0         48             0         0.53093    0.000101    0.00466   0.00930       0.340
+  48*          0         49             0         0.53082    0.000113    0.00512   0.00850       0.383
+  49*          0         50             0         0.53072    0.000102    0.00444   0.00919       0.347
+  50*          0         51             0         0.53061    0.000109    0.00477   0.00821       0.381
+  51*          0         52             0         0.53052    0.000092    0.00417   0.00887       0.328
+  52*          0         53             0         0.53042    0.000096    0.00444   0.00770       0.352
+  53*          0         54             0         0.53035    0.000077    0.00389   0.00840       0.284
+  54*          0         55             0         0.53026    0.000081    0.00418   0.00716       0.304
+  55*          0         56             0         0.53020    0.000062    0.00364   0.00798       0.230
+                                                                       18:56 Friday, April 2, 2021 142
+
+                                         Procedimiento NEURAL
+
+                                                                                                 Ratio
+                                                                                               Between
+                                                                                                Actual
+                                                            Objective    Max Abs                   and
+                   Function        Active       Objective    Function   Gradient             Predicted
+Iter    Restarts      Calls   Constraints        Function      Change    Element    Lambda      Change
+
+  56*          0         57             0         0.53013    0.000068    0.00398   0.00676       0.252
+  57*          0         58             0         0.53008    0.000050    0.00343   0.00770       0.180
+  58*          0         59             0         0.53003    0.000058    0.00382   0.00649       0.206
+  59*          0         60             0         0.52999    0.000041    0.00354   0.00758       0.140
+  60*          0         61             0         0.52994    0.000051    0.00418   0.00635       0.172
+  61*          1         66             0         0.52990    0.000035    0.00388   0.00748       0.111
+  62*          1         67             0         0.52985    0.000048    0.00457   0.00624       0.150
+  63*          1         68             0         0.52982    0.000032    0.00421   0.00750      0.0962
+  64*          1         69             0         0.52972    0.000103    0.00282    0.0267       0.394
+  65*          1         70             0         0.52967    0.000043    0.00224    0.0108       0.377
+  66*          1         71             0         0.52963    0.000040    0.00221    0.0110       0.417
+  67*          1         72             0         0.52960    0.000038    0.00163    0.0106       0.463
+  68*          1         73             0         0.52956    0.000040    0.00188    0.0100       0.543
+  69*          1         74             0         0.52952    0.000039    0.00132    0.0102       0.583
+  70*          1         75             0         0.52941    0.000108    0.00238   0.00250       0.831
+  71*          1         76             0         0.52925    0.000158    0.00240   0.00108       0.674
+  72*          1         77             0         0.52914    0.000110    0.00609   0.00087       0.345
+  73*          1         79             0         0.52907    0.000066    0.00551   0.00619       0.157
+  74*          1         80             0         0.52903    0.000043    0.00705   0.00389       0.103
+  75*          1         81             0         0.52899    0.000037    0.00665   0.00616      0.0727
+  76*          1         82             0         0.52884    0.000156    0.00473    0.0222       0.376
+  77*          1         83             0         0.52878    0.000056    0.00362   0.00835       0.298
+  78*          1         84             0         0.52873    0.000052    0.00369   0.00839       0.316
+  79*          1         85             0         0.52868    0.000046    0.00317   0.00831       0.313
+  80*          1         86             0         0.52864    0.000048    0.00334   0.00773       0.356
+  81*          1         87             0         0.52859    0.000044    0.00292   0.00790       0.353
+  82*          1         88             0         0.52855    0.000046    0.00313   0.00741       0.393
+  83*          1         89             0         0.52850    0.000044    0.00274   0.00759       0.391
+  84*          1         90             0         0.52846    0.000046    0.00298   0.00724       0.426
+  85*          1         91             0         0.52841    0.000044    0.00260   0.00738       0.426
+  86*          1         92             0         0.52837    0.000046    0.00286   0.00716       0.456
+  87*          1         93             0         0.52832    0.000045    0.00248   0.00726       0.460
+
+                                      Resultados de optimización
+
+Iteraciones                                     87  Invocaciones de función                         95
+Invocaciones del jacobiano                      90  Restricciones activas                            0
+Función objetivo                      0.5283212908  Elemento gradiente absoluto máx       0.0024823903
+Lambda                                0.0072562757  Actual Over Pred Change               0.4602956309
+Radio                                 0.0858461967                                                    
+
+  Convergence criterion (FCONV=0.0001) satisfied.                                                   
+
+NOTE: At least one element of the gradient is greater than 1e-3.
+
+                                                                       18:56 Friday, April 2, 2021 143
+
+                                         Procedimiento NEURAL
+
+                                      Resultados de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                   1 REP_P1343_tailQ17290934_H11             0.197800        0.000448
+                   2 REP_P1343_tailQ19180675_H11            -0.208429        0.000699
+                   3 REP_P1343_tailQ2657718_H11             -0.020860        0.000469
+                   4 REP_P1343_tailQ302556_H11              -0.478562        0.000424
+                   5 REP_P1343_tailQ4091875_H11             -0.452506    -0.000016629
+                   6 REP_P1343_tailQ602358_H11               0.254301        0.000362
+                   7 REP_P1343_tailQ67311526_H11             1.604120        0.000335
+                   8 REP_P1343_tail_EMPTY__H11              -0.361995        0.000504
+                   9 REP_P17_tailQ145_H11                   -0.590186        0.001286
+                  10 REP_P17_tailQ30_H11                    -1.138366       -0.000119
+                  11 REP_P17_tail_EMPTY__H11                -0.534583        0.000738
+                  12 REP_P27_tailQ145_H11                    0.548538     0.000072206
+                  13 REP_P27_tailQ30_H11                    -0.231537        0.000502
+                  14 REP_P27_tail_EMPTY__H11                -0.308827       -0.000774
+                  15 REP_P31_head_EMPTY__H11                -0.189466        0.000893
+                  16 REP_P31_tailQ35657_H11                 -0.837625       -0.000532
+                  17 REP_P31_tailQ5_H11                      0.318008       -0.001505
+                  18 REP_P31_tail_EMPTY__H11                 0.453587       -0.000359
+                  19 REP_P361_tailQ242345_H11                2.871531       -0.001242
+                  20 REP_P361_tailQ278064_H11               -0.316342       -0.001083
+                  21 REP_P361_tailQ49_H11                    0.775424       -0.001038
+                  22 REP_P361_tailQ507306_H11               -0.058295       -0.001070
+                  23 REP_P361_tailQ578170_H11                0.240624       -0.001160
+                  24 REP_P361_tailQ645968_H11               -2.030530       -0.001065
+                  25 REP_P361_tailQ7204_H11                 -2.543058       -0.001106
+                  26 REP_P361_tail_EMPTY__H11                0.516544       -0.002482
+                  27 REP_category_OTHER__H11                 0.940623    -0.000012902
+                  28 REP_categoryautos_H11                   0.087017    -0.000022688
+                  29 REP_categoryentertainment_H11          -1.621876     0.000021759
+                  30 REP_categoryfinance_H11                -1.193934    -0.000022386
+                  31 REP_categoryfoodanddrink_H11            0.188582       -0.000141
+                  32 REP_categoryhealth_H11                 -1.021500     0.000064042
+                  33 REP_categorylifestyle_H11               0.813545        0.000563
+                  34 REP_categorymovies_H11                 -0.620988     0.000038988
+                  35 REP_categorymusic_H11                   1.431685       -0.000348
+                  36 REP_categorynews_H11                    0.456820       -0.000876
+                  37 REP_categorysports_H11                  0.103840    -0.000020602
+                  38 REP_categorytravel_H11                  0.519117       -0.000151
+                  39 REP_categorytv_H11                     -0.123514       -0.000146
+                  40 REP_categoryvideo_H11                  -1.791142     0.000057995
+                  41 REP_subcategory_OTHER__H11              0.762210        0.000285
+                  42 REP_subcategoryautosenthusiasts_       -1.110616    -0.000019499
+                  43 REP_subcategoryautosnews_H11            0.891426     0.000018388
+                  44 REP_subcategorybaseball_mlb_H11        -0.638679     0.000022926
+                  45 REP_subcategorybasketball_nba_H1       -0.967004       -0.000213
+                  46 REP_subcategorycelebrity_H11            1.243597    -0.000068269
+                                                                       18:56 Friday, April 2, 2021 144
+
+                                         Procedimiento NEURAL
+
+                                      Resultados de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                  47 REP_subcategoryentertainmentcele       -0.832647     0.000004736
+                  48 REP_subcategoryfinancecompanies_        1.403215    -0.000004053
+                  49 REP_subcategoryfinancerealestate        0.723267       -0.000150
+                  50 REP_subcategoryfoodnews_H11            -1.059833     0.000065037
+                  51 REP_subcategoryfootball_ncaa_H11        1.070751    -0.000043167
+                  52 REP_subcategoryfootball_nfl_H11        -0.528460     0.000051261
+                  53 REP_subcategoryhealthnews_H11           0.574874    -0.000093727
+                  54 REP_subcategorylifestylebuzz_H11        0.387519    -0.000020594
+                  55 REP_subcategorylifestyleroyals_H        0.229782        0.000610
+                  56 REP_subcategorymarkets_H11              2.098022       -0.000210
+                  57 REP_subcategorymoviescelebrity_H        0.318110    -0.000010969
+                  58 REP_subcategorymoviesgallery_H11        0.869855    -0.000029940
+                  59 REP_subcategorymusiccelebrity_H1       -2.601694     0.000029507
+                  60 REP_subcategorymusicnews_H11           -2.323515       -0.000311
+                  61 REP_subcategorynewscrime_H11           -0.107241    -0.000046905
+                  62 REP_subcategorynewsgoodnews_H11         0.592850    -0.000057362
+                  63 REP_subcategorynewspolitics_H11        -1.675539     0.000054821
+                  64 REP_subcategorynewsus_H11               0.508490       -0.000627
+                  65 REP_subcategorynewsworld_H11            0.373347       -0.000325
+                  66 REP_subcategoryrecipes_H11             -0.579903     0.000085640
+                  67 REP_subcategoryrestaurantsandnew       -0.863887     0.000017923
+                  68 REP_subcategoryshopholidays_H11         0.203415    -0.000020669
+                  69 REP_subcategorytipsandtricks_H11       -0.361249     0.000040248
+                  70 REP_subcategorytravelnews_H11          -1.469908    -0.000032342
+                  71 REP_subcategorytvcelebrity_H11         -0.567600    -0.000011378
+                  72 REP_subcategorytvnews_H11              -2.156656        0.000135
+                  73 REP_subcategoryviral_H11                2.870093       -0.000243
+                  74 REP_subcategoryvoices_H11               0.264635       -0.000136
+                  75 REP_P1343_tailQ17290934_H12             0.010645       -0.000372
+                  76 REP_P1343_tailQ19180675_H12            -0.085520       -0.000513
+                  77 REP_P1343_tailQ2657718_H12             -0.057214    -0.000080815
+                  78 REP_P1343_tailQ302556_H12              -0.168995       -0.000121
+                  79 REP_P1343_tailQ4091875_H12             -0.206271    -0.000032351
+                  80 REP_P1343_tailQ602358_H12               0.186745       -0.000289
+                  81 REP_P1343_tailQ67311526_H12             0.689728       -0.000244
+                  82 REP_P1343_tail_EMPTY__H12              -0.118860       -0.000753
+                  83 REP_P17_tailQ145_H12                   -0.250476       -0.001372
+                  84 REP_P17_tailQ30_H12                    -0.557160       -0.000585
+                  85 REP_P17_tail_EMPTY__H12                -0.217370       -0.000921
+                  86 REP_P27_tailQ145_H12                    0.255399     0.000008309
+                  87 REP_P27_tailQ30_H12                    -0.147089       -0.000949
+                  88 REP_P27_tail_EMPTY__H12                -0.156950        0.000783
+                  89 REP_P31_head_EMPTY__H12                -0.247756        0.000355
+                  90 REP_P31_tailQ35657_H12                 -0.390193        0.000192
+                  91 REP_P31_tailQ5_H12                      0.088486        0.000683
+                  92 REP_P31_tail_EMPTY__H12                 0.324875        0.000221
+                                                                       18:56 Friday, April 2, 2021 145
+
+                                         Procedimiento NEURAL
+
+                                      Resultados de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                  93 REP_P361_tailQ242345_H12                1.199261        0.000604
+                  94 REP_P361_tailQ278064_H12                0.413657        0.000376
+                  95 REP_P361_tailQ49_H12                    0.239530        0.000446
+                  96 REP_P361_tailQ507306_H12               -0.129267        0.000428
+                  97 REP_P361_tailQ578170_H12                0.115665        0.000480
+                  98 REP_P361_tailQ645968_H12               -0.980162        0.000681
+                  99 REP_P361_tailQ7204_H12                 -1.140115        0.000583
+                 100 REP_P361_tail_EMPTY__H12                0.109853        0.001124
+                 101 REP_category_OTHER__H12                -0.215188     0.000028144
+                 102 REP_categoryautos_H12                   0.020071    -0.000002446
+                 103 REP_categoryentertainment_H12          -0.511407     0.000004578
+                 104 REP_categoryfinance_H12                -0.363010    -0.000023684
+                 105 REP_categoryfoodanddrink_H12            0.140179        0.000176
+                 106 REP_categoryhealth_H12                 -0.481079        0.000126
+                 107 REP_categorylifestyle_H12               0.394907       -0.000605
+                 108 REP_categorymovies_H12                 -0.244470    -0.000059260
+                 109 REP_categorymusic_H12                   0.921728        0.000192
+                 110 REP_categorynews_H12                    0.166294        0.000445
+                 111 REP_categorysports_H12                  0.002010       -0.000135
+                 112 REP_categorytravel_H12                  0.379347        0.000114
+                 113 REP_categorytv_H12                     -0.102778        0.000156
+                 114 REP_categoryvideo_H12                  -0.562271        0.000111
+                 115 REP_subcategory_OTHER__H12              0.313620       -0.000317
+                 116 _DUP                                   -0.223207        0.000102
+                 117 REP_subcategoryautosnews_H12            0.394553    -0.000044940
+                 118 REP_subcategorybaseball_mlb_H12        -0.177522     0.000011328
+                 119 _DUP1                                  -0.230527        0.000368
+                 120 REP_subcategorycelebrity_H12            0.493413     0.000010225
+                 121 _DUP2                                  -0.577618    -0.000046760
+                 122 _DUP3                                   0.461494    -0.000097312
+                 123 _DUP4                                   0.370140    -0.000012167
+                 124 REP_subcategoryfoodnews_H12            -0.551886        0.000132
+                 125 REP_subcategoryfootball_ncaa_H12        0.432800    -0.000005543
+                 126 REP_subcategoryfootball_nfl_H12        -0.193731       -0.000169
+                 127 REP_subcategoryhealthnews_H12           0.436460     0.000034688
+                 128 REP_subcategorylifestylebuzz_H12        0.082218     0.000034363
+                 129 _DUP5                                   0.035808       -0.000568
+                 130 REP_subcategorymarkets_H12              0.733223    -0.000001396
+                 131 _DUP6                                  -0.201677    -0.000047980
+                 132 REP_subcategorymoviesgallery_H12        0.510557    -0.000026940
+                 133 _DUP7                                  -1.531045     0.000000486
+                 134 REP_subcategorymusicnews_H12           -1.200736        0.000317
+                 135 REP_subcategorynewscrime_H12           -0.117926    -0.000019368
+                 136 REP_subcategorynewsgoodnews_H12         0.351259    -0.000040005
+                 137 REP_subcategorynewspolitics_H12        -0.451366       -0.000196
+                 138 REP_subcategorynewsus_H12               0.110324        0.000478
+                                                                       18:56 Friday, April 2, 2021 146
+
+                                         Procedimiento NEURAL
+
+                                      Resultados de optimización
+                                          Parameter Estimates
+                                                                             Gradient
+                                                                            Objective
+                   N Parameter                              Estimador        Function
+
+                 139 REP_subcategorynewsworld_H12            0.146925        0.000327
+                 140 REP_subcategoryrecipes_H12             -0.179438     0.000078362
+                 141 _DUP8                                  -0.379269        0.000102
+                 142 REP_subcategoryshopholidays_H12         0.144233     0.000077949
+                 143 REP_subcategorytipsandtricks_H12       -0.134005     0.000047920
+                 144 REP_subcategorytravelnews_H12          -0.626197        0.000159
+                 145 REP_subcategorytvcelebrity_H12         -0.239329     0.000055384
+                 146 REP_subcategorytvnews_H12              -0.737526     0.000008463
+                 147 REP_subcategoryviral_H12                1.142805    -0.000036644
+                 148 REP_subcategoryvoices_H12               0.228982     0.000015763
+                 149 BIAS_H11                               -0.986011       -0.000803
+                 150 BIAS_H12                               -0.452191        0.000383
+                 151 H11_REP_clicked0                       -8.649305        0.000117
+                 152 H12_REP_clicked0                       11.551900     0.000047609
+                 153 BIAS_REP_clicked0                       0.163481    -0.000020979
+
+                             Valor de la función objetivo = 0.5283212908
+
+                                                                       18:56 Friday, April 2, 2021 147
+
+                                          Procedimiento FREQ
+
+                                    Tabla de pre11 por REP_clicked
+
+                                 pre11
+                                            REP_clicked(Replacement: clicked)
+
+                                 Frecuencia‚
+                                 Porcentaje‚
+                                 Pct fila  ‚
+                                 Pct col   ‚       0‚       1‚  Total
+                                 ƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                         0 ‚   6845 ‚   2253 ‚   9098
+                                           ‚  37.01 ‚  12.18 ‚  49.19
+                                           ‚  75.24 ‚  24.76 ‚
+                                           ‚  74.22 ‚  24.30 ‚
+                                 ƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                         1 ‚   2378 ‚   7020 ‚   9398
+                                           ‚  12.86 ‚  37.95 ‚  50.81
+                                           ‚  25.30 ‚  74.70 ‚
+                                           ‚  25.78 ‚  75.70 ‚
+                                 ƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                 Total         9223     9273    18496
+                                              49.86    50.14   100.00
