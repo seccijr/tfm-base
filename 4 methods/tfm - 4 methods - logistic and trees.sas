@@ -26,7 +26,7 @@ groups = 4
 	ngrupos=4,
 	sinicio=12345,
 	sfinal=12354,
-	objetivo=Area
+	objetivo=tasafallos
 );
 
 data Results.llv4;
