@@ -344,7 +344,7 @@ groups = 4
 seeds = 10
 n = 2
 algo = levmar
-early = 141
+early = 234
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -357,7 +357,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=2,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=141,
+	early=234,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn2v4
 );
@@ -408,7 +408,7 @@ groups = 4
 seeds = 10
 n = 3
 algo = levmar
-early = 166
+early = 431
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -421,7 +421,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=3,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=166,
+	early=431,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn3v4
 );
@@ -472,7 +472,7 @@ groups = 4
 seeds = 10
 n = 4
 algo = levmar
-early = 59
+early = 504
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -485,7 +485,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=4,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=59,
+	early=504,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn4v4
 );
@@ -504,7 +504,7 @@ groups = 4
 seeds = 10
 n = 4
 algo = bprop
-early = 173
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -517,7 +517,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=4,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=173,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn4v4
 );
@@ -536,7 +536,7 @@ groups = 4
 seeds = 10
 n = 5
 algo = levmar
-early = 42
+early = 541
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -549,7 +549,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=5,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=42,
+	early=541,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn5v4
 );
@@ -568,7 +568,7 @@ groups = 4
 seeds = 10
 n = 5
 algo = bprop
-early = 191
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -581,7 +581,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=5,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=191,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn5v4
 );
@@ -600,7 +600,7 @@ groups = 4
 seeds = 10
 n = 6
 algo = levmar
-early = 36
+early = 136
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -613,7 +613,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=6,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=36,
+	early=136,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn6v4
 );
@@ -632,7 +632,7 @@ groups = 4
 seeds = 10
 n = 6
 algo = bprop
-early = 184
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -645,7 +645,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=6,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=184,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn6v4
 );
@@ -664,7 +664,7 @@ groups = 4
 seeds = 10
 n = 7
 algo = levmar
-early = 40
+early = 652
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -677,7 +677,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=7,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=40,
+	early=652,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn7v4
 );
@@ -696,7 +696,7 @@ groups = 4
 seeds = 10
 n = 7
 algo = bprop
-early = 185
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -709,7 +709,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=7,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=185,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn7v4
 );
@@ -728,7 +728,7 @@ groups = 4
 seeds = 10
 n = 8
 algo = levmar
-early = 30
+early = 84
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -741,7 +741,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=8,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=30,
+	early=84,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn8v4
 );
@@ -760,7 +760,7 @@ groups = 4
 seeds = 10
 n = 8
 algo = bprop
-early = 165
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -773,7 +773,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=8,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=165,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn8v4
 );
@@ -792,7 +792,7 @@ groups = 4
 seeds = 10
 n = 9
 algo = levmar
-early = 24
+early = 123
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -805,7 +805,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=9,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=24,
+	early=123,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn9v4
 );
@@ -824,7 +824,7 @@ groups = 4
 seeds = 10
 n = 9
 algo = bprop
-early = 169
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -837,7 +837,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=9,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=169,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn9v4
 );
@@ -856,7 +856,7 @@ groups = 4
 seeds = 10
 n = 10
 algo = levmar
-early = 27
+early = 62
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -869,7 +869,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=10,
 	algo=levmar,
 	objetivo=tasafallos,
-	early=27,
+	early=62,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\levtanhearlyXn10v4
 );
@@ -888,7 +888,7 @@ groups = 4
 seeds = 10
 n = 10
 algo = bprop
-early = 167
+early = 13
 Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 1 - [(Verdaderos Positivos + Verdaderos Negativos)/(N Muestras)]
 */
 %cruzadabinarianeural(
@@ -901,7 +901,7 @@ Esta macro me devuelve la media de la tasa de fallos = 1 - (Tasa de aciertos) = 
 	nodos=10,
 	algo=bprop,
 	objetivo=tasafallos,
-	early=167,
+	early=13,
 	acti=tanh,
 	directorio=C:\Users\secci\Workspace\TFM\Base\4 methods\Tmp\bproptanhearlyXn10v4
 );
